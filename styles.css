@@ -1,0 +1,315 @@
+/* =========================================================
+   ESTILO UCACUE - ROJO, NEGRO Y GRIS
+   Módulo: Instalaciones Civiles e Industriales
+   ========================================================= */
+
+/* -------------------------------
+   Variables de color
+-------------------------------- */
+
+:root {
+  --ucacue-rojo: #b00020;
+  --ucacue-rojo-oscuro: #7a0016;
+  --ucacue-negro: #111111;
+  --ucacue-gris-oscuro: #333333;
+  --ucacue-gris: #666666;
+  --ucacue-gris-claro: #f4f4f4;
+  --ucacue-blanco: #ffffff;
+}
+
+/* -------------------------------
+   Estilo general
+-------------------------------- */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--ucacue-negro);
+  background-color: var(--ucacue-blanco);
+}
+
+/* -------------------------------
+   Títulos
+-------------------------------- */
+
+h1 {
+  color: var(--ucacue-rojo);
+  font-weight: 800;
+  border-bottom: 4px solid var(--ucacue-negro);
+  padding-bottom: 0.4rem;
+  margin-top: 2rem;
+}
+
+h2 {
+  color: var(--ucacue-negro);
+  font-weight: 750;
+  border-left: 6px solid var(--ucacue-rojo);
+  padding-left: 0.6rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  color: var(--ucacue-rojo-oscuro);
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+h4 {
+  color: var(--ucacue-gris-oscuro);
+  font-weight: 700;
+}
+
+/* -------------------------------
+   Portada / título del libro
+-------------------------------- */
+
+.quarto-title-banner {
+  background: linear-gradient(135deg, var(--ucacue-negro), var(--ucacue-rojo-oscuro));
+  color: var(--ucacue-blanco);
+}
+
+.quarto-title h1.title {
+  color: var(--ucacue-blanco);
+}
+
+.quarto-title .subtitle {
+  color: #eeeeee;
+}
+
+/* -------------------------------
+   Barra lateral y navegación
+-------------------------------- */
+
+.sidebar-title {
+  color: var(--ucacue-rojo);
+  font-weight: 800;
+}
+
+.sidebar nav[role="doc-toc"] ul > li > a.active,
+.sidebar nav[role="doc-toc"] ul > li > a:hover {
+  color: var(--ucacue-rojo);
+  border-left: 3px solid var(--ucacue-rojo);
+}
+
+.sidebar-item-text {
+  color: var(--ucacue-negro);
+}
+
+.sidebar-item-text:hover {
+  color: var(--ucacue-rojo);
+}
+
+/* -------------------------------
+   Enlaces
+-------------------------------- */
+
+a {
+  color: var(--ucacue-rojo);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--ucacue-rojo-oscuro);
+  text-decoration: underline;
+}
+
+/* -------------------------------
+   Tablas
+-------------------------------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+thead {
+  background-color: var(--ucacue-negro);
+  color: var(--ucacue-blanco);
+}
+
+th {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid var(--ucacue-negro);
+}
+
+td {
+  padding: 9px;
+  border: 1px solid #dddddd;
+}
+
+tr:nth-child(even) {
+  background-color: var(--ucacue-gris-claro);
+}
+
+tr:hover {
+  background-color: #fbeaec;
+}
+
+/* -------------------------------
+   Figuras e imágenes
+-------------------------------- */
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  max-width: 100%;
+  border: 1px solid #dddddd;
+}
+
+figure {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--ucacue-gris);
+  font-style: italic;
+}
+
+/* -------------------------------
+   Callouts de Quarto
+-------------------------------- */
+
+.callout-note {
+  border-left-color: var(--ucacue-rojo);
+}
+
+.callout-note .callout-title {
+  color: var(--ucacue-rojo-oscuro);
+}
+
+.callout-important {
+  border-left-color: var(--ucacue-negro);
+}
+
+.callout-warning {
+  border-left-color: #d97706;
+}
+
+.callout-tip {
+  border-left-color: var(--ucacue-rojo);
+}
+
+/* -------------------------------
+   Bloques personalizados
+-------------------------------- */
+
+.resumen-bloque {
+  background-color: #f7f7f7;
+  border-left: 6px solid var(--ucacue-rojo);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+}
+
+.actividad {
+  background-color: #fff5f5;
+  border-left: 6px solid var(--ucacue-rojo);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+}
+
+.normativa {
+  background-color: #f2f2f2;
+  border-left: 6px solid var(--ucacue-negro);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+}
+
+.seguridad {
+  background-color: #fff0f0;
+  border-left: 6px solid var(--ucacue-rojo-oscuro);
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+}
+
+/* -------------------------------
+   Ecuaciones
+-------------------------------- */
+
+.math.display {
+  font-size: 1.15rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* -------------------------------
+   Código y bloques técnicos
+-------------------------------- */
+
+pre {
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+}
+
+code {
+  color: var(--ucacue-rojo-oscuro);
+}
+
+/* -------------------------------
+   Botones y elementos activos
+-------------------------------- */
+
+.btn-primary {
+  background-color: var(--ucacue-rojo);
+  border-color: var(--ucacue-rojo);
+}
+
+.btn-primary:hover {
+  background-color: var(--ucacue-rojo-oscuro);
+  border-color: var(--ucacue-rojo-oscuro);
+}
+
+/* -------------------------------
+   Separadores
+-------------------------------- */
+
+hr {
+  border: none;
+  border-top: 2px solid var(--ucacue-rojo);
+  margin: 2rem 0;
+}
+
+/* -------------------------------
+   Pie de página
+-------------------------------- */
+
+.nav-footer {
+  border-top: 3px solid var(--ucacue-rojo);
+  background-color: #f7f7f7;
+}
+
+/* -------------------------------
+   Mejoras para lectura móvil
+-------------------------------- */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+}

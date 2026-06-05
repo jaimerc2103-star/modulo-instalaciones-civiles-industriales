@@ -1,0 +1,85 @@
+# Bloque 3: Automatización
+
+## Resultado de aprendizaje del bloque
+
+El estudiante analiza e implementa soluciones básicas de automatización en sistemas eléctricos mediante principios de control industrial, identificación de arquitectura y componentes de un PLC y aplicaciones en procesos industriales simples.
+
+## Objetivo específico
+
+Desarrollar competencias para comprender y aplicar principios de automatización industrial y sistemas de control mediante el estudio de controladores lógicos programables, arquitectura, componentes y aplicaciones básicas en sistemas eléctricos.
+
+## 3.1 Introducción a la automatización industrial
+
+La automatización industrial consiste en el uso de dispositivos de control, sensores, actuadores, interfaces y programas para ejecutar procesos con mínima intervención humana. Su aplicación mejora productividad, seguridad, repetibilidad, control de calidad y continuidad de operación.
+
+## 3.2 Sistemas de control en procesos industriales
+
+Un sistema de control integra entradas, procesamiento y salidas.
+
+| Elemento | Función |
+|---|---|
+| Sensor | Detecta una condición física o eléctrica |
+| Pulsador | Permite una orden manual |
+| Controlador | Procesa señales y ejecuta lógica |
+| Actuador | Ejecuta una acción física |
+| Contactor | Maniobra cargas de potencia |
+| Protección | Desconecta ante fallas |
+
+## 3.3 Introducción a los controladores lógicos programables
+
+Un PLC es un dispositivo electrónico diseñado para controlar procesos mediante lógica programada. Sustituye parcial o totalmente la lógica cableada de relés, permitiendo modificar secuencias sin cambiar todo el cableado físico.
+
+## 3.4 Componentes y arquitectura básica de un PLC
+
+Un PLC básico incluye:
+
+- Fuente de alimentación.
+- CPU.
+- Memoria.
+- Entradas digitales o analógicas.
+- Salidas digitales o analógicas.
+- Módulos de comunicación.
+- Interfaz de programación.
+
+## 3.5 Aplicaciones básicas de PLC en sistemas eléctricos
+
+Ejemplos de aplicación:
+
+- Arranque y paro de motores.
+- Control de iluminación.
+- Temporización de cargas.
+- Control de bombas.
+- Secuencias automáticas.
+- Señalización de estados.
+- Transferencias automáticas simples.
+
+## Temporizadores básicos
+
+| Temporizador | Descripción | Aplicación típica |
+|---|---|---|
+| TON | Retardo a la conexión | Encendido diferido de una carga |
+| TOF | Retardo a la desconexión | Apagado diferido |
+| Pulso | Genera activación por tiempo definido | Señalización o eventos breves |
+
+## Ejemplo conceptual: retardo a la conexión
+
+Una lámpara piloto debe encenderse cinco segundos después de presionar un pulsador de marcha. La lógica básica es:
+
+1. Entrada I1 activa el temporizador TON.
+2. El temporizador cuenta 5 segundos.
+3. Al cumplirse el tiempo, se activa Q1.
+4. Un pulsador de paro reinicia el proceso.
+
+## Actividad de aula
+
+Diseñe la lógica básica para:
+
+1. Encendido de una lámpara con retardo de 5 segundos.
+2. Apagado con pulsador de paro.
+3. Señalización de estado activo.
+4. Representación del diagrama de conexión.
+
+## Práctica vinculada
+
+**Práctica 3:** Fundamentos de programación con PLCs usando Siemens LOGO!.
+

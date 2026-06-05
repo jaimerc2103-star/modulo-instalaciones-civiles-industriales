@@ -1,0 +1,1062 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Módulo de Instalaciones Civiles e Industriales",
+    "section": "",
+    "text": "1 Inicio\nBienvenido al Módulo de Instalaciones Civiles e Industriales.\nEste libro digital ha sido organizado para la asignatura Instalaciones Civiles e Industriales, correspondiente al cuarto ciclo de la Carrera de Electricidad de la Universidad Católica de Cuenca. Su finalidad es integrar fundamentos técnicos, criterios normativos, interpretación de planos, mediciones eléctricas, seguridad, automatización básica y prácticas experimentales.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inicio</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#resultado-de-aprendizaje-de-la-asignatura",
+    "href": "index.html#resultado-de-aprendizaje-de-la-asignatura",
+    "title": "Módulo de Instalaciones Civiles e Industriales",
+    "section": "1.1 Resultado de aprendizaje de la asignatura",
+    "text": "1.1 Resultado de aprendizaje de la asignatura\nAplicar los principios de los diseños de circuitos eléctricos, su simbología e interpretación práctica.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inicio</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#objetivo-general-del-módulo",
+    "href": "index.html#objetivo-general-del-módulo",
+    "title": "Módulo de Instalaciones Civiles e Industriales",
+    "section": "1.2 Objetivo general del módulo",
+    "text": "1.2 Objetivo general del módulo\nDesarrollar competencias para interpretar, diseñar y analizar instalaciones eléctricas civiles e industriales, aplicando normalización eléctrica, simbología técnica, diagramas eléctricos, mediciones eléctricas, análisis de errores, seguridad en laboratorio y fundamentos de automatización mediante PLC.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inicio</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#organización-del-aprendizaje",
+    "href": "index.html#organización-del-aprendizaje",
+    "title": "Módulo de Instalaciones Civiles e Industriales",
+    "section": "1.3 Organización del aprendizaje",
+    "text": "1.3 Organización del aprendizaje\n\n\n\nComponente\nHoras\n\n\n\n\nAprendizaje en contacto con el docente\n32\n\n\nAprendizaje autónomo\n32\n\n\nAprendizaje práctico-experimental\n32\n\n\nTotal\n96",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inicio</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#cómo-usar-este-libro",
+    "href": "index.html#cómo-usar-este-libro",
+    "title": "Módulo de Instalaciones Civiles e Industriales",
+    "section": "1.4 Cómo usar este libro",
+    "text": "1.4 Cómo usar este libro\nCada bloque contiene:\n\nResultado de aprendizaje.\nObjetivos específicos.\nDesarrollo conceptual.\nAplicaciones técnicas.\nActividades de aprendizaje.\nPrácticas vinculadas.\nEvaluación sugerida.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Inicio</span>"
+    ]
+  },
+  {
+    "objectID": "plan_asignatura.html",
+    "href": "plan_asignatura.html",
+    "title": "2  Plan de la asignatura",
+    "section": "",
+    "text": "2.1 Datos informativos",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Plan de la asignatura</span>"
+    ]
+  },
+  {
+    "objectID": "plan_asignatura.html#datos-informativos",
+    "href": "plan_asignatura.html#datos-informativos",
+    "title": "2  Plan de la asignatura",
+    "section": "",
+    "text": "Campo\nInformación\n\n\n\n\nAsignatura\nInstalaciones Civiles e Industriales\n\n\nCarrera\nElectricidad\n\n\nCiclo\nCuarto ciclo\n\n\nCódigo\nIC-IE-04\n\n\nCréditos\n2\n\n\nModalidad\nPresencial\n\n\nUnidad de organización curricular\nBásica\n\n\nDisciplina\nCiencias Tecnológicas\n\n\nSubdisciplina\nGeneración, Transmisión y Distribución",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Plan de la asignatura</span>"
+    ]
+  },
+  {
+    "objectID": "plan_asignatura.html#caracterización-de-la-asignatura",
+    "href": "plan_asignatura.html#caracterización-de-la-asignatura",
+    "title": "2  Plan de la asignatura",
+    "section": "2.2 Caracterización de la asignatura",
+    "text": "2.2 Caracterización de la asignatura\nLa asignatura proporciona fundamentos teóricos y prácticos para la interpretación, diseño y análisis de instalaciones eléctricas en edificaciones civiles y entornos industriales. Integra normalización eléctrica, simbología técnica, diagramas eléctricos, seguridad, mediciones eléctricas, análisis de errores y fundamentos de automatización industrial.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Plan de la asignatura</span>"
+    ]
+  },
+  {
+    "objectID": "plan_asignatura.html#bloques-formativos",
+    "href": "plan_asignatura.html#bloques-formativos",
+    "title": "2  Plan de la asignatura",
+    "section": "2.3 Bloques formativos",
+    "text": "2.3 Bloques formativos\n\n\n\n\n\n\n\n\n\nBloque\nTítulo\nFechas referenciales\nPráctica asociada\n\n\n\n\n1\nNormalización Eléctrica, Seguridad y Simbología\n20-03-2026 al 24-04-2026\nDiseño de plano eléctrico residencial\n\n\n2\nDiagramas Eléctricos e Instrumentación\n01-05-2026 al 05-06-2026\nDiseño de plano eléctrico industrial\n\n\n3\nAutomatización\n12-06-2026 al 17-07-2026\nFundamentos de programación con PLCs",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Plan de la asignatura</span>"
+    ]
+  },
+  {
+    "objectID": "plan_asignatura.html#bibliografía-base",
+    "href": "plan_asignatura.html#bibliografía-base",
+    "title": "2  Plan de la asignatura",
+    "section": "2.4 Bibliografía base",
+    "text": "2.4 Bibliografía base\n\nDavie, A. G. (1974). Introducción a la automatización industrial. Universitaria.\nEnríquez Harper, G. (2017). Protección de instalaciones eléctricas industriales y comerciales. Limusa.\nEnríquez Harper, G. (2012). Guía para el diseño de instalaciones eléctricas residenciales, industriales y comerciales. Limusa.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Plan de la asignatura</span>"
+    ]
+  },
+  {
+    "objectID": "plan_asignatura.html#bibliografía-complementaria",
+    "href": "plan_asignatura.html#bibliografía-complementaria",
+    "title": "2  Plan de la asignatura",
+    "section": "2.5 Bibliografía complementaria",
+    "text": "2.5 Bibliografía complementaria\n\nGarcía Trasancos, J. (2011). Instalaciones eléctricas en media y baja tensión. Paraninfo.\nMIDUVI. (2018). NEC-SB-IE: Instalaciones eléctricas. Norma Ecuatoriana de la Construcción.\nFesto. (2022). Automatización industrial: sistemas de aprendizaje para la formación técnica.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Plan de la asignatura</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "",
+    "text": "3.1 Presentación del bloque\nEl Bloque 1 introduce al estudiante en los fundamentos técnicos, normativos y gráficos necesarios para interpretar instalaciones eléctricas civiles e industriales. En esta etapa se estudia la importancia de la normalización eléctrica, el uso de simbología técnica, la identificación de componentes en planos eléctricos y la aplicación de criterios de seguridad en laboratorio y obra.\nUna instalación eléctrica no debe entenderse únicamente como la conexión de cables, interruptores, luminarias y tomacorrientes. En términos técnicos, es un sistema integrado que permite transportar, distribuir, proteger, controlar y utilizar la energía eléctrica de manera segura, eficiente y conforme a normas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#presentación-del-bloque",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#presentación-del-bloque",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "",
+    "text": "Este bloque constituye la base para los siguientes temas de la asignatura: diagramas eléctricos, instrumentación, mediciones eléctricas y automatización industrial.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#resultado-de-aprendizaje-del-bloque",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#resultado-de-aprendizaje-del-bloque",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "3.2 Resultado de aprendizaje del bloque",
+    "text": "3.2 Resultado de aprendizaje del bloque\nAl finalizar este bloque, el estudiante interpreta planos eléctricos, reconoce simbología normalizada y componentes de instalaciones eléctricas civiles e industriales conforme a normas técnicas vigentes. Además, aplica normas de seguridad eléctrica y protocolos de laboratorio, identificando riesgos eléctricos y proponiendo medidas de prevención en actividades prácticas y entornos reales.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#objetivo-específico-del-bloque",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#objetivo-específico-del-bloque",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "3.3 Objetivo específico del bloque",
+    "text": "3.3 Objetivo específico del bloque\nComprender y aplicar los fundamentos de las instalaciones eléctricas civiles e industriales, incorporando la normalización eléctrica, las normas técnicas y la simbología eléctrica, para la correcta interpretación de planos eléctricos y la ejecución de actividades bajo criterios de seguridad en laboratorios y entornos eléctricos.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#concepto-general-de-instalación-eléctrica",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#concepto-general-de-instalación-eléctrica",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "4.1 Concepto general de instalación eléctrica",
+    "text": "4.1 Concepto general de instalación eléctrica\nUna instalación eléctrica es el conjunto de elementos destinados a conducir, distribuir, proteger, controlar y utilizar la energía eléctrica dentro de una edificación o sistema productivo.\nEstá conformada por acometida, medidor, tablero general, tableros secundarios, protecciones, conductores, canalizaciones, cajas de paso, interruptores, tomacorrientes, luminarias, cargas especiales, sistema de puesta a tierra, planos y diagramas técnicos.\nEn una edificación, la instalación eléctrica debe permitir que la energía llegue desde el punto de suministro hasta cada carga de manera segura y funcional.\n\n\n\n\n\n\nFigura 4.1: Panel eléctrico residencial con subpanel y cubierta retirada.\n\n\n\nFuente de imagen: Wikimedia Commons, archivo Electrical panel and subpanel with cover removed from subpanel.jpg, autor Gvolk, licencia CC BY-SA 3.0. Disponible en: https://commons.wikimedia.org/wiki/File:Electrical_panel_and_subpanel_with_cover_removed_from_subpanel.jpg\nLa Figura 4.1 permite observar un tablero residencial con interruptores automáticos. En una instalación real, el tablero concentra protecciones, organiza circuitos y facilita la operación y mantenimiento.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#instalaciones-eléctricas-civiles",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#instalaciones-eléctricas-civiles",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "4.2 Instalaciones eléctricas civiles",
+    "text": "4.2 Instalaciones eléctricas civiles\nLas instalaciones civiles se encuentran en edificaciones destinadas a vivienda, comercio, educación, salud, oficinas, servicios públicos y espacios similares.\n\n\n\n\n\n\n\nTipo de carga\nEjemplos\n\n\n\n\nIluminación\nLuminarias interiores, exteriores, decorativas y de emergencia\n\n\nTomacorrientes\nEquipos domésticos, computadores, cargadores, electrodomésticos menores\n\n\nCargas especiales\nCocina eléctrica, ducha eléctrica, calefón, aire acondicionado, bomba de agua\n\n\nServicios complementarios\nPorteros eléctricos, alarmas, cámaras, redes de comunicación",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#instalaciones-eléctricas-industriales",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#instalaciones-eléctricas-industriales",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "4.3 Instalaciones eléctricas industriales",
+    "text": "4.3 Instalaciones eléctricas industriales\nLas instalaciones industriales se aplican en procesos productivos, talleres, plantas de manufactura, sistemas electromecánicos y entornos donde existen cargas de potencia, control e instrumentación.\n\n\n\n\n\n\n\nTipo de carga\nEjemplos\n\n\n\n\nCargas de fuerza\nMotores, bombas, compresores, ventiladores\n\n\nCargas de control\nContactores, relés, temporizadores, PLC\n\n\nCargas de instrumentación\nSensores, transmisores, indicadores\n\n\nCargas de iluminación industrial\nLuminarias de nave, reflectores, alumbrado de emergencia\n\n\nSistemas auxiliares\nTableros, bancos de capacitores, variadores de frecuencia",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.1.-diferencias-entre-instalaciones-civiles-e-industriales",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.1.-diferencias-entre-instalaciones-civiles-e-industriales",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "4.4 Tabla 1.1. Diferencias entre instalaciones civiles e industriales",
+    "text": "4.4 Tabla 1.1. Diferencias entre instalaciones civiles e industriales\n\n\n\n\n\n\n\n\nCriterio\nInstalaciones civiles\nInstalaciones industriales\n\n\n\n\nUso principal\nVivienda, comercio y servicios\nProducción, control y operación de maquinaria\n\n\nTipo de cargas\nIluminación, tomacorrientes y cargas especiales\nMotores, tableros de control, sensores y actuadores\n\n\nNivel de potencia\nBajo a medio\nMedio a alto\n\n\nComplejidad técnica\nModerada\nAlta\n\n\nDocumentos frecuentes\nPlano eléctrico, cuadro de cargas, diagrama unifilar\nDiagramas de potencia, control, mando, PLC e instrumentación\n\n\nRiesgos principales\nChoque eléctrico, sobrecarga, mala puesta a tierra\nArco eléctrico, fallas de motor, arranque de cargas, fallas de control\n\n\nMantenimiento\nCorrectivo y preventivo básico\nPreventivo, predictivo y correctivo especializado\n\n\n\n\n\n\n\n\n\nLa principal diferencia entre una instalación civil y una industrial no es únicamente el tamaño, sino el tipo de carga, el nivel de control, la criticidad operativa y los riesgos asociados.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#qué-es-la-normalización-eléctrica",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#qué-es-la-normalización-eléctrica",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "5.1 ¿Qué es la normalización eléctrica?",
+    "text": "5.1 ¿Qué es la normalización eléctrica?\nLa normalización eléctrica es el conjunto de reglas, criterios, símbolos, procedimientos y requisitos técnicos que permiten diseñar, construir, operar e inspeccionar instalaciones eléctricas bajo parámetros comunes.\nSu finalidad es evitar interpretaciones ambiguas y reducir riesgos técnicos. La normalización permite:\n\nGarantizar condiciones mínimas de seguridad.\nUnificar criterios entre diseñadores, constructores, instaladores y fiscalizadores.\nFacilitar la lectura de planos eléctricos.\nDefinir características mínimas de materiales y equipos.\nReducir el riesgo de incendios de origen eléctrico.\nFacilitar el mantenimiento y ampliación de instalaciones.\nProteger a usuarios, equipos y edificaciones.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.2.-problemas-frecuentes-por-falta-de-normalización",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.2.-problemas-frecuentes-por-falta-de-normalización",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "5.2 Tabla 1.2. Problemas frecuentes por falta de normalización",
+    "text": "5.2 Tabla 1.2. Problemas frecuentes por falta de normalización\n\n\n\n\n\n\n\n\nProblema\nConsecuencia técnica\nRiesgo asociado\n\n\n\n\nSímbolos no normalizados\nMala interpretación del plano\nConexiones incorrectas\n\n\nConductores sin código de color\nDificultad para identificar fase, neutro y tierra\nChoque eléctrico\n\n\nTableros sin rotulación\nMantenimiento inseguro\nDesconexión incorrecta\n\n\nCircuitos sin identificación\nConfusión en operación y mantenimiento\nSobrecarga o mal aislamiento\n\n\nAusencia de cuadro de cargas\nSelección deficiente de protecciones\nCalentamiento o incendio\n\n\nNo considerar puesta a tierra\nFallas peligrosas en carcasas metálicas\nContacto indirecto",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#ejemplo-aplicado",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#ejemplo-aplicado",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "5.3 Ejemplo aplicado",
+    "text": "5.3 Ejemplo aplicado\nSi en un plano residencial se representa un tomacorriente común y una salida para cocina eléctrica usando el mismo símbolo, el instalador podría utilizar el mismo conductor y la misma protección en ambos puntos. Esto generaría un riesgo, porque la cocina eléctrica requiere circuito especial, mayor capacidad de corriente y protección independiente.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#normativa-principal",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#normativa-principal",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "6.1 Normativa principal",
+    "text": "6.1 Normativa principal\nEn Ecuador, una referencia fundamental para instalaciones eléctricas en edificaciones es la NEC-SB-IE Instalaciones Eléctricas, perteneciente a la Norma Ecuatoriana de la Construcción. Esta norma se enfoca en instalaciones eléctricas interiores residenciales y establece criterios mínimos de diseño y seguridad.\nLa instalación debe proteger frente a choques eléctricos, efectos térmicos, sobrecorrientes, corrientes de falla y sobrevoltajes.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.3.-normas-y-documentos-técnicos-de-referencia",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.3.-normas-y-documentos-técnicos-de-referencia",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "6.2 Tabla 1.3. Normas y documentos técnicos de referencia",
+    "text": "6.2 Tabla 1.3. Normas y documentos técnicos de referencia\n\n\n\n\n\n\n\nNorma / documento\nAplicación en el módulo\n\n\n\n\nNEC-SB-IE Instalaciones Eléctricas\nDiseño y ejecución de instalaciones eléctricas interiores residenciales\n\n\nNFPA 70 / National Electrical Code\nCriterios de seguridad, protecciones, conductores y canalizaciones\n\n\nCPE INEN 019\nCódigo Eléctrico Ecuatoriano\n\n\nIEC 60617\nSimbología gráfica para diagramas eléctricos\n\n\nNTE INEN 2345\nAlambres y cables con aislamiento termoplástico\n\n\nNTE INEN 3098\nVoltajes normalizados\n\n\nIEC 60364\nInstalaciones eléctricas en edificaciones\n\n\nReglamentos de empresas distribuidoras\nAcometidas, medidores y requisitos de conexión\n\n\n\n\n\n\n\n\n\nCuando existan diferencias entre documentos técnicos, se debe revisar la normativa nacional vigente, los requisitos de la empresa distribuidora y las especificaciones del proyecto.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#relación-entre-norma-plano-y-ejecución",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#relación-entre-norma-plano-y-ejecución",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "6.3 Relación entre norma, plano y ejecución",
+    "text": "6.3 Relación entre norma, plano y ejecución\nUna instalación eléctrica segura requiere coherencia entre normativa aplicable, memoria técnica, plano eléctrico, cuadro de cargas, diagrama unifilar, selección de materiales, ejecución en obra e inspección final.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#concepto",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#concepto",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "7.1 Concepto",
+    "text": "7.1 Concepto\nLa simbología eléctrica normalizada permite representar gráficamente los componentes de una instalación eléctrica. Un símbolo eléctrico resume información técnica sobre el tipo de dispositivo, su función y su ubicación dentro del sistema.\nLos símbolos se emplean en planos eléctricos en planta, diagramas unifilares, diagramas multifilares, diagramas de control, diagramas de potencia, planos de tableros y esquemas de automatización.\n\n\n\n\n\n\nFigura 7.1: Colección de símbolos eléctricos IEC.\n\n\n\nFuente de imagen: Wikimedia Commons, archivo Electrical Symbols IEC.svg, autor Emareg, licencia CC0 1.0. Disponible en: https://commons.wikimedia.org/wiki/File:Electrical_Symbols_IEC.svg\nLa Figura 7.1 muestra una colección de símbolos eléctricos IEC. Esta referencia permite comprender por qué la representación gráfica debe ser consistente, legible y verificable.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.4.-simbología-básica-para-instalaciones-civiles",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.4.-simbología-básica-para-instalaciones-civiles",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "7.2 Tabla 1.4. Simbología básica para instalaciones civiles",
+    "text": "7.2 Tabla 1.4. Simbología básica para instalaciones civiles\n\n\n\n\n\n\n\n\nElemento\nRepresentación textual sugerida\nFunción\n\n\n\n\nPunto de luz\nPL\nSalida para luminaria\n\n\nInterruptor simple\nS1\nControl de una luminaria desde un punto\n\n\nInterruptor doble\nS2\nControl de dos luminarias o grupos\n\n\nTomacorriente simple\nT1\nAlimentación de carga de uso general\n\n\nTomacorriente doble\nT2\nAlimentación de dos equipos\n\n\nTomacorriente con tierra\nTT\nAlimentación con conductor de protección\n\n\nSalida especial\nSE\nAlimentación de carga específica\n\n\nTablero de distribución\nTD\nAgrupación de protecciones\n\n\nMedidor\nM\nRegistro de energía\n\n\nPuesta a tierra\nPT\nConexión de seguridad a tierra",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.5.-simbología-básica-para-instalaciones-industriales",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.5.-simbología-básica-para-instalaciones-industriales",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "7.3 Tabla 1.5. Simbología básica para instalaciones industriales",
+    "text": "7.3 Tabla 1.5. Simbología básica para instalaciones industriales\n\n\n\nElemento\nCódigo frecuente\nFunción\n\n\n\n\nMotor\nM\nConvierte energía eléctrica en mecánica\n\n\nContactor\nKM\nManiobra eléctrica de cargas\n\n\nRelé térmico\nFR\nProtección contra sobrecarga en motores\n\n\nPulsador de marcha\nS1 / START\nOrden de encendido\n\n\nPulsador de paro\nS0 / STOP\nOrden de apagado\n\n\nLámpara piloto\nH\nSeñalización visual\n\n\nFinal de carrera\nSQ\nDetección de posición\n\n\nSensor\nB\nDetección de variable física\n\n\nPLC\nPLC\nControl lógico programable\n\n\nFuente de alimentación\nPS\nAlimentación de circuitos de control",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#criterios-de-representación",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#criterios-de-representación",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "7.4 Criterios de representación",
+    "text": "7.4 Criterios de representación\nPara que la simbología sea técnicamente correcta, debe ser legible, estar incluida en una leyenda, mantenerse igual en todo el plano, diferenciar cargas normales y especiales, identificar circuitos y relacionarse con el cuadro de cargas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#lectura-de-planos-eléctricos",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#lectura-de-planos-eléctricos",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "8.1 Lectura de planos eléctricos",
+    "text": "8.1 Lectura de planos eléctricos\nUn plano eléctrico es un documento técnico que representa la ubicación y conexión de elementos eléctricos dentro de una edificación.\nEn instalaciones civiles, el plano eléctrico se suele elaborar sobre la planta arquitectónica. Sobre ella se ubican luminarias, interruptores, tomacorrientes, salidas especiales, tablero y canalizaciones.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#elementos-mínimos-de-un-plano-eléctrico-residencial",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#elementos-mínimos-de-un-plano-eléctrico-residencial",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "8.2 Elementos mínimos de un plano eléctrico residencial",
+    "text": "8.2 Elementos mínimos de un plano eléctrico residencial\n\n\n\n\n\n\n\n\nElemento\nDescripción\nImportancia\n\n\n\n\nPlanta arquitectónica\nBase gráfica de la vivienda\nPermite ubicar ambientes y recorridos\n\n\nPuntos de iluminación\nLuminarias interiores y exteriores\nDefine circuitos de alumbrado\n\n\nInterruptores\nDispositivos de control\nPermiten maniobra de luminarias\n\n\nTomacorrientes\nSalidas de uso general\nAlimentan equipos portátiles\n\n\nCargas especiales\nCocina, ducha, calefón, bomba\nRequieren circuitos independientes\n\n\nTablero\nCentro de distribución\nAloja protecciones\n\n\nCanalizaciones\nRecorrido de conductores\nDefine ejecución física\n\n\nCuadro de cargas\nResumen de potencia y corriente\nPermite dimensionamiento\n\n\nDiagrama unifilar\nEsquema general del sistema\nMuestra jerarquía eléctrica\n\n\nLeyenda\nSímbolos utilizados\nFacilita interpretación\n\n\n\n\n\n\n\n\n\nFigura 8.1: Configuraciones NEMA con identificación de línea, neutro y tierra.\n\n\n\nFuente de imagen: Wikimedia Commons, archivo NEMA simplified pins.svg, autor Orion Lawlor, licencia indicada en la página del archivo. Se usa una previsualización PNG generada por Wikimedia. Disponible en: https://commons.wikimedia.org/wiki/File:NEMA_simplified_pins.svg\nLa Figura 8.1 ayuda a identificar la función de los pines en diferentes configuraciones de tomacorrientes. En planos eléctricos, las salidas especiales deben diferenciarse de los tomacorrientes de uso general.\n\n\n\n\n\n\nFigura 8.2: Tomacorriente doméstico con conexión a tierra.\n\n\n\nFuente de imagen: Wikimedia Commons, archivo OutletGround.jpg, autor Fg2, dominio público. Disponible en: https://commons.wikimedia.org/wiki/File:OutletGround.jpg\nLa Figura 8.2 ilustra un tomacorriente con punto de tierra. En instalaciones residenciales, los tomacorrientes deben considerar protección y polarización adecuada según el tipo de carga y ambiente de uso.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#procedimiento-recomendado-para-interpretar-un-plano-eléctrico",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#procedimiento-recomendado-para-interpretar-un-plano-eléctrico",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "8.3 Procedimiento recomendado para interpretar un plano eléctrico",
+    "text": "8.3 Procedimiento recomendado para interpretar un plano eléctrico\n\nIdentificar la planta arquitectónica.\nLocalizar el tablero de distribución.\nReconocer la simbología utilizada.\nRevisar los circuitos de iluminación.\nRevisar los circuitos de tomacorrientes.\nIdentificar cargas especiales.\nVerificar recorridos de canalización.\nRevisar el cuadro de cargas.\nComparar el plano con el diagrama unifilar.\nConfirmar la existencia de sistema de puesta a tierra.\n\n\n\n\n\n\n\nTodo símbolo colocado en planta debe tener respaldo en la leyenda y, cuando corresponda, en el cuadro de cargas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#seguridad-eléctrica",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#seguridad-eléctrica",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "9.1 Seguridad eléctrica",
+    "text": "9.1 Seguridad eléctrica\nLa seguridad eléctrica consiste en aplicar medidas preventivas para evitar daños a las personas, equipos e instalaciones. En instalaciones eléctricas, el riesgo no solo aparece por contacto directo con conductores energizados, sino también por fallas de aislamiento, conexiones deficientes, sobrecargas, ausencia de puesta a tierra o protecciones mal seleccionadas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#seguridad-en-laboratorio",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#seguridad-en-laboratorio",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "9.2 Seguridad en laboratorio",
+    "text": "9.2 Seguridad en laboratorio\nEl laboratorio eléctrico es un espacio de aprendizaje experimental. Sin embargo, al trabajar con tensión, corriente y equipos de medición, se deben cumplir reglas estrictas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.6.-reglas-básicas-de-seguridad-en-laboratorio",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.6.-reglas-básicas-de-seguridad-en-laboratorio",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "9.3 Tabla 1.6. Reglas básicas de seguridad en laboratorio",
+    "text": "9.3 Tabla 1.6. Reglas básicas de seguridad en laboratorio\n\n\n\n\n\n\n\nRegla\nAplicación práctica\n\n\n\n\nRevisar el circuito antes de energizar\nVerificar conexiones según el diagrama\n\n\nConfirmar ausencia de tensión\nUsar multímetro antes de manipular\n\n\nSeleccionar escala correcta\nEvitar daño del instrumento\n\n\nUsar cables en buen estado\nEvitar falsos contactos o cortocircuitos\n\n\nNo dejar conductores expuestos\nPrevenir choque eléctrico\n\n\nEnergizar solo con autorización\nMantener control docente\n\n\nDesenergizar antes de modificar\nEvitar conexiones bajo tensión\n\n\nMantener orden en la mesa\nReducir errores de conexión\n\n\nNo improvisar puentes\nRespetar el esquema de trabajo\n\n\nReportar fallas de equipos\nPrevenir accidentes\n\n\n\n\n\n\n\n\n\nFigura 9.1: Multímetro digital para medición de voltaje, corriente y resistencia.\n\n\n\nFuente de imagen: Wikimedia Commons, archivo Digital Multimeter (To measure Voltage, Current and Resistance).jpg, autor K.Venkataramana, licencia CC0 1.0. Disponible en: https://commons.wikimedia.org/wiki/File:Digital_Multimeter_(To_measure_Voltage,_Current_and_Resistance).jpg\nLa Figura 9.1 muestra un instrumento básico para mediciones eléctricas. Su uso exige seleccionar correctamente magnitud, escala, puntas de prueba y forma de conexión.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.7.-uso-básico-del-multímetro",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.7.-uso-básico-del-multímetro",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "9.4 Tabla 1.7. Uso básico del multímetro",
+    "text": "9.4 Tabla 1.7. Uso básico del multímetro\n\n\n\n\n\n\n\n\n\nMagnitud\nPosición del instrumento\nForma de conexión\nCondición de seguridad\n\n\n\n\nVoltaje\nV AC / V DC\nEn paralelo\nCircuito energizado con cuidado\n\n\nCorriente\nA / mA\nEn serie\nRevisar escala y borne correcto\n\n\nResistencia\nΩ\nEn paralelo al elemento\nCircuito desenergizado\n\n\nContinuidad\nSímbolo de buzzer\nEntre dos puntos\nCircuito desenergizado\n\n\n\n\n\n\n\n\n\nNunca se debe medir resistencia o continuidad en un circuito energizado. Esta acción puede dañar el instrumento y poner en riesgo al usuario.\n\n\n\n\n\n\n\n\n\nFigura 9.2: Procedimiento de bloqueo y etiquetado en controles eléctricos.\n\n\n\nFuente de imagen: Wikimedia Commons, archivo Lockout.jpg, autor Gregory Maxwell, licencia GFDL 1.2. Disponible en: https://commons.wikimedia.org/wiki/File:Lockout.jpg\nLa Figura 9.2 muestra controles etiquetados para evitar accionamientos no previstos. En obra e industria, el bloqueo y etiquetado reduce el riesgo de energización accidental durante mantenimiento.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#concepto-de-riesgo-eléctrico",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#concepto-de-riesgo-eléctrico",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "10.1 Concepto de riesgo eléctrico",
+    "text": "10.1 Concepto de riesgo eléctrico\nUn riesgo eléctrico es la posibilidad de que una persona, equipo o instalación sufra daño debido a la presencia de energía eléctrica en condiciones inseguras.\nLos riesgos eléctricos pueden presentarse por contacto directo, contacto indirecto, sobrecarga, cortocircuito, falla a tierra, arco eléctrico, conexiones deficientes, ausencia de protecciones, mala selección de conductores o canalizaciones inadecuadas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.8.-tipos-de-riesgos-eléctricos",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#tabla-1.8.-tipos-de-riesgos-eléctricos",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "10.2 Tabla 1.8. Tipos de riesgos eléctricos",
+    "text": "10.2 Tabla 1.8. Tipos de riesgos eléctricos\n\n\n\n\n\n\n\n\n\nRiesgo\nCausa frecuente\nConsecuencia\nPrevención\n\n\n\n\nChoque eléctrico\nContacto con parte energizada\nLesión o muerte\nAislamiento, señalización, EPP\n\n\nContacto indirecto\nCarcasa energizada por falla\nElectrocución\nPuesta a tierra, protección diferencial\n\n\nSobrecarga\nExceso de corriente en conductor\nCalentamiento\nCálculo de carga y protección adecuada\n\n\nCortocircuito\nUnión accidental entre conductores\nCorriente elevada\nBreaker, fusible, aislamiento correcto\n\n\nFalla a tierra\nCorriente hacia tierra no prevista\nRiesgo en equipos metálicos\nSistema de puesta a tierra\n\n\nArco eléctrico\nFalla de alta energía\nQuemaduras, daño de equipos\nMantenimiento, EPP, protecciones\n\n\nIncendio eléctrico\nCalor por mala conexión\nDaño material\nInspección y conexiones firmes\n\n\n\n\n\n\n\n\n\nFigura 10.1: Señal de advertencia de peligro por arco eléctrico.\n\n\n\nFuente de imagen: Wikimedia Commons, archivo ISO 7010 W042 warning; arc flash hazard.svg, licencia CC0 1.0. Se usa una previsualización PNG generada por Wikimedia. Disponible en: https://commons.wikimedia.org/wiki/File:ISO_7010_W042_warning;_arc_flash_hazard.svg\nLa Figura 10.1 representa el riesgo de arco eléctrico. Este riesgo es especialmente importante en tableros, sistemas industriales y maniobras sobre equipos energizados.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#sobrecarga",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#sobrecarga",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "10.3 Sobrecarga",
+    "text": "10.3 Sobrecarga\nLa sobrecarga ocurre cuando un circuito conduce una corriente mayor a la prevista durante un tiempo prolongado. Esto puede suceder por conectar demasiadas cargas a un mismo circuito o por seleccionar conductores de calibre insuficiente.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#cortocircuito",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#cortocircuito",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "10.4 Cortocircuito",
+    "text": "10.4 Cortocircuito\nEl cortocircuito es una falla de baja impedancia entre conductores activos o entre fase y tierra. Genera una corriente muy elevada en un tiempo muy corto.\nSus causas frecuentes son aislamiento deteriorado, conexiones flojas, humedad, daño mecánico en conductores, errores de conexión o contacto accidental entre fase y neutro.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#falla-a-tierra",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#falla-a-tierra",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "10.5 Falla a tierra",
+    "text": "10.5 Falla a tierra\nLa falla a tierra ocurre cuando una corriente no deseada fluye hacia elementos metálicos o hacia tierra. Es especialmente peligrosa cuando energiza carcasas de equipos.\n\n\n\n\n\n\nFigura 10.2: Cable eléctrico con conductor de puesta a tierra incorporado.\n\n\n\nFuente de imagen: Wikimedia Commons, archivo ElectricWireGrounded.jpg, autor KVDP, dominio público. Disponible en: https://commons.wikimedia.org/wiki/File:ElectricWireGrounded.jpg\nLa Figura 10.2 permite reconocer la función del conductor de protección dentro de una instalación. La identificación del conductor de tierra es fundamental para prevenir contactos indirectos.\n\n\n\n\n\n\nFigura 10.3: Barra principal de puesta a tierra.\n\n\n\nFuente de imagen: Wikimedia Commons, archivo Main ground busbar.JPG, autor Victor zmey / Dmitry G, licencia CC BY-SA 3.0. Disponible en: https://commons.wikimedia.org/wiki/File:Main_ground_busbar.JPG\nLa Figura 10.3 muestra una barra principal de tierra. Este elemento permite concentrar conductores de protección y asegurar continuidad hacia el sistema de puesta a tierra.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#medidas-generales-de-prevención",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#medidas-generales-de-prevención",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "10.6 Medidas generales de prevención",
+    "text": "10.6 Medidas generales de prevención\n\n\n\n\n\n\n\nMedida\nAplicación\n\n\n\n\nDimensionar correctamente conductores\nEvita calentamiento\n\n\nSeleccionar protecciones adecuadas\nPermite desconexión ante fallas\n\n\nUsar puesta a tierra\nReduce riesgo de contacto indirecto\n\n\nUsar protección diferencial\nProtege personas ante fugas de corriente\n\n\nAislar conexiones\nEvita contactos accidentales\n\n\nRotular tableros\nFacilita mantenimiento seguro\n\n\nSeparar circuitos\nEvita sobrecarga y facilita operación\n\n\nRealizar inspecciones\nDetecta fallas antes de accidentes\n\n\n\n\n\n\n\n\n\nFigura 10.4: Tomacorriente GFCI con botones de prueba y reinicio.\n\n\n\nFuente de imagen: Wikimedia Commons, archivo Ground Fault Circuit Interrupter (GFCI) Electrical Outlet (29268945818).jpg, autor Tony Webster, licencia CC BY 2.0. Disponible en: https://commons.wikimedia.org/wiki/File:Ground_Fault_Circuit_Interrupter_(GFCI)_Electrical_Outlet_(29268945818).jpg\nLa Figura 10.4 muestra un tomacorriente con protección diferencial de falla a tierra. Este tipo de dispositivo es especialmente relevante en zonas húmedas o con mayor exposición al contacto accidental.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#práctica-del-bloque",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#práctica-del-bloque",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "11.1 Práctica del bloque",
+    "text": "11.1 Práctica del bloque\nLa práctica oficial del bloque consiste en el diseño de un plano eléctrico residencial. Esta actividad integra normalización, simbología, seguridad y criterios iniciales de diseño.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#entregables-de-la-práctica",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#entregables-de-la-práctica",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "11.2 Entregables de la práctica",
+    "text": "11.2 Entregables de la práctica\n\n\n\n\n\n\n\nEntregable\nContenido mínimo\n\n\n\n\nPlano eléctrico residencial\nLuminarias, interruptores, tomacorrientes, cargas especiales y tablero\n\n\nCuadro de cargas\nCircuito, descripción, potencia, corriente, conductor y protección\n\n\nDiagrama unifilar\nMedidor, tablero, protecciones y circuitos derivados\n\n\nCuadro de simbología\nSímbolos utilizados en el plano\n\n\nMemoria técnica\nCriterios normativos, cálculos y justificación\n\n\nConclusiones\nAnálisis técnico del diseño realizado",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#cuadro-de-cargas-modelo",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#cuadro-de-cargas-modelo",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "11.3 Cuadro de cargas modelo",
+    "text": "11.3 Cuadro de cargas modelo\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCircuito\nDescripción\nCantidad\nPotencia unitaria (W)\nPotencia total (W)\nVoltaje (V)\nCorriente (A)\nConductor sugerido\nProtección\n\n\n\n\nC1\nIluminación planta baja\n8\n100\n800\n120\n6.67\n14 AWG\n15 A\n\n\nC2\nIluminación planta alta\n6\n100\n600\n120\n5.00\n14 AWG\n15 A\n\n\nC3\nTomacorrientes generales\n8\n200\n1600\n120\n13.33\n12 AWG\n20 A\n\n\nC4\nTomacorrientes cocina\n4\n200\n800\n120\n6.67\n12 AWG\n20 A\n\n\nC5\nCocina eléctrica\n1\n6000\n6000\n240\n25.00\nSegún cálculo\nBipolar\n\n\nC6\nDucha eléctrica\n1\n3500\n3500\n240\n14.58\nSegún cálculo\nBipolar\n\n\n\n\n\n\n\n\n\nLos valores del cuadro son referenciales para fines académicos. En un proyecto real deben verificarse con normativa vigente, condiciones de instalación, temperatura, caída de tensión, tipo de aislamiento, longitud del circuito y especificaciones del fabricante.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#análisis-de-una-vivienda-básica",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#análisis-de-una-vivienda-básica",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "12.1 Análisis de una vivienda básica",
+    "text": "12.1 Análisis de una vivienda básica\nA partir de un plano arquitectónico asignado por el docente, el estudiante deberá:\n\nIdentificar ambientes.\nProponer puntos de iluminación.\nUbicar interruptores.\nUbicar tomacorrientes.\nIdentificar cargas especiales.\nProponer ubicación del tablero.\nElaborar una leyenda básica de símbolos.\nIdentificar riesgos eléctricos.\nProponer medidas de prevención.\nJustificar el criterio de separación de circuitos.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#producto-esperado",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#producto-esperado",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "12.2 Producto esperado",
+    "text": "12.2 Producto esperado\nUn esquema preliminar de instalación eléctrica residencial con simbología básica, identificación de circuitos y observaciones de seguridad.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_01_normalizacion_seguridad_simbologia.html#ficha-de-revisión-normativa",
+    "href": "bloque_01_normalizacion_seguridad_simbologia.html#ficha-de-revisión-normativa",
+    "title": "3  Bloque 1: Normalización Eléctrica, Seguridad y Simbología",
+    "section": "13.1 Ficha de revisión normativa",
+    "text": "13.1 Ficha de revisión normativa\nEl estudiante revisará la NEC-SB-IE Instalaciones Eléctricas y elaborará una ficha técnica con:\n\nobjetivo de la norma;\ncampo de aplicación;\nnormas referenciadas;\ncriterios de circuitos;\ncriterios de conductores;\ncriterios de protecciones;\ncriterios de puesta a tierra;\ncriterios de ubicación de interruptores y tomacorrientes;\ntres conclusiones técnicas.\n\nExtensión sugerida: 2 a 3 páginas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html",
+    "href": "bloque_02_diagramas_instrumentacion.html",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "",
+    "text": "4.1 Presentación del bloque\nEl Bloque 2 profundiza en la interpretación y elaboración de diagramas eléctricos, así como en el uso técnico de instrumentos de medición. Este bloque conecta los fundamentos normativos y de simbología estudiados en el Bloque 1 con la representación funcional de instalaciones civiles e industriales.\nEn una instalación eléctrica real, el plano o diagrama no es únicamente un dibujo. Es un documento técnico que permite diseñar, construir, operar, diagnosticar, mantener y modificar un sistema eléctrico. Por esta razón, el estudiante debe diferenciar entre plano en planta, diagrama unifilar, diagrama multifilar, diagrama de potencia, diagrama de control e información de instrumentación.\nAdemás, este bloque introduce la medición eléctrica como proceso técnico. Medir no consiste solamente en observar un número en la pantalla de un instrumento; implica seleccionar el equipo adecuado, conectar correctamente, registrar la unidad, interpretar el dato y reconocer el posible error de medición.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#presentación-del-bloque",
+    "href": "bloque_02_diagramas_instrumentacion.html#presentación-del-bloque",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "",
+    "text": "El propósito central del bloque es que el estudiante pase de “ver símbolos” a “leer sistemas eléctricos”, interpretando cómo se alimentan, protegen, controlan y verifican las instalaciones civiles e industriales.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#resultado-de-aprendizaje-del-bloque",
+    "href": "bloque_02_diagramas_instrumentacion.html#resultado-de-aprendizaje-del-bloque",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "4.2 Resultado de aprendizaje del bloque",
+    "text": "4.2 Resultado de aprendizaje del bloque\nAl finalizar este bloque, el estudiante interpreta diagramas y planos eléctricos, realiza mediciones de magnitudes eléctricas utilizando instrumentos adecuados y analiza la exactitud, precisión y errores de medición para la correcta evaluación de sistemas eléctricos.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#objetivo-específico-del-bloque",
+    "href": "bloque_02_diagramas_instrumentacion.html#objetivo-específico-del-bloque",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "4.3 Objetivo específico del bloque",
+    "text": "4.3 Objetivo específico del bloque\nAnalizar e interpretar diagramas eléctricos de instalaciones civiles e industriales, aplicando adecuadamente técnicas de medición eléctrica y el uso de instrumentos, para evaluar con criterio técnico la exactitud, precisión y los errores en los resultados obtenidos.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#concepto-de-diagrama-eléctrico",
+    "href": "bloque_02_diagramas_instrumentacion.html#concepto-de-diagrama-eléctrico",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "5.1 Concepto de diagrama eléctrico",
+    "text": "5.1 Concepto de diagrama eléctrico\nUn diagrama eléctrico es una representación gráfica de un circuito, instalación o sistema eléctrico. Su función es mostrar cómo se alimenta, conecta, protege, controla y opera un conjunto de elementos eléctricos.\nUn diagrama eléctrico puede representar una instalación completa o solo una parte de ella. Por ejemplo, puede mostrar la distribución desde un tablero general, el arranque de un motor, la conexión de un instrumento, el mando de un contactor o el esquema de protección de un alimentador.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#tabla-2.1.-tipos-de-diagramas-eléctricos",
+    "href": "bloque_02_diagramas_instrumentacion.html#tabla-2.1.-tipos-de-diagramas-eléctricos",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "5.2 Tabla 2.1. Tipos de diagramas eléctricos",
+    "text": "5.2 Tabla 2.1. Tipos de diagramas eléctricos\n\n\n\n\n\n\n\n\nTipo de diagrama\nQué representa\nUso principal\n\n\n\n\nPlano eléctrico en planta\nUbicación física de dispositivos sobre el plano arquitectónico\nDiseño, montaje e inspección\n\n\nDiagrama unifilar\nDistribución eléctrica simplificada mediante una línea por circuito\nAnálisis de alimentación, protecciones y tableros\n\n\nDiagrama multifilar\nConexión individual de conductores\nCableado, verificación y mantenimiento\n\n\nDiagrama de potencia\nCamino de la energía hacia la carga\nAlimentación de motores y cargas industriales\n\n\nDiagrama de control\nLógica de mando y operación\nMarcha, paro, enclavamientos, señalización\n\n\nDiagrama de instrumentación\nSeñales de medición y control\nSensores, transmisores, indicadores y controladores\n\n\nEsquema de tablero\nDisposición de elementos dentro de gabinete\nFabricación, montaje y mantenimiento de tableros",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#relación-entre-diagramas",
+    "href": "bloque_02_diagramas_instrumentacion.html#relación-entre-diagramas",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "5.3 Relación entre diagramas",
+    "text": "5.3 Relación entre diagramas\nEn un proyecto real, los diagramas se complementan. El plano en planta indica dónde se ubican los elementos; el diagrama unifilar muestra cómo se alimentan; el multifilar permite ver los conductores; el diagrama de potencia muestra el flujo de energía hacia la carga; y el diagrama de control explica la lógica de mando.\n\n\n\n\n\n\nUn error frecuente es pensar que todos los diagramas cumplen la misma función. En realidad, cada diagrama responde a una pregunta técnica distinta.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#diagrama-unifilar",
+    "href": "bloque_02_diagramas_instrumentacion.html#diagrama-unifilar",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "6.1 Diagrama unifilar",
+    "text": "6.1 Diagrama unifilar\nEl diagrama unifilar representa un sistema eléctrico mediante una sola línea por circuito, aunque físicamente existan varios conductores. Es muy utilizado en tableros, acometidas, alimentadores, subestaciones, centros de carga y sistemas de distribución.\nEste tipo de diagrama permite revisar:\n\nfuente de alimentación;\ntransformador o acometida;\ninterruptor principal;\nbarras principales;\nalimentadores;\ntableros secundarios;\nprotecciones;\ncargas principales;\nsistema de puesta a tierra;\nniveles de tensión;\ncorriente nominal;\ncapacidad interruptiva.\n\n\n\n\n\n\n\nFigura 6.1: Diagrama unifilar de una subestación de distribución.\n\n\n\nFuente: Wikimedia Commons, archivo 110kV substation wiring.JPG. Autor: Dmitry G. Licencia: CC BY-SA 3.0 / GFDL.\nLa Figura 6.1 muestra un ejemplo de diagrama unifilar. Aunque corresponde a una subestación de distribución, permite observar el principio de representación simplificada: una sola línea resume la estructura principal del sistema.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#diagrama-multifilar",
+    "href": "bloque_02_diagramas_instrumentacion.html#diagrama-multifilar",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "6.2 Diagrama multifilar",
+    "text": "6.2 Diagrama multifilar\nEl diagrama multifilar representa cada conductor de forma independiente. A diferencia del unifilar, no simplifica el circuito en una sola línea, sino que muestra la conexión real de conductores, fases, neutro, tierra, contactos, bobinas, cargas, borneras y protecciones.\nEl multifilar es útil para:\n\nmontaje de tableros;\ncableado de equipos;\nrevisión de continuidad;\ndiagnóstico de fallas;\nidentificación de conductores;\nverificación de terminales;\nmantenimiento correctivo.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#tabla-2.2.-comparación-entre-diagrama-unifilar-y-multifilar",
+    "href": "bloque_02_diagramas_instrumentacion.html#tabla-2.2.-comparación-entre-diagrama-unifilar-y-multifilar",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "6.3 Tabla 2.2. Comparación entre diagrama unifilar y multifilar",
+    "text": "6.3 Tabla 2.2. Comparación entre diagrama unifilar y multifilar\n\n\n\n\n\n\n\n\nCriterio\nDiagrama unifilar\nDiagrama multifilar\n\n\n\n\nNivel de detalle\nGeneral\nDetallado\n\n\nRepresentación\nUna línea por circuito\nCada conductor se representa por separado\n\n\nUso principal\nDistribución y protecciones\nCableado y verificación\n\n\nVentaja\nSimplifica sistemas grandes\nMuestra conexiones reales\n\n\nLimitación\nNo muestra todos los conductores\nPuede ser extenso y complejo\n\n\nAplicación típica\nAcometidas, alimentadores, tableros\nMotores, tableros de control, borneras",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#ejemplo-de-interpretación",
+    "href": "bloque_02_diagramas_instrumentacion.html#ejemplo-de-interpretación",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "6.4 Ejemplo de interpretación",
+    "text": "6.4 Ejemplo de interpretación\nSi en un diagrama unifilar aparece un motor trifásico, se puede conocer su alimentador y protección. Sin embargo, para conocer cómo se conectan L1, L2, L3, PE, contactor, relé térmico y bornera, se requiere un diagrama multifilar o un diagrama de potencia detallado.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#circuito-de-potencia",
+    "href": "bloque_02_diagramas_instrumentacion.html#circuito-de-potencia",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "7.1 Circuito de potencia",
+    "text": "7.1 Circuito de potencia\nEl circuito de potencia, también denominado circuito de fuerza, es el camino por donde circula la corriente principal hacia la carga. En instalaciones industriales alimenta motores, bombas, compresores, ventiladores, resistencias, hornos o máquinas.\nElementos frecuentes:\n\ninterruptor termomagnético;\nfusible;\nguardamotor;\ncontactor de potencia;\nrelé térmico;\nvariador de frecuencia;\nmotor;\nconductores de fuerza;\nborneras de potencia.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#circuito-de-control",
+    "href": "bloque_02_diagramas_instrumentacion.html#circuito-de-control",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "7.2 Circuito de control",
+    "text": "7.2 Circuito de control\nEl circuito de control, también llamado circuito de mando, define la lógica de operación. Trabaja con corrientes menores y permite ordenar la marcha, paro, enclavamiento, temporización, señalización o protección lógica de una carga.\nElementos frecuentes:\n\npulsador de marcha;\npulsador de paro;\nparo de emergencia;\ncontacto auxiliar;\nbobina de contactor;\ntemporizador;\nrelé;\nlámpara piloto;\nsensor;\nfinal de carrera;\nPLC.\n\n\n\n\n\n\n\nFigura 7.1: Circuito de inversión de giro de motor con contactores.\n\n\n\nFuente: Wikimedia Commons, archivo AC motor reverse without auxilary contacts.jpg. Autor: Dmitry G. Licencia: CC BY-SA 3.0 / GFDL.\nLa Figura 7.1 presenta un circuito de inversión de giro con contactores. Este tipo de diagrama permite diferenciar visualmente la parte de potencia y la parte de mando, así como los elementos de protección y maniobra.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#tabla-2.3.-diferencias-entre-potencia-y-control",
+    "href": "bloque_02_diagramas_instrumentacion.html#tabla-2.3.-diferencias-entre-potencia-y-control",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "7.3 Tabla 2.3. Diferencias entre potencia y control",
+    "text": "7.3 Tabla 2.3. Diferencias entre potencia y control\n\n\n\n\n\n\n\n\nCriterio\nCircuito de potencia\nCircuito de control\n\n\n\n\nFunción\nAlimentar la carga principal\nGobernar la operación\n\n\nCorriente\nAlta o media\nBaja\n\n\nElementos principales\nBreaker, contactor, relé térmico, motor\nPulsadores, contactos, bobinas, relés, PLC\n\n\nRiesgo principal\nSobrecorriente, arco eléctrico, calentamiento\nManiobra no deseada, error lógico\n\n\nDocumento asociado\nDiagrama de potencia\nDiagrama de mando\n\n\nVerificación\nContinuidad de fuerza y protecciones\nSecuencia lógica y señales",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#ejemplo-arranque-directo-de-motor",
+    "href": "bloque_02_diagramas_instrumentacion.html#ejemplo-arranque-directo-de-motor",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "7.4 Ejemplo: arranque directo de motor",
+    "text": "7.4 Ejemplo: arranque directo de motor\nUn arranque directo de motor puede representarse con dos diagramas:\n\nDiagrama de potencia: alimentación trifásica, breaker, contactor, relé térmico y motor.\nDiagrama de control: pulsador de paro, pulsador de marcha, contacto auxiliar de enclavamiento, contacto del relé térmico y bobina del contactor.\n\nCuando el operador presiona marcha, se energiza la bobina del contactor. Al cerrarse los contactos principales, la energía llega al motor. Si se produce sobrecarga, el relé térmico abre el circuito de control y detiene el sistema.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#lectura-técnica-de-planos",
+    "href": "bloque_02_diagramas_instrumentacion.html#lectura-técnica-de-planos",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "8.1 Lectura técnica de planos",
+    "text": "8.1 Lectura técnica de planos\nInterpretar un plano eléctrico significa comprender la relación entre símbolos, conexiones, circuitos, cargas, protecciones y ubicación física de los elementos. Esta habilidad es indispensable para montaje, mantenimiento y diagnóstico.\n\n\n\n\n\n\nFigura 8.1: Panel eléctrico abierto con breakers identificados.\n\n\n\nFuente: Wikimedia Commons, archivo Electrical panel opened.jpg. Autor: FuriousYogi. Licencia: CC BY-SA 4.0.\nLa Figura 8.1 muestra un tablero con interruptores automáticos identificados. Esta imagen permite relacionar el plano eléctrico con la instalación física: cada circuito debe estar protegido, identificado y documentado.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#procedimiento-recomendado-para-interpretar-un-plano",
+    "href": "bloque_02_diagramas_instrumentacion.html#procedimiento-recomendado-para-interpretar-un-plano",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "8.2 Procedimiento recomendado para interpretar un plano",
+    "text": "8.2 Procedimiento recomendado para interpretar un plano\n\nRevisar el título del plano y el alcance del documento.\nRevisar simbología y abreviaturas.\nIdentificar la fuente de alimentación.\nUbicar tablero principal y tableros secundarios.\nLocalizar cargas principales.\nDiferenciar potencia y control.\nVerificar protecciones.\nRevisar numeración de cables y borneras.\nComparar con el cuadro de cargas.\nRevisar notas técnicas.\nVerificar puesta a tierra.\nConfirmar rotulado y correspondencia con la instalación real.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#tabla-2.4.-errores-frecuentes-al-interpretar-planos",
+    "href": "bloque_02_diagramas_instrumentacion.html#tabla-2.4.-errores-frecuentes-al-interpretar-planos",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "8.3 Tabla 2.4. Errores frecuentes al interpretar planos",
+    "text": "8.3 Tabla 2.4. Errores frecuentes al interpretar planos\n\n\n\n\n\n\n\n\nError frecuente\nConsecuencia\nRecomendación\n\n\n\n\nNo revisar la leyenda\nConfusión de símbolos\nLeer la simbología antes de interpretar\n\n\nConfundir potencia y control\nDiagnóstico incorrecto\nSeparar ambos circuitos\n\n\nIgnorar numeración de cables\nError de conexión\nVerificar borneras y marcas\n\n\nNo comparar con cuadro de cargas\nProtección mal seleccionada\nRevisar potencia, corriente y breaker\n\n\nNo leer notas técnicas\nOmisión de restricciones\nRevisar observaciones del plano\n\n\nNo verificar puesta a tierra\nRiesgo de seguridad\nConfirmar PE y barras de tierra",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#importancia-de-medir",
+    "href": "bloque_02_diagramas_instrumentacion.html#importancia-de-medir",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "9.1 Importancia de medir",
+    "text": "9.1 Importancia de medir\nMedir es comparar una magnitud con una unidad de referencia. En instalaciones eléctricas, las mediciones permiten verificar si un sistema opera dentro de condiciones seguras y funcionales.\nLas mediciones eléctricas permiten:\n\ncomprobar presencia o ausencia de tensión;\nverificar continuidad;\nmedir corriente de carga;\ndetectar sobrecargas;\ncomprobar caída de tensión;\nrevisar resistencia de aislamiento;\nmedir potencia;\nestimar factor de potencia;\ndiagnosticar fallas;\nvalidar instalaciones después del montaje.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#instrumentos-de-medición",
+    "href": "bloque_02_diagramas_instrumentacion.html#instrumentos-de-medición",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "9.2 Instrumentos de medición",
+    "text": "9.2 Instrumentos de medición\n\n\n\n\n\n\n\n\nFigura 9.1: Multímetro digital.\n\n\n\nFuente: Wikimedia Commons, archivo Digital Multimeter (To measure Voltage, Current and Resistance).jpg. Autor: K.Venkataramana. Licencia: CC0.\n\n\n\n\n\n\n\nFigura 9.2: Pinza amperimétrica.\n\n\n\nFuente: Wikimedia Commons, archivo Clampmeter Fluke 337.jpg. Autor: Harke. Dominio público.\n\n\n\n\n\n\n\nFigura 9.3: Medidor de aislamiento.\n\n\n\nFuente: Wikimedia Commons, archivo Isolationsmessgerät 1507.jpg. Autor: wdwd. Licencia: CC BY-SA 4.0.\n\n\nLas Figura 9.1, Figura 9.2 y Figura 9.3 muestran instrumentos de uso frecuente en laboratorio y obra. El multímetro sirve para mediciones generales; la pinza amperimétrica permite medir corriente sin abrir el circuito; y el medidor de aislamiento permite evaluar el estado dieléctrico de cables, motores y equipos.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#tabla-2.5.-instrumentos-y-magnitudes",
+    "href": "bloque_02_diagramas_instrumentacion.html#tabla-2.5.-instrumentos-y-magnitudes",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "9.3 Tabla 2.5. Instrumentos y magnitudes",
+    "text": "9.3 Tabla 2.5. Instrumentos y magnitudes\n\n\n\n\n\n\n\n\nInstrumento\nMagnitud principal\nAplicación\n\n\n\n\nVoltímetro\nTensión\nVerificar alimentación y caída de tensión\n\n\nAmperímetro\nCorriente\nMedir corriente de carga\n\n\nPinza amperimétrica\nCorriente\nMedición sin abrir el circuito\n\n\nÓhmetro\nResistencia\nVerificar resistencias y continuidad\n\n\nMultímetro\nVarias magnitudes\nMedición general en laboratorio y campo\n\n\nMegóhmetro\nResistencia de aislamiento\nEvaluación de cables, motores y tableros\n\n\nVatímetro\nPotencia activa\nEvaluación de consumo\n\n\nAnalizador de redes\nV, I, P, Q, S, FP, armónicos\nDiagnóstico avanzado\n\n\n\n\n\n\n\n\n\nAntes de realizar una medición se debe confirmar si el circuito debe estar energizado o desenergizado. Resistencia, continuidad y aislamiento se miden con el circuito sin tensión.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#magnitudes-principales",
+    "href": "bloque_02_diagramas_instrumentacion.html#magnitudes-principales",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "10.1 Magnitudes principales",
+    "text": "10.1 Magnitudes principales\nLas magnitudes eléctricas básicas permiten describir el comportamiento de una instalación. En este bloque se analizan desde el punto de vista de la medición.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#tabla-2.6.-magnitudes-eléctricas-fundamentales",
+    "href": "bloque_02_diagramas_instrumentacion.html#tabla-2.6.-magnitudes-eléctricas-fundamentales",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "10.2 Tabla 2.6. Magnitudes eléctricas fundamentales",
+    "text": "10.2 Tabla 2.6. Magnitudes eléctricas fundamentales\n\n\n\n\n\n\n\n\n\n\nMagnitud\nSímbolo\nUnidad\nInstrumento\nForma de conexión\n\n\n\n\nVoltaje\n(V)\nVoltio (V)\nVoltímetro / multímetro\nParalelo\n\n\nCorriente\n(I)\nAmperio (A)\nAmperímetro / pinza\nSerie o pinza\n\n\nResistencia\n(R)\nOhmio (())\nÓhmetro\nCircuito desenergizado\n\n\nPotencia activa\n(P)\nWatt (W)\nVatímetro / analizador\nSegún instrumento\n\n\nEnergía\n(E)\nkWh\nMedidor de energía\nInstalado en red\n\n\nFrecuencia\n(f)\nHertz (Hz)\nFrecuencímetro\nParalelo\n\n\nFactor de potencia\nFP\nAdimensional\nAnalizador de redes\nSegún instrumento\n\n\nResistencia de aislamiento\n(R_{iso})\nM()\nMegóhmetro\nCircuito desenergizado",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#conexión-de-instrumentos",
+    "href": "bloque_02_diagramas_instrumentacion.html#conexión-de-instrumentos",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "10.3 Conexión de instrumentos",
+    "text": "10.3 Conexión de instrumentos\n\n\n\n\n\n\nFigura 10.1: Circuito didáctico con voltímetro y amperímetro.\n\n\n\nFuente: Wikimedia Commons, archivo Electric circuit with voltmeter and ammeter.JPG. Autor: Meganbeckett27. Licencia: CC BY-SA 3.0.\nLa Figura 10.1 muestra una práctica de laboratorio con voltímetro y amperímetro. En términos generales, el voltímetro se conecta en paralelo con el elemento de interés, mientras que el amperímetro se conecta en serie con la corriente que se desea medir.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#fórmulas-útiles-en-instalaciones-y-mediciones",
+    "href": "bloque_02_diagramas_instrumentacion.html#fórmulas-útiles-en-instalaciones-y-mediciones",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "10.4 Fórmulas útiles en instalaciones y mediciones",
+    "text": "10.4 Fórmulas útiles en instalaciones y mediciones\nEn Quarto, las expresiones matemáticas se escriben con sintaxis LaTeX. Para una lectura clara en HTML se utilizarán ecuaciones centradas. Las variables principales son: voltaje \\(V\\), corriente \\(I\\), resistencia \\(R\\), potencia activa \\(P\\), potencia aparente \\(S\\), potencia reactiva \\(Q\\) y factor de potencia \\(\\cos\\phi\\).\n\n10.4.1 Ley de Ohm\nLa Ley de Ohm relaciona voltaje, corriente y resistencia:\n\\[\nV = I \\, R\n\\]\nDe esta expresión se despejan:\n\\[\nI = \\frac{V}{R}\n\\]\n\\[\nR = \\frac{V}{I}\n\\]\nDonde:\n\n(V) es el voltaje, medido en voltios ().\n(I) es la corriente, medida en amperios ().\n(R) es la resistencia, medida en ohmios ().\n\n\n\n10.4.2 Potencia eléctrica en corriente alterna monofásica\nPara una carga monofásica, la potencia activa se expresa como:\n\\[\nP = V \\, I \\, \\cos\\phi\n\\]\nPor tanto, la corriente de diseño puede estimarse mediante:\n\\[\nI = \\frac{P}{V \\, \\cos\\phi}\n\\]\nLa potencia aparente monofásica se calcula como:\n\\[\nS = V \\, I\n\\]\nY la relación entre potencia activa, aparente y factor de potencia es:\n\\[\n\\cos\\phi = \\frac{P}{S}\n\\]\n\n\n10.4.3 Potencia eléctrica en corriente alterna trifásica\nEn un sistema trifásico balanceado, la potencia activa se calcula como:\n\\[\nP = \\sqrt{3} \\, V_L \\, I_L \\, \\cos\\phi\n\\]\nLa potencia aparente trifásica se obtiene con:\n\\[\nS = \\sqrt{3} \\, V_L \\, I_L\n\\]\nDe la ecuación de potencia activa trifásica se puede despejar la corriente de línea:\n\\[\nI_L = \\frac{P}{\\sqrt{3} \\, V_L \\, \\cos\\phi}\n\\]\nDonde:\n\n(V_L) es el voltaje de línea.\n(I_L) es la corriente de línea.\n() es el factor de potencia.\n\n\n\n\n\n\n\nFigura 10.2: Relación entre potencia activa, reactiva y aparente.\n\n\n\nFuente: Wikimedia Commons, archivo Electric power factor.svg. Autor: VoidZero / F l a n k e r. Licencia: GFDL, CC BY-SA 3.0 y Free Art License.\nLa Figura 10.2 representa el triángulo de potencia. En cargas industriales inductivas, la potencia activa (P), la potencia reactiva (Q) y la potencia aparente (S) permiten analizar el factor de potencia del sistema.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#ejemplo-aplicado",
+    "href": "bloque_02_diagramas_instrumentacion.html#ejemplo-aplicado",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "10.5 Ejemplo aplicado",
+    "text": "10.5 Ejemplo aplicado\nUn motor trifásico opera con los siguientes datos:\n\\[\nV_L = 220 \\, \\mathrm{V}\n\\]\n\\[\nI_L = 12 \\, \\mathrm{A}\n\\]\n\\[\n\\cos\\phi = 0.85\n\\]\nLa potencia activa aproximada se calcula con:\n\\[\nP = \\sqrt{3} \\, V_L \\, I_L \\, \\cos\\phi\n\\]\nSustituyendo valores:\n\\[\nP = \\sqrt{3} \\, (220) \\, (12) \\, (0.85)\n\\]\n\\[\nP = 3886.7 \\, \\mathrm{W}\n\\]\n\\[\nP \\approx 3.89 \\, \\mathrm{kW}\n\\]\nTambién se puede calcular la potencia aparente trifásica:\n\\[\nS = \\sqrt{3} \\, V_L \\, I_L\n\\]\n\\[\nS = \\sqrt{3} \\, (220) \\, (12) = 4572.4 \\, \\mathrm{VA}\n\\]\n\\[\nS \\approx 4.57 \\, \\mathrm{kVA}\n\\]\nLa relación entre ambas magnitudes confirma el factor de potencia:\n\\[\n\\cos\\phi = \\frac{P}{S} = \\frac{3.89}{4.57} \\approx 0.85\n\\]\nEsta información permite estimar demanda, seleccionar protecciones y analizar el comportamiento de la carga.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#procedimiento-general",
+    "href": "bloque_02_diagramas_instrumentacion.html#procedimiento-general",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "11.1 Procedimiento general",
+    "text": "11.1 Procedimiento general\nUn procedimiento de medición debe ser ordenado, repetible y seguro. No basta con colocar las puntas del instrumento; el estudiante debe justificar qué mide, cómo lo mide y qué significa el resultado.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#tabla-2.7.-procedimiento-general-de-medición",
+    "href": "bloque_02_diagramas_instrumentacion.html#tabla-2.7.-procedimiento-general-de-medición",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "11.2 Tabla 2.7. Procedimiento general de medición",
+    "text": "11.2 Tabla 2.7. Procedimiento general de medición\n\n\n\n\n\n\n\n\nPaso\nAcción\nCriterio técnico\n\n\n\n\n1\nIdentificar magnitud\nVoltaje, corriente, resistencia, potencia, etc.\n\n\n2\nSeleccionar instrumento\nDebe corresponder a la magnitud\n\n\n3\nRevisar estado del instrumento\nPuntas, batería, fusible, carcasa\n\n\n4\nSeleccionar escala\nRango superior al valor esperado\n\n\n5\nDefinir conexión\nSerie, paralelo, pinza o circuito abierto\n\n\n6\nVerificar seguridad\nEnergizado o desenergizado según medición\n\n\n7\nRealizar medición\nEvitar contacto con partes energizadas\n\n\n8\nRegistrar lectura\nValor, unidad, escala y condición\n\n\n9\nRepetir si es necesario\nPermite evaluar dispersión\n\n\n10\nInterpretar resultado\nComparar con valor esperado o nominal",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#medición-de-voltaje",
+    "href": "bloque_02_diagramas_instrumentacion.html#medición-de-voltaje",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "11.3 Medición de voltaje",
+    "text": "11.3 Medición de voltaje\nEl voltaje se mide en paralelo. En instalaciones de baja tensión se puede medir entre:\n\nfase y neutro;\nfase y fase;\nfase y tierra;\nneutro y tierra.\n\nUna lectura anormal entre neutro y tierra puede indicar problemas de puesta a tierra, caída de tensión o retorno de corriente.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#medición-de-corriente",
+    "href": "bloque_02_diagramas_instrumentacion.html#medición-de-corriente",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "11.4 Medición de corriente",
+    "text": "11.4 Medición de corriente\nLa corriente se puede medir de dos formas:\n\ncon amperímetro conectado en serie;\ncon pinza amperimétrica alrededor de un conductor.\n\nEn instalaciones reales, la pinza amperimétrica es más segura porque no requiere abrir el circuito.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#medición-de-resistencia",
+    "href": "bloque_02_diagramas_instrumentacion.html#medición-de-resistencia",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "11.5 Medición de resistencia",
+    "text": "11.5 Medición de resistencia\nLa resistencia se mide con el circuito desenergizado. Se usa para verificar componentes, continuidad o condición de un conductor.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#medición-de-aislamiento",
+    "href": "bloque_02_diagramas_instrumentacion.html#medición-de-aislamiento",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "11.6 Medición de aislamiento",
+    "text": "11.6 Medición de aislamiento\nLa resistencia de aislamiento se mide con megóhmetro. Es una prueba importante en motores, cables y tableros. Debe realizarse con el equipo desconectado, descargado y bajo un procedimiento seguro.\n\n\n\n\n\n\nEn una medición técnica, el dato sin contexto tiene poco valor. Siempre debe registrarse magnitud, unidad, punto de medición, instrumento, escala, condición de operación y observaciones.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#exactitud",
+    "href": "bloque_02_diagramas_instrumentacion.html#exactitud",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "12.1 Exactitud",
+    "text": "12.1 Exactitud\nLa exactitud indica qué tan cerca está una medición del valor verdadero o aceptado como referencia.\nEjemplo: si una fuente entrega realmente (120.0 V) y un instrumento mide (119.8 V), la medición tiene buena exactitud.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#precisión",
+    "href": "bloque_02_diagramas_instrumentacion.html#precisión",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "12.2 Precisión",
+    "text": "12.2 Precisión\nLa precisión indica qué tan cercanas son varias mediciones entre sí. Un instrumento puede ser preciso, pero no exacto, si repite valores similares pero alejados del valor real.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#tabla-2.8.-diferencia-entre-exactitud-y-precisión",
+    "href": "bloque_02_diagramas_instrumentacion.html#tabla-2.8.-diferencia-entre-exactitud-y-precisión",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "12.3 Tabla 2.8. Diferencia entre exactitud y precisión",
+    "text": "12.3 Tabla 2.8. Diferencia entre exactitud y precisión\n\n\n\n\n\n\n\n\nConcepto\nPregunta que responde\nEjemplo\n\n\n\n\nExactitud\n¿Qué tan cerca estoy del valor real?\nMido 119.9 V cuando el valor real es 120 V\n\n\nPrecisión\n¿Qué tan repetibles son mis mediciones?\nMido 117.1 V, 117.2 V, 117.1 V\n\n\nBaja exactitud\nLecturas alejadas del valor real\nInstrumento descalibrado\n\n\nBaja precisión\nLecturas muy dispersas\nMala conexión o ruido en la señal",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#ejemplo-de-análisis",
+    "href": "bloque_02_diagramas_instrumentacion.html#ejemplo-de-análisis",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "12.4 Ejemplo de análisis",
+    "text": "12.4 Ejemplo de análisis\nValor de referencia: (120.0 V)\nLecturas del instrumento A:\n[ 119.8, 119.9, 120.0, 119.9 ]\nLecturas del instrumento B:\n[ 116.5, 116.6, 116.5, 116.7 ]\nEl instrumento A presenta buena exactitud y buena precisión. El instrumento B presenta buena precisión, pero baja exactitud, porque repite valores similares pero alejados del valor de referencia.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#qué-es-el-error-de-medición",
+    "href": "bloque_02_diagramas_instrumentacion.html#qué-es-el-error-de-medición",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "13.1 ¿Qué es el error de medición?",
+    "text": "13.1 ¿Qué es el error de medición?\nEl error de medición es la diferencia entre el valor medido y el valor verdadero o de referencia. En la práctica, el valor verdadero casi nunca se conoce de forma absoluta, por lo que se utiliza un valor patrón, nominal o de referencia.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#error-absoluto",
+    "href": "bloque_02_diagramas_instrumentacion.html#error-absoluto",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "13.2 Error absoluto",
+    "text": "13.2 Error absoluto\nEl error absoluto mide la diferencia entre el valor medido y el valor de referencia:\n\\[\nE_a = \\left| X_m - X_r \\right|\n\\]\nDonde:\n\n(E_a) es el error absoluto.\n(X_m) es el valor medido.\n(X_r) es el valor de referencia.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#error-relativo",
+    "href": "bloque_02_diagramas_instrumentacion.html#error-relativo",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "13.3 Error relativo",
+    "text": "13.3 Error relativo\nEl error relativo compara el error absoluto con el valor de referencia:\n\\[\nE_r = \\frac{E_a}{X_r}\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#error-porcentual",
+    "href": "bloque_02_diagramas_instrumentacion.html#error-porcentual",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "13.4 Error porcentual",
+    "text": "13.4 Error porcentual\nEl error porcentual expresa el error relativo en porcentaje:\n\\[\nE_{\\%} = \\frac{E_a}{X_r} \\times 100\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#ejemplo",
+    "href": "bloque_02_diagramas_instrumentacion.html#ejemplo",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "13.5 Ejemplo",
+    "text": "13.5 Ejemplo\nUna tensión de referencia es:\n\\[\nX_r = 120 \\, \\mathrm{V}\n\\]\nEl multímetro registra:\n\\[\nX_m = 117.6 \\, \\mathrm{V}\n\\]\nEl error absoluto es:\n\\[\nE_a = \\left|117.6 - 120\\right|\n\\]\n\\[\nE_a = 2.4 \\, \\mathrm{V}\n\\]\nEl error relativo es:\n\\[\nE_r = \\frac{2.4}{120}\n\\]\n\\[\nE_r = 0.02\n\\]\nEl error porcentual es:\n\\[\nE_{\\%} = 0.02 \\times 100\n\\]\n\\[\nE_{\\%} = 2\\%\n\\]\nLa medición presenta un error porcentual del (2%). Dependiendo de la tolerancia aceptable, este valor puede ser admisible o no.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#tabla-2.9.-tipos-de-error",
+    "href": "bloque_02_diagramas_instrumentacion.html#tabla-2.9.-tipos-de-error",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "13.6 Tabla 2.9. Tipos de error",
+    "text": "13.6 Tabla 2.9. Tipos de error\n\n\n\n\n\n\n\n\n\nTipo de error\nDescripción\nEjemplo\nForma de reducirlo\n\n\n\n\nSistemático\nSe repite en la misma dirección\nInstrumento descalibrado\nCalibración\n\n\nAleatorio\nVaría de forma impredecible\nRuido o variación de señal\nRepetir mediciones y promediar\n\n\nInstrumental\nAsociado al instrumento\nFusible dañado, baja resolución\nRevisar equipo\n\n\nDe método\nProcedimiento inadecuado\nMedir corriente en paralelo\nCapacitación y guía\n\n\nHumano\nLectura o conexión incorrecta\nEscala incorrecta\nVerificación cruzada\n\n\nAmbiental\nInfluencia externa\nTemperatura, humedad, campos EM\nControlar condiciones",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#promedio-de-mediciones",
+    "href": "bloque_02_diagramas_instrumentacion.html#promedio-de-mediciones",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "13.7 Promedio de mediciones",
+    "text": "13.7 Promedio de mediciones\nCuando se realizan varias mediciones de una misma magnitud, se recomienda calcular el promedio:\n\\[\n\\bar{X} = \\frac{X_1 + X_2 + X_3 + \\cdots + X_n}{n}\n\\]\nDonde ({X}) es el valor promedio y (n) es el número total de mediciones.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#desviación-respecto-al-promedio",
+    "href": "bloque_02_diagramas_instrumentacion.html#desviación-respecto-al-promedio",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "13.8 Desviación respecto al promedio",
+    "text": "13.8 Desviación respecto al promedio\nPara analizar la dispersión de cada lectura respecto al promedio se puede usar:\n\\[\nd_i = \\left|X_i - \\bar{X}\\right|\n\\]\nSi las desviaciones son pequeñas, las mediciones son más precisas. Si las desviaciones son grandes, existe mayor dispersión y se debe revisar el método, el instrumento o las condiciones de medición.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#práctica-del-bloque",
+    "href": "bloque_02_diagramas_instrumentacion.html#práctica-del-bloque",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "14.1 Práctica del bloque",
+    "text": "14.1 Práctica del bloque\nLa práctica asociada al Bloque 2 consiste en el diseño de un plano eléctrico de una instalación de tipo industrial. Esta actividad se desarrolla como estudio de caso e integra diagramas, cargas, protecciones, mando, potencia y documentación técnica.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#criterios-técnicos-para-el-diseño-industrial",
+    "href": "bloque_02_diagramas_instrumentacion.html#criterios-técnicos-para-el-diseño-industrial",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "14.2 Criterios técnicos para el diseño industrial",
+    "text": "14.2 Criterios técnicos para el diseño industrial\nEn una instalación industrial deben considerarse:\n\npotencia activa, reactiva y aparente;\nfactor de potencia;\ncorrientes de arranque;\nmotores trifásicos;\nselectividad de protecciones;\ndiagramas de potencia;\ndiagramas de control;\nrotulado de cables y bornes;\nseguridad de operación;\ncontinuidad del proceso productivo.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#entregables-mínimos",
+    "href": "bloque_02_diagramas_instrumentacion.html#entregables-mínimos",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "14.3 Entregables mínimos",
+    "text": "14.3 Entregables mínimos\n\n\n\n\n\n\n\nEntregable\nContenido esperado\n\n\n\n\nPlano de canalizaciones\nRecorrido de alimentadores, tableros, cargas y canalizaciones\n\n\nDiagrama unifilar\nAlimentación, protecciones, tableros, cargas y datos eléctricos\n\n\nDiagrama de potencia\nAlimentación de motores y cargas industriales\n\n\nDiagrama de mando\nPulsadores, contactos, bobinas, temporizadores y enclavamientos\n\n\nCuadro de cargas\nPotencia, voltaje, corriente, factor de potencia y protección\n\n\nLista de materiales\nConductores, canalizaciones, protecciones y equipos\n\n\nMemoria técnica\nCriterios de diseño, cálculos y justificaciones\n\n\nConclusiones\nInterpretación técnica del diseño realizado",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#caso-de-estudio-sugerido",
+    "href": "bloque_02_diagramas_instrumentacion.html#caso-de-estudio-sugerido",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "14.4 Caso de estudio sugerido",
+    "text": "14.4 Caso de estudio sugerido\nDiseñar el sistema eléctrico básico para un pequeño taller industrial que contiene:\n\n\n\nCarga\nCantidad\nPotencia unitaria\nTensión\nObservación\n\n\n\n\nMotor bomba\n1\n3 HP\n220 V trifásico\nArranque directo\n\n\nMotor compresor\n1\n5 HP\n220 V trifásico\nProtección térmica\n\n\nIluminación industrial\n8\n100 W\n120 V\nCircuito independiente\n\n\nTomacorrientes de servicio\n6\n200 W\n120 V\nUso general\n\n\nExtractor\n1\n1 HP\n220 V\nControl manual\n\n\nTablero de control\n1\n300 W\n120 V\nMando y señalización\n\n\n\nEl estudiante deberá elaborar:\n\ncuadro de cargas;\ndiagrama unifilar;\ndiagrama de potencia para un motor;\ndiagrama de control marcha-paro;\nselección preliminar de protecciones;\nlista de materiales;\nanálisis de mediciones esperadas.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#interpretación-guiada-de-diagramas",
+    "href": "bloque_02_diagramas_instrumentacion.html#interpretación-guiada-de-diagramas",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "15.1 Interpretación guiada de diagramas",
+    "text": "15.1 Interpretación guiada de diagramas\nEl docente entregará un diagrama unifilar y un diagrama de control de un motor. En grupos, los estudiantes deberán:\n\nidentificar la alimentación;\nreconocer protecciones;\ndiferenciar potencia y control;\nidentificar motor, contactor y relé térmico;\nexplicar la secuencia de marcha y paro;\nproponer puntos de medición;\nidentificar riesgos;\nreportar posibles errores de interpretación.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_02_diagramas_instrumentacion.html#informe-breve-de-mediciones-eléctricas",
+    "href": "bloque_02_diagramas_instrumentacion.html#informe-breve-de-mediciones-eléctricas",
+    "title": "4  Bloque 2: Diagramas Eléctricos e Instrumentación",
+    "section": "16.1 Informe breve de mediciones eléctricas",
+    "text": "16.1 Informe breve de mediciones eléctricas\nEl estudiante deberá elaborar un informe de 2 a 3 páginas con:\n\ndefinición de voltaje, corriente, resistencia y potencia;\ninstrumento utilizado para cada magnitud;\nforma correcta de conexión;\nejemplo de cálculo de error absoluto, relativo y porcentual;\ndiferencia entre exactitud y precisión;\ntres recomendaciones de seguridad para mediciones en laboratorio.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bloque 2: Diagramas Eléctricos e Instrumentación</span>"
+    ]
+  },
+  {
+    "objectID": "evaluacion.html",
+    "href": "evaluacion.html",
+    "title": "7  Evaluación",
+    "section": "",
+    "text": "7.1 Distribución general",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Evaluación</span>"
+    ]
+  },
+  {
+    "objectID": "evaluacion.html#distribución-general",
+    "href": "evaluacion.html#distribución-general",
+    "title": "7  Evaluación",
+    "section": "",
+    "text": "Componente\nValoración\n\n\n\n\nAprendizaje en contacto con el docente\n30 puntos\n\n\nAprendizaje autónomo\n20 puntos\n\n\nAprendizaje práctico-experimental\n20 puntos\n\n\nEvaluación interciclo\n10 puntos\n\n\nEvaluación final\n20 puntos\n\n\nTotal\n100 puntos",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Evaluación</span>"
+    ]
+  },
+  {
+    "objectID": "evaluacion.html#actividades-evaluativas-sugeridas",
+    "href": "evaluacion.html#actividades-evaluativas-sugeridas",
+    "title": "7  Evaluación",
+    "section": "7.2 Actividades evaluativas sugeridas",
+    "text": "7.2 Actividades evaluativas sugeridas\n\n\n\nActividad\nBloque\nTécnica\nInstrumento\nPuntaje referencial\n\n\n\n\nEvaluación de conocimientos\n1\nPrueba\nCuestionario\n10\n\n\nWebinar\n2\nInforme / ensayo\nRúbrica\n5\n\n\nInvestigación formativa\n2\nEnsayo\nRúbrica\n10\n\n\nEvaluación de conocimientos\n3\nPrueba\nCuestionario\n5\n\n\nPráctica residencial\n1\nInforme\nRúbrica\n20\n\n\nPráctica industrial\n2\nInforme\nRúbrica\n20\n\n\nPráctica PLC\n3\nInforme\nRúbrica\n20\n\n\nProyecto final\n3\nProyecto\nRúbrica\n10",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Evaluación</span>"
+    ]
+  },
+  {
+    "objectID": "evaluacion.html#rúbrica-general-para-prácticas",
+    "href": "evaluacion.html#rúbrica-general-para-prácticas",
+    "title": "7  Evaluación",
+    "section": "7.3 Rúbrica general para prácticas",
+    "text": "7.3 Rúbrica general para prácticas\n\n\n\n\n\n\n\n\n\n\nCriterio\nExcelente\nBueno\nBásico\nPuntaje\n\n\n\n\nCumplimiento técnico\nAplica normativa, cálculos y criterios de seguridad de forma consistente\nPresenta criterios técnicos con errores menores\nPresenta criterios incompletos\n4\n\n\nRepresentación gráfica\nPlano/diagrama claro, ordenado y normalizado\nPlano/diagrama comprensible con detalles por corregir\nPlano/diagrama incompleto\n4\n\n\nCálculos y justificación\nCálculos completos y correctamente interpretados\nCálculos parcialmente correctos\nCálculos insuficientes\n4\n\n\nInforme técnico\nEstructura clara, redacción técnica y evidencias\nPresenta estructura aceptable\nInforme débil o desordenado\n4\n\n\nSeguridad y procedimiento\nIdentifica riesgos y aplica prevención\nReconoce parcialmente riesgos\nOmite criterios de seguridad\n4\n\n\nTotal\n\n\n\n20",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Evaluación</span>"
+    ]
+  },
+  {
+    "objectID": "proyecto_final.html",
+    "href": "proyecto_final.html",
+    "title": "8  Proyecto final del módulo",
+    "section": "",
+    "text": "8.1 Título sugerido\nDiseño, interpretación y automatización básica de una instalación eléctrica civil o industrial",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Proyecto final del módulo</span>"
+    ]
+  },
+  {
+    "objectID": "proyecto_final.html#propósito",
+    "href": "proyecto_final.html#propósito",
+    "title": "8  Proyecto final del módulo",
+    "section": "8.2 Propósito",
+    "text": "8.2 Propósito\nIntegrar los contenidos de normalización, simbología, seguridad, diagramas eléctricos, mediciones e introducción a la automatización industrial mediante un caso aplicado.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Proyecto final del módulo</span>"
+    ]
+  },
+  {
+    "objectID": "proyecto_final.html#entregables",
+    "href": "proyecto_final.html#entregables",
+    "title": "8  Proyecto final del módulo",
+    "section": "8.3 Entregables",
+    "text": "8.3 Entregables\n\nDescripción del caso de estudio.\nPlano eléctrico o esquema de instalación.\nCuadro de cargas.\nDiagrama unifilar.\nDiagrama de control y potencia, si aplica.\nSelección preliminar de conductores y protecciones.\nPropuesta de mediciones eléctricas.\nIdentificación de riesgos eléctricos.\nPropuesta básica de automatización con PLC o relés.\nInforme técnico final.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Proyecto final del módulo</span>"
+    ]
+  },
+  {
+    "objectID": "proyecto_final.html#estructura-del-informe",
+    "href": "proyecto_final.html#estructura-del-informe",
+    "title": "8  Proyecto final del módulo",
+    "section": "8.4 Estructura del informe",
+    "text": "8.4 Estructura del informe\n\nPortada.\nIntroducción.\nObjetivos.\nMarco normativo y técnico.\nDesarrollo del diseño.\nCálculos.\nDiagramas.\nAnálisis de seguridad.\nAutomatización propuesta.\nConclusiones.\nBibliografía.\nAnexos.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Proyecto final del módulo</span>"
+    ]
+  }
+]

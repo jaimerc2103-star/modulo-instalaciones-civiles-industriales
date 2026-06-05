@@ -1,0 +1,39 @@
+# Inicio
+
+Bienvenido al **Módulo de Instalaciones Civiles e Industriales**.
+
+Este libro digital ha sido organizado para la asignatura **Instalaciones Civiles e Industriales**, correspondiente al cuarto ciclo de la Carrera de Electricidad de la Universidad Católica de Cuenca. Su finalidad es integrar fundamentos técnicos, criterios normativos, interpretación de planos, mediciones eléctricas, seguridad, automatización básica y prácticas experimentales.
+
+::: {.callout-note title="Enfoque del módulo"}
+El módulo sigue la estructura oficial de tres bloques: **Normalización Eléctrica, Seguridad y Simbología**; **Diagramas Eléctricos e Instrumentación**; y **Automatización**.
+:::
+
+## Resultado de aprendizaje de la asignatura
+
+Aplicar los principios de los diseños de circuitos eléctricos, su simbología e interpretación práctica.
+
+## Objetivo general del módulo
+
+Desarrollar competencias para interpretar, diseñar y analizar instalaciones eléctricas civiles e industriales, aplicando normalización eléctrica, simbología técnica, diagramas eléctricos, mediciones eléctricas, análisis de errores, seguridad en laboratorio y fundamentos de automatización mediante PLC.
+
+## Organización del aprendizaje
+
+| Componente | Horas |
+|---|---:|
+| Aprendizaje en contacto con el docente | 32 |
+| Aprendizaje autónomo | 32 |
+| Aprendizaje práctico-experimental | 32 |
+| **Total** | **96** |
+
+## Cómo usar este libro
+
+Cada bloque contiene:
+
+1. Resultado de aprendizaje.
+2. Objetivos específicos.
+3. Desarrollo conceptual.
+4. Aplicaciones técnicas.
+5. Actividades de aprendizaje.
+6. Prácticas vinculadas.
+7. Evaluación sugerida.
+

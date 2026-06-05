@@ -1,0 +1,2329 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  spanish,
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Tabla de contenidos}
+\else
+  \newcommand\contentsname{Tabla de contenidos}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{Listado de Figuras}
+\else
+  \newcommand\listfigurename{Listado de Figuras}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{Listado de Tablas}
+\else
+  \newcommand\listtablename{Listado de Tablas}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figura}
+\else
+  \newcommand\figurename{Figura}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Tabla}
+\else
+  \newcommand\tablename{Tabla}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listado}
+\newcommand*\listoflistings{\listof{codelisting}{Listado de Listados}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Módulo de Instalaciones Civiles e Industriales},
+  pdfauthor={Ing. Jaime Rojas C., Mgtr.},
+  pdflang={es},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{Módulo de Instalaciones Civiles e Industriales}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Normalización, diagramas, instrumentación y automatización}
+\author{Ing. Jaime Rojas C., Mgtr.}
+\date{2026-05-28}
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Tabla de contenidos}
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+
+\bookmarksetup{startatroot}
+
+\chapter{Inicio}\label{inicio}
+
+Bienvenido al \textbf{Módulo de Instalaciones Civiles e Industriales}.
+
+Este libro digital ha sido organizado para la asignatura
+\textbf{Instalaciones Civiles e Industriales}, correspondiente al cuarto
+ciclo de la Carrera de Electricidad de la Universidad Católica de
+Cuenca. Su finalidad es integrar fundamentos técnicos, criterios
+normativos, interpretación de planos, mediciones eléctricas, seguridad,
+automatización básica y prácticas experimentales.
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-note-color!10!white, colframe=quarto-callout-note-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Enfoque del módulo}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+El módulo sigue la estructura oficial de tres bloques:
+\textbf{Normalización Eléctrica, Seguridad y Simbología};
+\textbf{Diagramas Eléctricos e Instrumentación}; y
+\textbf{Automatización}.
+
+\end{tcolorbox}
+
+\section{Resultado de aprendizaje de la
+asignatura}\label{resultado-de-aprendizaje-de-la-asignatura}
+
+Aplicar los principios de los diseños de circuitos eléctricos, su
+simbología e interpretación práctica.
+
+\section{Objetivo general del
+módulo}\label{objetivo-general-del-muxf3dulo}
+
+Desarrollar competencias para interpretar, diseñar y analizar
+instalaciones eléctricas civiles e industriales, aplicando normalización
+eléctrica, simbología técnica, diagramas eléctricos, mediciones
+eléctricas, análisis de errores, seguridad en laboratorio y fundamentos
+de automatización mediante PLC.
+
+\section{Organización del
+aprendizaje}\label{organizaciuxf3n-del-aprendizaje}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lr@{}}
+\toprule\noalign{}
+Componente & Horas \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Aprendizaje en contacto con el docente & 32 \\
+Aprendizaje autónomo & 32 \\
+Aprendizaje práctico-experimental & 32 \\
+\textbf{Total} & \textbf{96} \\
+\end{longtable}
+}
+
+\section{Cómo usar este libro}\label{cuxf3mo-usar-este-libro}
+
+Cada bloque contiene:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Resultado de aprendizaje.
+\item
+  Objetivos específicos.
+\item
+  Desarrollo conceptual.
+\item
+  Aplicaciones técnicas.
+\item
+  Actividades de aprendizaje.
+\item
+  Prácticas vinculadas.
+\item
+  Evaluación sugerida.
+\end{enumerate}
+
+\bookmarksetup{startatroot}
+
+\chapter{Plan de la asignatura}\label{plan-de-la-asignatura}
+
+\section{Datos informativos}\label{datos-informativos}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Campo & Información \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Asignatura & Instalaciones Civiles e Industriales \\
+Carrera & Electricidad \\
+Ciclo & Cuarto ciclo \\
+Código & IC-IE-04 \\
+Créditos & 2 \\
+Modalidad & Presencial \\
+Unidad de organización curricular & Básica \\
+Disciplina & Ciencias Tecnológicas \\
+Subdisciplina & Generación, Transmisión y Distribución \\
+\end{longtable}
+}
+
+\section{Caracterización de la
+asignatura}\label{caracterizaciuxf3n-de-la-asignatura}
+
+La asignatura proporciona fundamentos teóricos y prácticos para la
+interpretación, diseño y análisis de instalaciones eléctricas en
+edificaciones civiles y entornos industriales. Integra normalización
+eléctrica, simbología técnica, diagramas eléctricos, seguridad,
+mediciones eléctricas, análisis de errores y fundamentos de
+automatización industrial.
+
+\section{Bloques formativos}\label{bloques-formativos}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Bloque
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Título
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fechas referenciales
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Práctica asociada
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & Normalización Eléctrica, Seguridad y Simbología & 20-03-2026 al
+24-04-2026 & Diseño de plano eléctrico residencial \\
+2 & Diagramas Eléctricos e Instrumentación & 01-05-2026 al 05-06-2026 &
+Diseño de plano eléctrico industrial \\
+3 & Automatización & 12-06-2026 al 17-07-2026 & Fundamentos de
+programación con PLCs \\
+\end{longtable}
+}
+
+\section{Bibliografía base}\label{bibliografuxeda-base}
+
+\begin{itemize}
+\tightlist
+\item
+  Davie, A. G. (1974). \emph{Introducción a la automatización
+  industrial}. Universitaria.
+\item
+  Enríquez Harper, G. (2017). \emph{Protección de instalaciones
+  eléctricas industriales y comerciales}. Limusa.
+\item
+  Enríquez Harper, G. (2012). \emph{Guía para el diseño de instalaciones
+  eléctricas residenciales, industriales y comerciales}. Limusa.
+\end{itemize}
+
+\section{Bibliografía
+complementaria}\label{bibliografuxeda-complementaria}
+
+\begin{itemize}
+\tightlist
+\item
+  García Trasancos, J. (2011). \emph{Instalaciones eléctricas en media y
+  baja tensión}. Paraninfo.
+\item
+  MIDUVI. (2018). \emph{NEC-SB-IE: Instalaciones eléctricas}. Norma
+  Ecuatoriana de la Construcción.
+\item
+  Festo. (2022). \emph{Automatización industrial: sistemas de
+  aprendizaje para la formación técnica}.
+\end{itemize}
+
+\bookmarksetup{startatroot}
+
+\chapter{Bloque 1: Normalización Eléctrica, Seguridad y
+Simbología}\label{bloque-1-normalizaciuxf3n-eluxe9ctrica-seguridad-y-simbologuxeda}
+
+\section{Presentación del bloque}\label{presentaciuxf3n-del-bloque}
+
+El Bloque 1 introduce al estudiante en los fundamentos técnicos,
+normativos y gráficos necesarios para interpretar instalaciones
+eléctricas civiles e industriales. En esta etapa se estudia la
+importancia de la normalización eléctrica, el uso de simbología técnica,
+la identificación de componentes en planos eléctricos y la aplicación de
+criterios de seguridad en laboratorio y obra.
+
+Una instalación eléctrica no debe entenderse únicamente como la conexión
+de cables, interruptores, luminarias y tomacorrientes. En términos
+técnicos, es un sistema integrado que permite transportar, distribuir,
+controlar y utilizar la energía eléctrica de manera segura, eficiente y
+conforme a normas.
+
+En el ámbito civil, las instalaciones se orientan principalmente a
+viviendas, edificios, locales comerciales, oficinas, instituciones
+educativas y edificaciones de servicio. En el ámbito industrial, las
+instalaciones incorporan motores, tableros de potencia, tableros de
+control, sensores, actuadores, canalizaciones industriales, sistemas de
+protección y tecnologías de automatización.
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-note-color!10!white, colframe=quarto-callout-note-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Nota}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Este bloque constituye la base para los siguientes temas de la
+asignatura: diagramas eléctricos, instrumentación, mediciones eléctricas
+y automatización industrial.
+
+\end{tcolorbox}
+
+\section{Resultado de aprendizaje del
+bloque}\label{resultado-de-aprendizaje-del-bloque}
+
+Al finalizar este bloque, el estudiante interpreta planos eléctricos,
+reconoce simbología normalizada y componentes de instalaciones
+eléctricas civiles e industriales conforme a normas técnicas vigentes.
+Además, aplica normas de seguridad eléctrica y protocolos de
+laboratorio, identificando riesgos eléctricos y proponiendo medidas de
+prevención en actividades prácticas y entornos reales.
+
+\section{Objetivo específico del
+bloque}\label{objetivo-especuxedfico-del-bloque}
+
+Comprender y aplicar los fundamentos de las instalaciones eléctricas
+civiles e industriales, incorporando la normalización eléctrica, las
+normas técnicas y la simbología eléctrica, para la correcta
+interpretación de planos eléctricos y la ejecución de actividades bajo
+criterios de seguridad en laboratorios y entornos eléctricos.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{1.1 Introducción a las instalaciones eléctricas civiles e
+industriales}\label{introducciuxf3n-a-las-instalaciones-eluxe9ctricas-civiles-e-industriales}
+
+\subsection{Concepto general de instalación
+eléctrica}\label{concepto-general-de-instalaciuxf3n-eluxe9ctrica}
+
+Una instalación eléctrica es el conjunto de elementos destinados a
+conducir, distribuir, proteger, controlar y utilizar la energía
+eléctrica dentro de una edificación o sistema productivo.
+
+Está conformada por:
+
+\begin{itemize}
+\tightlist
+\item
+  acometida;
+\item
+  medidor;
+\item
+  tablero general;
+\item
+  tableros secundarios;
+\item
+  protecciones;
+\item
+  conductores;
+\item
+  canalizaciones;
+\item
+  cajas de paso;
+\item
+  interruptores;
+\item
+  tomacorrientes;
+\item
+  luminarias;
+\item
+  cargas especiales;
+\item
+  sistema de puesta a tierra;
+\item
+  planos y diagramas técnicos.
+\end{itemize}
+
+En una edificación, la instalación eléctrica debe permitir que la
+energía llegue desde el punto de suministro hasta cada carga de manera
+segura y funcional.
+
+\subsection{Figura 1.1. Esquema general de una instalación
+eléctrica}\label{figura-1.1.-esquema-general-de-una-instalaciuxf3n-eluxe9ctrica}
+
+\includegraphics[width=15.49in,height=4.23in]{bloque_01_normalizacion_seguridad_simbologia_files/figure-latex/mermaid-figure-1.png}
+
+La figura muestra la secuencia general de una instalación eléctrica de
+baja tensión. La energía ingresa desde la red de distribución, pasa por
+la acometida, se registra en el medidor, se protege mediante un
+dispositivo principal y se distribuye hacia circuitos derivados.
+
+\subsection{Instalaciones eléctricas
+civiles}\label{instalaciones-eluxe9ctricas-civiles}
+
+Las instalaciones civiles se encuentran en edificaciones destinadas a
+vivienda, comercio, educación, salud, oficinas, servicios públicos y
+espacios similares.
+
+Sus cargas más comunes son:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Tipo de carga
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ejemplos
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Iluminación & Luminarias interiores, exteriores, decorativas y de
+emergencia \\
+Tomacorrientes & Equipos domésticos, computadores, cargadores,
+electrodomésticos menores \\
+Cargas especiales & Cocina eléctrica, ducha eléctrica, calefón, aire
+acondicionado, bomba de agua \\
+Servicios complementarios & Porteros eléctricos, alarmas, cámaras, redes
+de comunicación \\
+\end{longtable}
+}
+
+En instalaciones civiles, el diseño prioriza la seguridad de las
+personas, la continuidad del servicio, la facilidad de uso y el
+cumplimiento normativo.
+
+\subsection{Instalaciones eléctricas
+industriales}\label{instalaciones-eluxe9ctricas-industriales}
+
+Las instalaciones industriales se aplican en procesos productivos,
+talleres, plantas de manufactura, sistemas electromecánicos y entornos
+donde existen cargas de potencia, control e instrumentación.
+
+Sus cargas más comunes son:
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Tipo de carga
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ejemplos
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Cargas de fuerza & Motores, bombas, compresores, ventiladores \\
+Cargas de control & Contactores, relés, temporizadores, PLC \\
+Cargas de instrumentación & Sensores, transmisores, indicadores \\
+Cargas de iluminación industrial & Luminarias de nave, reflectores,
+alumbrado de emergencia \\
+Sistemas auxiliares & Tableros, bancos de capacitores, variadores de
+frecuencia \\
+\end{longtable}
+}
+
+\subsection{Tabla 1.1. Diferencias entre instalaciones civiles e
+industriales}\label{tabla-1.1.-diferencias-entre-instalaciones-civiles-e-industriales}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Criterio
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Instalaciones civiles
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Instalaciones industriales
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Uso principal & Vivienda, comercio y servicios & Producción, control y
+operación de maquinaria \\
+Tipo de cargas & Iluminación, tomacorrientes y cargas especiales &
+Motores, tableros de control, sensores y actuadores \\
+Nivel de potencia & Bajo a medio & Medio a alto \\
+Complejidad técnica & Moderada & Alta \\
+Documentos frecuentes & Plano eléctrico, cuadro de cargas, diagrama
+unifilar & Diagramas de potencia, control, mando, PLC e
+instrumentación \\
+Riesgos principales & Choque eléctrico, sobrecarga, mala puesta a tierra
+& Arco eléctrico, fallas de motor, arranque de cargas, fallas de
+control \\
+Mantenimiento & Correctivo y preventivo básico & Preventivo, predictivo
+y correctivo especializado \\
+\end{longtable}
+}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-important-color!10!white, colframe=quarto-callout-important-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Importante}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+La principal diferencia entre una instalación civil y una industrial no
+es únicamente el tamaño, sino el tipo de carga, el nivel de control, la
+criticidad operativa y los riesgos asociados.
+
+\end{tcolorbox}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{1.2 Importancia de la normalización
+eléctrica}\label{importancia-de-la-normalizaciuxf3n-eluxe9ctrica}
+
+\subsection{¿Qué es la normalización
+eléctrica?}\label{quuxe9-es-la-normalizaciuxf3n-eluxe9ctrica}
+
+La normalización eléctrica es el conjunto de reglas, criterios,
+símbolos, procedimientos y requisitos técnicos que permiten diseñar,
+construir, operar e inspeccionar instalaciones eléctricas bajo
+parámetros comunes.
+
+Su finalidad es evitar interpretaciones ambiguas y reducir riesgos
+técnicos.
+
+\subsection{Importancia técnica}\label{importancia-tuxe9cnica}
+
+La normalización permite:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Garantizar condiciones mínimas de seguridad.
+\item
+  Unificar criterios entre diseñadores, constructores, instaladores y
+  fiscalizadores.
+\item
+  Facilitar la lectura de planos eléctricos.
+\item
+  Definir características mínimas de materiales y equipos.
+\item
+  Evitar sobredimensionamientos o subdimensionamientos.
+\item
+  Reducir el riesgo de incendios de origen eléctrico.
+\item
+  Facilitar el mantenimiento y ampliación de instalaciones.
+\item
+  Proteger a usuarios, equipos y edificaciones.
+\end{enumerate}
+
+\subsection{Figura 1.2. Función de la normalización
+eléctrica}\label{figura-1.2.-funciuxf3n-de-la-normalizaciuxf3n-eluxe9ctrica}
+
+\includegraphics[width=15.8in,height=2.06in]{bloque_01_normalizacion_seguridad_simbologia_files/figure-latex/mermaid-figure-8.png}
+
+\subsection{Ejemplo aplicado}\label{ejemplo-aplicado}
+
+Supóngase que un plano residencial representa un tomacorriente común y
+una salida para cocina eléctrica usando el mismo símbolo. El instalador
+podría utilizar el mismo conductor y la misma protección en ambos
+puntos. Esto generaría un riesgo, porque la cocina eléctrica requiere un
+circuito especial, mayor capacidad de corriente y protección
+independiente.
+
+La normalización evita este tipo de errores porque obliga a diferenciar
+símbolos, circuitos, protecciones y cargas.
+
+\subsection{Tabla 1.2. Problemas frecuentes por falta de
+normalización}\label{tabla-1.2.-problemas-frecuentes-por-falta-de-normalizaciuxf3n}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Problema
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Consecuencia técnica
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Riesgo asociado
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Símbolos no normalizados & Mala interpretación del plano & Conexiones
+incorrectas \\
+Conductores sin código de color & Dificultad para identificar fase,
+neutro y tierra & Choque eléctrico \\
+Tableros sin rotulación & Mantenimiento inseguro & Desconexión
+incorrecta \\
+Circuitos sin identificación & Confusión en operación y mantenimiento &
+Sobrecarga o mal aislamiento \\
+Ausencia de cuadro de cargas & Selección deficiente de protecciones &
+Calentamiento o incendio \\
+No considerar puesta a tierra & Fallas peligrosas en carcasas metálicas
+& Contacto indirecto \\
+\end{longtable}
+}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{1.3 Normas técnicas aplicadas a instalaciones
+eléctricas}\label{normas-tuxe9cnicas-aplicadas-a-instalaciones-eluxe9ctricas}
+
+\subsection{Normativa principal}\label{normativa-principal}
+
+En Ecuador, una referencia fundamental para instalaciones eléctricas en
+edificaciones es la \textbf{NEC-SB-IE Instalaciones Eléctricas},
+perteneciente a la Norma Ecuatoriana de la Construcción. Esta norma se
+enfoca en instalaciones eléctricas interiores residenciales y establece
+criterios mínimos de diseño y seguridad.
+
+La NEC-SB-IE señala que las instalaciones deben contar con protección
+frente a:
+
+\begin{itemize}
+\tightlist
+\item
+  choques eléctricos;
+\item
+  efectos térmicos;
+\item
+  sobrecorrientes;
+\item
+  corrientes de falla;
+\item
+  sobrevoltajes.
+\end{itemize}
+
+\subsection{Tabla 1.3. Normas y documentos técnicos de
+referencia}\label{tabla-1.3.-normas-y-documentos-tuxe9cnicos-de-referencia}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Norma / documento
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Aplicación en el módulo
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+NEC-SB-IE Instalaciones Eléctricas & Diseño y ejecución de instalaciones
+eléctricas interiores residenciales \\
+NFPA 70 / National Electrical Code & Criterios de seguridad,
+protecciones, conductores y canalizaciones \\
+CPE INEN 019 & Código Eléctrico Ecuatoriano \\
+IEC 60617 & Simbología gráfica para diagramas eléctricos \\
+NTE INEN 2345 & Alambres y cables con aislamiento termoplástico \\
+NTE INEN 3098 & Voltajes normalizados \\
+IEC 60364 & Instalaciones eléctricas en edificaciones \\
+Reglamentos de empresas distribuidoras & Acometidas, medidores y
+requisitos de conexión \\
+\end{longtable}
+}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-note-color!10!white, colframe=quarto-callout-note-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Nota}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Cuando existan diferencias entre documentos técnicos, se debe revisar la
+normativa nacional vigente, los requisitos de la empresa distribuidora y
+las especificaciones del proyecto.
+
+\end{tcolorbox}
+
+\subsection{Relación entre norma, plano y
+ejecución}\label{relaciuxf3n-entre-norma-plano-y-ejecuciuxf3n}
+
+Una instalación eléctrica segura requiere coherencia entre:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  normativa aplicable;
+\item
+  memoria técnica;
+\item
+  plano eléctrico;
+\item
+  cuadro de cargas;
+\item
+  diagrama unifilar;
+\item
+  selección de materiales;
+\item
+  ejecución en obra;
+\item
+  inspección final.
+\end{enumerate}
+
+\subsection{Figura 1.3. Flujo técnico de diseño
+normativo}\label{figura-1.3.-flujo-tuxe9cnico-de-diseuxf1o-normativo}
+
+\includegraphics[width=18.11in,height=0.98in]{bloque_01_normalizacion_seguridad_simbologia_files/figure-latex/mermaid-figure-7.png}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{1.4 Simbología eléctrica
+normalizada}\label{simbologuxeda-eluxe9ctrica-normalizada}
+
+\subsection{Concepto}\label{concepto}
+
+La simbología eléctrica normalizada permite representar gráficamente los
+componentes de una instalación eléctrica. Un símbolo eléctrico resume
+información técnica sobre el tipo de dispositivo, su función y su
+ubicación dentro del sistema.
+
+Los símbolos se emplean en:
+
+\begin{itemize}
+\tightlist
+\item
+  planos eléctricos en planta;
+\item
+  diagramas unifilares;
+\item
+  diagramas multifilares;
+\item
+  diagramas de control;
+\item
+  diagramas de potencia;
+\item
+  planos de tableros;
+\item
+  esquemas de automatización.
+\end{itemize}
+
+\subsection{Tabla 1.4. Simbología básica para instalaciones
+civiles}\label{tabla-1.4.-simbologuxeda-buxe1sica-para-instalaciones-civiles}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Elemento
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Representación textual sugerida
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Función
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Punto de luz & PL & Salida para luminaria \\
+Interruptor simple & S1 & Control de una luminaria desde un punto \\
+Interruptor doble & S2 & Control de dos luminarias o grupos \\
+Tomacorriente simple & T1 & Alimentación de carga de uso general \\
+Tomacorriente doble & T2 & Alimentación de dos equipos \\
+Tomacorriente con tierra & TT & Alimentación con conductor de
+protección \\
+Salida especial & SE & Alimentación de carga específica \\
+Tablero de distribución & TD & Agrupación de protecciones \\
+Medidor & M & Registro de energía \\
+Puesta a tierra & PT & Conexión de seguridad a tierra \\
+\end{longtable}
+}
+
+\subsection{Tabla 1.5. Simbología básica para instalaciones
+industriales}\label{tabla-1.5.-simbologuxeda-buxe1sica-para-instalaciones-industriales}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Elemento & Código frecuente & Función \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Motor & M & Convierte energía eléctrica en mecánica \\
+Contactor & KM & Maniobra eléctrica de cargas \\
+Relé térmico & FR & Protección contra sobrecarga en motores \\
+Pulsador de marcha & S1 / START & Orden de encendido \\
+Pulsador de paro & S0 / STOP & Orden de apagado \\
+Lámpara piloto & H & Señalización visual \\
+Final de carrera & SQ & Detección de posición \\
+Sensor & B & Detección de variable física \\
+PLC & PLC & Control lógico programable \\
+Fuente de alimentación & PS & Alimentación de circuitos de control \\
+\end{longtable}
+}
+
+\subsection{Figura 1.4. Relación entre símbolo, dispositivo y
+función}\label{figura-1.4.-relaciuxf3n-entre-suxedmbolo-dispositivo-y-funciuxf3n}
+
+\includegraphics[width=9.19in,height=0.73in]{bloque_01_normalizacion_seguridad_simbologia_files/figure-latex/mermaid-figure-6.png}
+
+\subsection{Criterios de
+representación}\label{criterios-de-representaciuxf3n}
+
+Para que la simbología sea técnicamente correcta:
+
+\begin{itemize}
+\tightlist
+\item
+  debe ser legible;
+\item
+  debe estar incluida en una leyenda;
+\item
+  debe mantenerse igual en todo el plano;
+\item
+  debe diferenciar cargas normales y especiales;
+\item
+  debe identificar circuitos;
+\item
+  debe relacionarse con el cuadro de cargas;
+\item
+  debe permitir al instalador ejecutar el trabajo sin ambigüedad.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{1.5 Identificación de símbolos eléctricos en
+planos}\label{identificaciuxf3n-de-suxedmbolos-eluxe9ctricos-en-planos}
+
+\subsection{Lectura de planos
+eléctricos}\label{lectura-de-planos-eluxe9ctricos}
+
+Un plano eléctrico es un documento técnico que representa la ubicación y
+conexión de elementos eléctricos dentro de una edificación.
+
+En instalaciones civiles, el plano eléctrico se suele elaborar sobre la
+planta arquitectónica. Sobre ella se ubican luminarias, interruptores,
+tomacorrientes, salidas especiales, tablero y canalizaciones.
+
+\subsection{Elementos mínimos de un plano eléctrico
+residencial}\label{elementos-muxednimos-de-un-plano-eluxe9ctrico-residencial}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Elemento
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Descripción
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Importancia
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Planta arquitectónica & Base gráfica de la vivienda & Permite ubicar
+ambientes y recorridos \\
+Puntos de iluminación & Luminarias interiores y exteriores & Define
+circuitos de alumbrado \\
+Interruptores & Dispositivos de control & Permiten maniobra de
+luminarias \\
+Tomacorrientes & Salidas de uso general & Alimentan equipos
+portátiles \\
+Cargas especiales & Cocina, ducha, calefón, bomba & Requieren circuitos
+independientes \\
+Tablero & Centro de distribución & Aloja protecciones \\
+Canalizaciones & Recorrido de conductores & Define ejecución física \\
+Cuadro de cargas & Resumen de potencia y corriente & Permite
+dimensionamiento \\
+Diagrama unifilar & Esquema general del sistema & Muestra jerarquía
+eléctrica \\
+Leyenda & Símbolos utilizados & Facilita interpretación \\
+\end{longtable}
+}
+
+\subsection{Figura 1.5. Esquema conceptual de plano eléctrico
+residencial}\label{figura-1.5.-esquema-conceptual-de-plano-eluxe9ctrico-residencial}
+
+\includegraphics[width=12.18in,height=5.31in]{bloque_01_normalizacion_seguridad_simbologia_files/figure-latex/mermaid-figure-5.png}
+
+\subsection{Procedimiento recomendado para interpretar un plano
+eléctrico}\label{procedimiento-recomendado-para-interpretar-un-plano-eluxe9ctrico}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Identificar la planta arquitectónica.
+\item
+  Localizar el tablero de distribución.
+\item
+  Reconocer la simbología utilizada.
+\item
+  Revisar los circuitos de iluminación.
+\item
+  Revisar los circuitos de tomacorrientes.
+\item
+  Identificar cargas especiales.
+\item
+  Verificar recorridos de canalización.
+\item
+  Revisar el cuadro de cargas.
+\item
+  Comparar el plano con el diagrama unifilar.
+\item
+  Confirmar la existencia de sistema de puesta a tierra.
+\end{enumerate}
+
+\subsection{Ejemplo de lectura
+técnica}\label{ejemplo-de-lectura-tuxe9cnica}
+
+Si en el plano aparece una salida especial en cocina, el estudiante debe
+verificar:
+
+\begin{itemize}
+\tightlist
+\item
+  si tiene circuito independiente;
+\item
+  si aparece en el cuadro de cargas;
+\item
+  si se asignó potencia adecuada;
+\item
+  si tiene conductor y protección correspondiente;
+\item
+  si existe conductor de puesta a tierra;
+\item
+  si aparece en el diagrama unifilar.
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-tip-color!10!white, colframe=quarto-callout-tip-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Todo símbolo colocado en planta debe tener respaldo en la leyenda y,
+cuando corresponda, en el cuadro de cargas.
+
+\end{tcolorbox}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{1.6 Normas de seguridad eléctrica y uso de laboratorios
+eléctricos}\label{normas-de-seguridad-eluxe9ctrica-y-uso-de-laboratorios-eluxe9ctricos}
+
+\subsection{Seguridad eléctrica}\label{seguridad-eluxe9ctrica}
+
+La seguridad eléctrica consiste en aplicar medidas preventivas para
+evitar daños a las personas, equipos e instalaciones. En instalaciones
+eléctricas, el riesgo no solo aparece por contacto directo con
+conductores energizados, sino también por fallas de aislamiento,
+conexiones deficientes, sobrecargas, ausencia de puesta a tierra o
+protecciones mal seleccionadas.
+
+\subsection{Seguridad en laboratorio}\label{seguridad-en-laboratorio}
+
+El laboratorio eléctrico es un espacio de aprendizaje experimental. Sin
+embargo, al trabajar con tensión, corriente y equipos de medición, se
+deben cumplir reglas estrictas.
+
+\subsection{Tabla 1.7. Reglas básicas de seguridad en
+laboratorio}\label{tabla-1.7.-reglas-buxe1sicas-de-seguridad-en-laboratorio}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Regla
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Aplicación práctica
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Revisar el circuito antes de energizar & Verificar conexiones según el
+diagrama \\
+Confirmar ausencia de tensión & Usar multímetro antes de manipular \\
+Seleccionar escala correcta & Evitar daño del instrumento \\
+Usar cables en buen estado & Evitar falsos contactos o cortocircuitos \\
+No dejar conductores expuestos & Prevenir choque eléctrico \\
+Energizar solo con autorización & Mantener control docente \\
+Desenergizar antes de modificar & Evitar conexiones bajo tensión \\
+Mantener orden en la mesa & Reducir errores de conexión \\
+No improvisar puentes & Respetar el esquema de trabajo \\
+Reportar fallas de equipos & Prevenir accidentes \\
+\end{longtable}
+}
+
+\subsection{Figura 1.6. Secuencia segura de trabajo en
+laboratorio}\label{figura-1.6.-secuencia-segura-de-trabajo-en-laboratorio}
+
+\includegraphics[width=23.4in,height=0.98in]{bloque_01_normalizacion_seguridad_simbologia_files/figure-latex/mermaid-figure-4.png}
+
+\subsection{Uso seguro del
+multímetro}\label{uso-seguro-del-multuxedmetro}
+
+El multímetro es uno de los instrumentos más usados en instalaciones
+eléctricas. Permite medir voltaje, corriente, resistencia y continuidad,
+según el modelo.
+
+\subsection{Tabla 1.8. Uso básico del
+multímetro}\label{tabla-1.8.-uso-buxe1sico-del-multuxedmetro}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Magnitud
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Posición del instrumento
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Forma de conexión
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Condición de seguridad
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Voltaje & V AC / V DC & En paralelo & Circuito energizado con cuidado \\
+Corriente & A / mA & En serie & Revisar escala y borne correcto \\
+Resistencia & Ω & En paralelo al elemento & Circuito desenergizado \\
+Continuidad & Símbolo de buzzer & Entre dos puntos & Circuito
+desenergizado \\
+\end{longtable}
+}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Advertencia}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Nunca se debe medir resistencia o continuidad en un circuito energizado.
+Esta acción puede dañar el instrumento y poner en riesgo al usuario.
+
+\end{tcolorbox}
+
+\subsection{Equipo de protección
+personal}\label{equipo-de-protecciuxf3n-personal}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Elemento & Función \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Gafas de seguridad & Protección ante chispas o partículas \\
+Guantes aislantes & Protección frente a contacto eléctrico \\
+Calzado dieléctrico & Aislamiento respecto al piso \\
+Herramientas aisladas & Reducción de riesgo por contacto accidental \\
+Ropa ajustada & Evita enganches o contacto accidental \\
+Señalización & Advierte presencia de trabajo eléctrico \\
+\end{longtable}
+}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{1.7 Riesgos eléctricos y medidas de
+prevención}\label{riesgos-eluxe9ctricos-y-medidas-de-prevenciuxf3n}
+
+\subsection{Concepto de riesgo
+eléctrico}\label{concepto-de-riesgo-eluxe9ctrico}
+
+Un riesgo eléctrico es la posibilidad de que una persona, equipo o
+instalación sufra daño debido a la presencia de energía eléctrica en
+condiciones inseguras.
+
+Los riesgos eléctricos pueden presentarse por:
+
+\begin{itemize}
+\tightlist
+\item
+  contacto directo;
+\item
+  contacto indirecto;
+\item
+  sobrecarga;
+\item
+  cortocircuito;
+\item
+  falla a tierra;
+\item
+  arco eléctrico;
+\item
+  conexiones deficientes;
+\item
+  ausencia de protecciones;
+\item
+  mala selección de conductores;
+\item
+  canalizaciones inadecuadas.
+\end{itemize}
+
+\subsection{Tabla 1.9. Tipos de riesgos
+eléctricos}\label{tabla-1.9.-tipos-de-riesgos-eluxe9ctricos}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Riesgo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Causa frecuente
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Consecuencia
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Prevención
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Choque eléctrico & Contacto con parte energizada & Lesión o muerte &
+Aislamiento, señalización, EPP \\
+Contacto indirecto & Carcasa energizada por falla & Electrocución &
+Puesta a tierra, protección diferencial \\
+Sobrecarga & Exceso de corriente en conductor & Calentamiento & Cálculo
+de carga y protección adecuada \\
+Cortocircuito & Unión accidental entre conductores & Corriente elevada &
+Breaker, fusible, aislamiento correcto \\
+Falla a tierra & Corriente hacia tierra no prevista & Riesgo en equipos
+metálicos & Sistema de puesta a tierra \\
+Arco eléctrico & Falla de alta energía & Quemaduras, daño de equipos &
+Mantenimiento, EPP, protecciones \\
+Incendio eléctrico & Calor por mala conexión & Daño material &
+Inspección y conexiones firmes \\
+\end{longtable}
+}
+
+\subsection{Figura 1.7. Relación entre falla eléctrica y
+protección}\label{figura-1.7.-relaciuxf3n-entre-falla-eluxe9ctrica-y-protecciuxf3n}
+
+\includegraphics[width=6.96in,height=5.31in]{bloque_01_normalizacion_seguridad_simbologia_files/figure-latex/mermaid-figure-3.png}
+
+\subsection{Sobrecarga}\label{sobrecarga}
+
+La sobrecarga ocurre cuando un circuito conduce una corriente mayor a la
+prevista durante un tiempo prolongado. Esto puede suceder por conectar
+demasiadas cargas a un mismo circuito o por seleccionar conductores de
+calibre insuficiente.
+
+Ejemplo:
+
+Si un circuito de tomacorrientes fue diseñado para 20 A y se conectan
+equipos que demandan 28 A, el conductor puede calentarse excesivamente
+si la protección no actúa adecuadamente.
+
+\subsection{Cortocircuito}\label{cortocircuito}
+
+El cortocircuito es una falla de baja impedancia entre conductores
+activos o entre fase y tierra. Genera una corriente muy elevada en un
+tiempo muy corto.
+
+Sus causas frecuentes son:
+
+\begin{itemize}
+\tightlist
+\item
+  aislamiento deteriorado;
+\item
+  conexiones flojas;
+\item
+  humedad;
+\item
+  daño mecánico en conductores;
+\item
+  errores de conexión;
+\item
+  contacto accidental entre fase y neutro.
+\end{itemize}
+
+\subsection{Falla a tierra}\label{falla-a-tierra}
+
+La falla a tierra ocurre cuando una corriente no deseada fluye hacia
+elementos metálicos o hacia tierra. Es especialmente peligrosa cuando
+energiza carcasas de equipos.
+
+La puesta a tierra proporciona un camino seguro para esa corriente de
+falla y permite la operación de las protecciones.
+
+\subsection{Medidas generales de
+prevención}\label{medidas-generales-de-prevenciuxf3n}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Medida
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Aplicación
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Dimensionar correctamente conductores & Evita calentamiento \\
+Seleccionar protecciones adecuadas & Permite desconexión ante fallas \\
+Usar puesta a tierra & Reduce riesgo de contacto indirecto \\
+Usar protección diferencial & Protege personas ante fugas de
+corriente \\
+Aislar conexiones & Evita contactos accidentales \\
+Rotular tableros & Facilita mantenimiento seguro \\
+Separar circuitos & Evita sobrecarga y facilita operación \\
+Realizar inspecciones & Detecta fallas antes de accidentes \\
+\end{longtable}
+}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Integración del Bloque 1 con la práctica
+experimental}\label{integraciuxf3n-del-bloque-1-con-la-pruxe1ctica-experimental}
+
+\subsection{Práctica del bloque}\label{pruxe1ctica-del-bloque}
+
+La práctica oficial del bloque consiste en el diseño de un plano
+eléctrico residencial. Esta actividad integra normalización, simbología,
+seguridad y criterios iniciales de diseño.
+
+\subsection{Figura 1.8. Flujo de trabajo de la práctica
+residencial}\label{figura-1.8.-flujo-de-trabajo-de-la-pruxe1ctica-residencial}
+
+\includegraphics[width=2.88in,height=9.9in]{bloque_01_normalizacion_seguridad_simbologia_files/figure-latex/mermaid-figure-2.png}
+
+\subsection{Entregables de la
+práctica}\label{entregables-de-la-pruxe1ctica}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Entregable
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Contenido mínimo
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Plano eléctrico residencial & Luminarias, interruptores, tomacorrientes,
+cargas especiales y tablero \\
+Cuadro de cargas & Circuito, descripción, potencia, corriente, conductor
+y protección \\
+Diagrama unifilar & Medidor, tablero, protecciones y circuitos
+derivados \\
+Cuadro de simbología & Símbolos utilizados en el plano \\
+Memoria técnica & Criterios normativos, cálculos y justificación \\
+Conclusiones & Análisis técnico del diseño realizado \\
+\end{longtable}
+}
+
+\subsection{Cuadro de cargas modelo}\label{cuadro-de-cargas-modelo}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0938}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0938}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1250}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1250}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1250}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1250}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.1250}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0938}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 16\tabcolsep) * \real{0.0938}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Circuito
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Descripción
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Cantidad
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Potencia unitaria (W)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Potencia total (W)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Voltaje (V)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Corriente (A)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Conductor sugerido
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Protección
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+C1 & Iluminación planta baja & 8 & 100 & 800 & 120 & 6.67 & 14 AWG & 15
+A \\
+C2 & Iluminación planta alta & 6 & 100 & 600 & 120 & 5.00 & 14 AWG & 15
+A \\
+C3 & Tomacorrientes generales & 8 & 200 & 1600 & 120 & 13.33 & 12 AWG &
+20 A \\
+C4 & Tomacorrientes cocina & 4 & 200 & 800 & 120 & 6.67 & 12 AWG & 20
+A \\
+C5 & Cocina eléctrica & 1 & 6000 & 6000 & 240 & 25.00 & Según cálculo &
+Bipolar \\
+C6 & Ducha eléctrica & 1 & 3500 & 3500 & 240 & 14.58 & Según cálculo &
+Bipolar \\
+\end{longtable}
+}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-important-color!10!white, colframe=quarto-callout-important-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Importante}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Los valores del cuadro son referenciales para fines académicos. En un
+proyecto real deben verificarse con la normativa vigente, condiciones de
+instalación, temperatura, caída de tensión, tipo de aislamiento,
+longitud del circuito y especificaciones del fabricante.
+
+\end{tcolorbox}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Actividad en clase}\label{actividad-en-clase}
+
+\subsection{Análisis de una vivienda
+básica}\label{anuxe1lisis-de-una-vivienda-buxe1sica}
+
+A partir de un plano arquitectónico asignado por el docente, el
+estudiante deberá:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Identificar ambientes.
+\item
+  Proponer puntos de iluminación.
+\item
+  Ubicar interruptores.
+\item
+  Ubicar tomacorrientes.
+\item
+  Identificar cargas especiales.
+\item
+  Proponer ubicación del tablero.
+\item
+  Elaborar una leyenda básica de símbolos.
+\item
+  Identificar riesgos eléctricos.
+\item
+  Proponer medidas de prevención.
+\item
+  Justificar el criterio de separación de circuitos.
+\end{enumerate}
+
+\subsection{Producto esperado}\label{producto-esperado}
+
+Un esquema preliminar de instalación eléctrica residencial con
+simbología básica, identificación de circuitos y observaciones de
+seguridad.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Actividad autónoma}\label{actividad-autuxf3noma}
+
+\subsection{Ficha de revisión
+normativa}\label{ficha-de-revisiuxf3n-normativa}
+
+El estudiante revisará la NEC-SB-IE Instalaciones Eléctricas y elaborará
+una ficha técnica con:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  objetivo de la norma;
+\item
+  campo de aplicación;
+\item
+  normas referenciadas;
+\item
+  criterios de circuitos;
+\item
+  criterios de conductores;
+\item
+  criterios de protecciones;
+\item
+  criterios de puesta a tierra;
+\item
+  criterios de ubicación de interruptores y tomacorrientes;
+\item
+  tres conclusiones técnicas.
+\end{enumerate}
+
+Extensión sugerida: 2 a 3 páginas.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Preguntas de repaso}\label{preguntas-de-repaso}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  ¿Qué es una instalación eléctrica?
+\item
+  ¿Qué diferencia existe entre una instalación civil y una industrial?
+\item
+  ¿Por qué es importante la normalización eléctrica?
+\item
+  ¿Qué normas se pueden aplicar en instalaciones eléctricas?
+\item
+  ¿Qué función cumple la simbología eléctrica?
+\item
+  ¿Qué elementos debe contener un plano eléctrico residencial?
+\item
+  ¿Qué es un cuadro de cargas?
+\item
+  ¿Qué es un diagrama unifilar?
+\item
+  ¿Qué diferencia existe entre sobrecarga y cortocircuito?
+\item
+  ¿Por qué la puesta a tierra es una medida de seguridad?
+\item
+  ¿Qué riesgos existen al trabajar en laboratorio eléctrico?
+\item
+  ¿Por qué no se debe medir resistencia en un circuito energizado?
+\item
+  ¿Qué información debe contener una leyenda de simbología?
+\item
+  ¿Por qué se deben separar circuitos de iluminación, tomacorrientes y
+  cargas especiales?
+\item
+  ¿Qué relación existe entre carga, conductor y protección?
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Cierre del bloque}\label{cierre-del-bloque}
+
+El Bloque 1 permite al estudiante comprender que una instalación
+eléctrica segura depende de la correcta aplicación de normas,
+simbología, criterios de diseño y medidas de prevención. Estos
+fundamentos son necesarios para avanzar hacia el análisis de diagramas
+eléctricos, mediciones, instrumentación y automatización industrial.
+
+En los siguientes bloques se profundizará en la interpretación de
+diagramas unifilares, multifilares, diagramas de control y potencia, así
+como en el uso de instrumentos de medición y sistemas básicos de
+automatización.
+
+\bookmarksetup{startatroot}
+
+\chapter{Bloque 2: Diagramas Eléctricos e
+Instrumentación}\label{bloque-2-diagramas-eluxe9ctricos-e-instrumentaciuxf3n}
+
+\section{Resultado de aprendizaje del
+bloque}\label{resultado-de-aprendizaje-del-bloque-1}
+
+El estudiante interpreta diagramas y planos eléctricos, realiza
+mediciones de magnitudes eléctricas, utiliza instrumentos adecuados y
+analiza exactitud, precisión y errores de medición para evaluar sistemas
+eléctricos con criterio técnico.
+
+\section{Objetivo específico}\label{objetivo-especuxedfico}
+
+Analizar e interpretar diagramas eléctricos de instalaciones civiles e
+industriales, aplicando técnicas de medición eléctrica y uso de
+instrumentos para evaluar la exactitud, precisión y errores en los
+resultados obtenidos.
+
+\section{2.1 Tipos de diagramas
+eléctricos}\label{tipos-de-diagramas-eluxe9ctricos}
+
+Los diagramas eléctricos representan la estructura, funcionamiento o
+conexión de un sistema. Entre los más utilizados se encuentran:
+
+\begin{itemize}
+\tightlist
+\item
+  Diagrama unifilar.
+\item
+  Diagrama multifilar.
+\item
+  Diagrama de control.
+\item
+  Diagrama de potencia.
+\item
+  Plano eléctrico arquitectónico.
+\item
+  Diagrama de conexión.
+\item
+  Esquema de tablero.
+\end{itemize}
+
+\section{2.2 Diagramas unifilares y
+multifilares}\label{diagramas-unifilares-y-multifilares}
+
+El \textbf{diagrama unifilar} representa un sistema eléctrico mediante
+una sola línea por circuito o alimentador. Es útil para mostrar
+acometida, medidor, protección principal, tableros, circuitos derivados
+y cargas.
+
+El \textbf{diagrama multifilar} representa cada conductor de manera
+individual. Permite visualizar fases, neutro, tierra, retornos,
+contactos y conexiones específicas.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Criterio
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Diagrama unifilar
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Diagrama multifilar
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Nivel de detalle & General & Alto \\
+Uso principal & Diseño, memoria técnica, tableros & Cableado y
+montaje \\
+Representación de conductores & Simplificada & Individual \\
+Aplicación & Distribución eléctrica & Conexión real de circuitos \\
+\end{longtable}
+}
+
+\section{2.3 Diagramas de control y
+potencia}\label{diagramas-de-control-y-potencia}
+
+En instalaciones industriales, el circuito de potencia alimenta cargas
+como motores, resistencias, bombas o compresores. El circuito de control
+gobierna la operación mediante pulsadores, sensores, relés, contactores,
+temporizadores o PLC.
+
+\section{2.4 Interpretación de planos
+eléctricos}\label{interpretaciuxf3n-de-planos-eluxe9ctricos}
+
+Para interpretar planos eléctricos se debe revisar:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Escala y orientación del plano.
+\item
+  Cuadro de simbología.
+\item
+  Ubicación de salidas eléctricas.
+\item
+  Identificación de circuitos.
+\item
+  Cuadro de cargas.
+\item
+  Diagrama unifilar.
+\item
+  Notas técnicas y especificaciones.
+\item
+  Criterios de seguridad y puesta a tierra.
+\end{enumerate}
+
+\section{2.5 Introducción a las mediciones
+eléctricas}\label{introducciuxf3n-a-las-mediciones-eluxe9ctricas}
+
+La medición eléctrica permite verificar el comportamiento real de un
+sistema. Las magnitudes básicas son voltaje, corriente, resistencia,
+potencia y energía.
+
+\section{2.6 Magnitudes eléctricas fundamentales e instrumentos de
+medición}\label{magnitudes-eluxe9ctricas-fundamentales-e-instrumentos-de-mediciuxf3n}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lllll@{}}
+\toprule\noalign{}
+Magnitud & Símbolo & Unidad & Instrumento & Conexión básica \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Voltaje & V & Voltio & Voltímetro & Paralelo \\
+Corriente & I & Amperio & Amperímetro & Serie \\
+Resistencia & R & Ohmio & Óhmetro & Circuito desenergizado \\
+Potencia & P & Watt & Vatímetro / multímetro & Según instrumento \\
+Energía & W o E & kWh & Medidor de energía & Instalación fija \\
+\end{longtable}
+}
+
+\begin{tcolorbox}[enhanced jigsaw, arc=.35mm, bottomrule=.15mm, bottomtitle=1mm, breakable, colback=white, colbacktitle=quarto-callout-warning-color!10!white, colframe=quarto-callout-warning-color-frame, coltitle=black, left=2mm, leftrule=.75mm, opacityback=0, opacitybacktitle=0.6, rightrule=.15mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Seguridad de medición}, titlerule=0mm, toprule=.15mm, toptitle=1mm]
+
+Nunca se debe medir resistencia en un circuito energizado. Primero se
+verifica ausencia de tensión y condiciones seguras de trabajo.
+
+\end{tcolorbox}
+
+\section{2.7 Procedimientos de
+medición}\label{procedimientos-de-mediciuxf3n}
+
+Procedimiento general:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Identificar la magnitud a medir.
+\item
+  Seleccionar el instrumento adecuado.
+\item
+  Verificar categoría, rango y estado del instrumento.
+\item
+  Conectar de acuerdo con la magnitud.
+\item
+  Registrar lectura y condiciones de medición.
+\item
+  Interpretar el resultado.
+\item
+  Desenergizar y ordenar el área de trabajo.
+\end{enumerate}
+
+\section{2.8 Exactitud y precisión en las
+mediciones}\label{exactitud-y-precisiuxf3n-en-las-mediciones}
+
+La \textbf{exactitud} indica qué tan cerca está una medición del valor
+real o aceptado. La \textbf{precisión} indica qué tan repetibles son las
+mediciones entre sí.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Caso
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Interpretación
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Alta exactitud y alta precisión & Mediciones confiables \\
+Alta precisión y baja exactitud & Error sistemático probable \\
+Baja precisión & Lecturas dispersas \\
+Baja exactitud y baja precisión & Procedimiento o instrumento
+deficiente \\
+\end{longtable}
+}
+
+\section{2.9 Errores en las mediciones}\label{errores-en-las-mediciones}
+
+Los errores pueden clasificarse como:
+
+\begin{itemize}
+\tightlist
+\item
+  Sistemáticos: asociados al instrumento, calibración o método.
+\item
+  Aleatorios: variaciones no controladas durante la medición.
+\item
+  Humanos: lectura incorrecta, mala conexión o selección inadecuada de
+  escala.
+\item
+  Ambientales: temperatura, humedad, interferencias o condiciones del
+  entorno.
+\end{itemize}
+
+\subsection{Cálculo básico del error
+absoluto}\label{cuxe1lculo-buxe1sico-del-error-absoluto}
+
+\[
+E_a = |X_m - X_v|
+\]
+
+Donde:
+
+\begin{itemize}
+\tightlist
+\item
+  \(E_a\) = error absoluto.
+\item
+  \(X_m\) = valor medido.
+\item
+  \(X_v\) = valor verdadero o de referencia.
+\end{itemize}
+
+\subsection{Cálculo básico del error
+porcentual}\label{cuxe1lculo-buxe1sico-del-error-porcentual}
+
+\[
+E_{\%} = \frac{|X_m - X_v|}{X_v} \times 100
+\]
+
+\section{Actividad de aula}\label{actividad-de-aula}
+
+Realice tres mediciones de voltaje en una fuente de laboratorio y
+calcule:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Promedio.
+\item
+  Error absoluto.
+\item
+  Error porcentual.
+\item
+  Interpretación de exactitud y precisión.
+\end{enumerate}
+
+\section{Práctica vinculada}\label{pruxe1ctica-vinculada}
+
+\textbf{Práctica 2:} Diseño de plano eléctrico de una instalación de
+tipo industrial.
+
+\bookmarksetup{startatroot}
+
+\chapter{Bloque 3: Automatización}\label{bloque-3-automatizaciuxf3n}
+
+\section{Resultado de aprendizaje del
+bloque}\label{resultado-de-aprendizaje-del-bloque-2}
+
+El estudiante analiza e implementa soluciones básicas de automatización
+en sistemas eléctricos mediante principios de control industrial,
+identificación de arquitectura y componentes de un PLC y aplicaciones en
+procesos industriales simples.
+
+\section{Objetivo específico}\label{objetivo-especuxedfico-1}
+
+Desarrollar competencias para comprender y aplicar principios de
+automatización industrial y sistemas de control mediante el estudio de
+controladores lógicos programables, arquitectura, componentes y
+aplicaciones básicas en sistemas eléctricos.
+
+\section{3.1 Introducción a la automatización
+industrial}\label{introducciuxf3n-a-la-automatizaciuxf3n-industrial}
+
+La automatización industrial consiste en el uso de dispositivos de
+control, sensores, actuadores, interfaces y programas para ejecutar
+procesos con mínima intervención humana. Su aplicación mejora
+productividad, seguridad, repetibilidad, control de calidad y
+continuidad de operación.
+
+\section{3.2 Sistemas de control en procesos
+industriales}\label{sistemas-de-control-en-procesos-industriales}
+
+Un sistema de control integra entradas, procesamiento y salidas.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}ll@{}}
+\toprule\noalign{}
+Elemento & Función \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Sensor & Detecta una condición física o eléctrica \\
+Pulsador & Permite una orden manual \\
+Controlador & Procesa señales y ejecuta lógica \\
+Actuador & Ejecuta una acción física \\
+Contactor & Maniobra cargas de potencia \\
+Protección & Desconecta ante fallas \\
+\end{longtable}
+}
+
+\section{3.3 Introducción a los controladores lógicos
+programables}\label{introducciuxf3n-a-los-controladores-luxf3gicos-programables}
+
+Un PLC es un dispositivo electrónico diseñado para controlar procesos
+mediante lógica programada. Sustituye parcial o totalmente la lógica
+cableada de relés, permitiendo modificar secuencias sin cambiar todo el
+cableado físico.
+
+\section{3.4 Componentes y arquitectura básica de un
+PLC}\label{componentes-y-arquitectura-buxe1sica-de-un-plc}
+
+Un PLC básico incluye:
+
+\begin{itemize}
+\tightlist
+\item
+  Fuente de alimentación.
+\item
+  CPU.
+\item
+  Memoria.
+\item
+  Entradas digitales o analógicas.
+\item
+  Salidas digitales o analógicas.
+\item
+  Módulos de comunicación.
+\item
+  Interfaz de programación.
+\end{itemize}
+
+\section{3.5 Aplicaciones básicas de PLC en sistemas
+eléctricos}\label{aplicaciones-buxe1sicas-de-plc-en-sistemas-eluxe9ctricos}
+
+Ejemplos de aplicación:
+
+\begin{itemize}
+\tightlist
+\item
+  Arranque y paro de motores.
+\item
+  Control de iluminación.
+\item
+  Temporización de cargas.
+\item
+  Control de bombas.
+\item
+  Secuencias automáticas.
+\item
+  Señalización de estados.
+\item
+  Transferencias automáticas simples.
+\end{itemize}
+
+\section{Temporizadores básicos}\label{temporizadores-buxe1sicos}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Temporizador
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Descripción
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Aplicación típica
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+TON & Retardo a la conexión & Encendido diferido de una carga \\
+TOF & Retardo a la desconexión & Apagado diferido \\
+Pulso & Genera activación por tiempo definido & Señalización o eventos
+breves \\
+\end{longtable}
+}
+
+\section{Ejemplo conceptual: retardo a la
+conexión}\label{ejemplo-conceptual-retardo-a-la-conexiuxf3n}
+
+Una lámpara piloto debe encenderse cinco segundos después de presionar
+un pulsador de marcha. La lógica básica es:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Entrada I1 activa el temporizador TON.
+\item
+  El temporizador cuenta 5 segundos.
+\item
+  Al cumplirse el tiempo, se activa Q1.
+\item
+  Un pulsador de paro reinicia el proceso.
+\end{enumerate}
+
+\section{Actividad de aula}\label{actividad-de-aula-1}
+
+Diseñe la lógica básica para:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Encendido de una lámpara con retardo de 5 segundos.
+\item
+  Apagado con pulsador de paro.
+\item
+  Señalización de estado activo.
+\item
+  Representación del diagrama de conexión.
+\end{enumerate}
+
+\section{Práctica vinculada}\label{pruxe1ctica-vinculada-1}
+
+\textbf{Práctica 3:} Fundamentos de programación con PLCs usando Siemens
+LOGO!.
+
+\bookmarksetup{startatroot}
+
+\chapter{Prácticas de laboratorio}\label{pruxe1cticas-de-laboratorio}
+
+\section{Organización general}\label{organizaciuxf3n-general}
+
+Las prácticas están alineadas con los tres bloques de la asignatura y
+con el componente práctico-experimental.
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Práctica
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Bloque
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Título
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Producto esperado
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & Bloque 1 & Diseño de plano eléctrico residencial & Plano, cuadro de
+cargas, diagrama unifilar e informe \\
+2 & Bloque 2 & Diseño de plano eléctrico industrial & Plano industrial,
+diagramas de potencia/control e informe \\
+3 & Bloque 3 & Fundamentos de programación con PLCs & Programa básico,
+conexión física e informe \\
+\end{longtable}
+}
+
+\section{Práctica 1: Diseño de plano eléctrico
+residencial}\label{pruxe1ctica-1-diseuxf1o-de-plano-eluxe9ctrico-residencial}
+
+\subsection{Objetivo}\label{objetivo}
+
+Diseñar el plano eléctrico integral de una instalación residencial
+mediante simbología normalizada, criterios normativos, cuadro de cargas,
+selección de conductores, protecciones y puesta a tierra.
+
+\subsection{Producto mínimo}\label{producto-muxednimo}
+
+\begin{itemize}
+\tightlist
+\item
+  Plano arquitectónico con instalación eléctrica.
+\item
+  Cuadro de cargas.
+\item
+  Diagrama unifilar.
+\item
+  Cuadro de simbología.
+\item
+  Criterio de selección de conductores y protecciones.
+\item
+  Identificación de puesta a tierra.
+\item
+  Informe técnico.
+\end{itemize}
+
+\subsection{Criterios técnicos
+básicos}\label{criterios-tuxe9cnicos-buxe1sicos}
+
+\begin{itemize}
+\tightlist
+\item
+  Separación de circuitos de iluminación, tomacorrientes y cargas
+  especiales.
+\item
+  Uso de simbología normalizada.
+\item
+  Protección termomagnética por circuito.
+\item
+  Consideración de conductor de protección.
+\item
+  Ubicación funcional del tablero.
+\end{itemize}
+
+\section{Práctica 2: Diseño de plano eléctrico
+industrial}\label{pruxe1ctica-2-diseuxf1o-de-plano-eluxe9ctrico-industrial}
+
+\subsection{Objetivo}\label{objetivo-1}
+
+Diseñar e interpretar una instalación eléctrica industrial básica,
+diferenciando circuitos de potencia y control, diagramas unifilares,
+multifilares, protecciones, cargas e instrumentos de medición.
+
+\subsection{Producto mínimo}\label{producto-muxednimo-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Plano o esquema de instalación industrial.
+\item
+  Diagrama de potencia.
+\item
+  Diagrama de control.
+\item
+  Identificación de instrumentos de medición.
+\item
+  Análisis de magnitudes eléctricas.
+\item
+  Informe técnico.
+\end{itemize}
+
+\section{Práctica 3: Fundamentos de programación con
+PLCs}\label{pruxe1ctica-3-fundamentos-de-programaciuxf3n-con-plcs}
+
+\subsection{Objetivo}\label{objetivo-2}
+
+Configurar, conectar y programar manualmente un micro-PLC Siemens LOGO!
+mediante funciones de temporización para el control secuencial de cargas
+eléctricas.
+
+\subsection{Producto mínimo}\label{producto-muxednimo-2}
+
+\begin{itemize}
+\tightlist
+\item
+  Diagrama de conexión.
+\item
+  Programa o lógica de control.
+\item
+  Evidencia de funcionamiento.
+\item
+  Tabla de entradas y salidas.
+\item
+  Informe técnico.
+\end{itemize}
+
+\subsection{Tabla de entradas y salidas
+sugerida}\label{tabla-de-entradas-y-salidas-sugerida}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+Variable & Dirección & Descripción \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Marcha & I1 & Pulsador normalmente abierto \\
+Paro / Reset & I2 & Pulsador normalmente cerrado \\
+Carga & Q1 & Lámpara piloto o bobina de contactor \\
+Temporizador & TON & Retardo a la conexión de 5 s \\
+\end{longtable}
+}
+
+\bookmarksetup{startatroot}
+
+\chapter{Evaluación}\label{evaluaciuxf3n}
+
+\section{Distribución general}\label{distribuciuxf3n-general}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lr@{}}
+\toprule\noalign{}
+Componente & Valoración \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Aprendizaje en contacto con el docente & 30 puntos \\
+Aprendizaje autónomo & 20 puntos \\
+Aprendizaje práctico-experimental & 20 puntos \\
+Evaluación interciclo & 10 puntos \\
+Evaluación final & 20 puntos \\
+\textbf{Total} & \textbf{100 puntos} \\
+\end{longtable}
+}
+
+\section{Actividades evaluativas
+sugeridas}\label{actividades-evaluativas-sugeridas}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}llllr@{}}
+\toprule\noalign{}
+Actividad & Bloque & Técnica & Instrumento & Puntaje referencial \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Evaluación de conocimientos & 1 & Prueba & Cuestionario & 10 \\
+Webinar & 2 & Informe / ensayo & Rúbrica & 5 \\
+Investigación formativa & 2 & Ensayo & Rúbrica & 10 \\
+Evaluación de conocimientos & 3 & Prueba & Cuestionario & 5 \\
+Práctica residencial & 1 & Informe & Rúbrica & 20 \\
+Práctica industrial & 2 & Informe & Rúbrica & 20 \\
+Práctica PLC & 3 & Informe & Rúbrica & 20 \\
+Proyecto final & 3 & Proyecto & Rúbrica & 10 \\
+\end{longtable}
+}
+
+\section{Rúbrica general para
+prácticas}\label{ruxfabrica-general-para-pruxe1cticas}
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1875}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1875}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1875}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.1875}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2500}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Criterio
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Excelente
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Bueno
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Básico
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Puntaje
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Cumplimiento técnico & Aplica normativa, cálculos y criterios de
+seguridad de forma consistente & Presenta criterios técnicos con errores
+menores & Presenta criterios incompletos & 4 \\
+Representación gráfica & Plano/diagrama claro, ordenado y normalizado &
+Plano/diagrama comprensible con detalles por corregir & Plano/diagrama
+incompleto & 4 \\
+Cálculos y justificación & Cálculos completos y correctamente
+interpretados & Cálculos parcialmente correctos & Cálculos insuficientes
+& 4 \\
+Informe técnico & Estructura clara, redacción técnica y evidencias &
+Presenta estructura aceptable & Informe débil o desordenado & 4 \\
+Seguridad y procedimiento & Identifica riesgos y aplica prevención &
+Reconoce parcialmente riesgos & Omite criterios de seguridad & 4 \\
+\textbf{Total} & & & & \textbf{20} \\
+\end{longtable}
+}
+
+\bookmarksetup{startatroot}
+
+\chapter{Proyecto final del módulo}\label{proyecto-final-del-muxf3dulo}
+
+\section{Título sugerido}\label{tuxedtulo-sugerido}
+
+\textbf{Diseño, interpretación y automatización básica de una
+instalación eléctrica civil o industrial}
+
+\section{Propósito}\label{propuxf3sito}
+
+Integrar los contenidos de normalización, simbología, seguridad,
+diagramas eléctricos, mediciones e introducción a la automatización
+industrial mediante un caso aplicado.
+
+\section{Entregables}\label{entregables}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Descripción del caso de estudio.
+\item
+  Plano eléctrico o esquema de instalación.
+\item
+  Cuadro de cargas.
+\item
+  Diagrama unifilar.
+\item
+  Diagrama de control y potencia, si aplica.
+\item
+  Selección preliminar de conductores y protecciones.
+\item
+  Propuesta de mediciones eléctricas.
+\item
+  Identificación de riesgos eléctricos.
+\item
+  Propuesta básica de automatización con PLC o relés.
+\item
+  Informe técnico final.
+\end{enumerate}
+
+\section{Estructura del informe}\label{estructura-del-informe}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Portada.
+\item
+  Introducción.
+\item
+  Objetivos.
+\item
+  Marco normativo y técnico.
+\item
+  Desarrollo del diseño.
+\item
+  Cálculos.
+\item
+  Diagramas.
+\item
+  Análisis de seguridad.
+\item
+  Automatización propuesta.
+\item
+  Conclusiones.
+\item
+  Bibliografía.
+\item
+  Anexos.
+\end{enumerate}
+
+\bookmarksetup{startatroot}
+
+\chapter{Referencias}\label{referencias}
+
+\protect\phantomsection\label{refs}
+
+
+
+
+\end{document}

@@ -1,0 +1,40 @@
+# Plan de la asignatura
+
+## Datos informativos
+
+| Campo | Información |
+|---|---|
+| Asignatura | Instalaciones Civiles e Industriales |
+| Carrera | Electricidad |
+| Ciclo | Cuarto ciclo |
+| Código | IC-IE-04 |
+| Créditos | 2 |
+| Modalidad | Presencial |
+| Unidad de organización curricular | Básica |
+| Disciplina | Ciencias Tecnológicas |
+| Subdisciplina | Generación, Transmisión y Distribución |
+
+## Caracterización de la asignatura
+
+La asignatura proporciona fundamentos teóricos y prácticos para la interpretación, diseño y análisis de instalaciones eléctricas en edificaciones civiles y entornos industriales. Integra normalización eléctrica, simbología técnica, diagramas eléctricos, seguridad, mediciones eléctricas, análisis de errores y fundamentos de automatización industrial.
+
+## Bloques formativos
+
+| Bloque | Título | Fechas referenciales | Práctica asociada |
+|---|---|---|---|
+| 1 | Normalización Eléctrica, Seguridad y Simbología | 20-03-2026 al 24-04-2026 | Diseño de plano eléctrico residencial |
+| 2 | Diagramas Eléctricos e Instrumentación | 01-05-2026 al 05-06-2026 | Diseño de plano eléctrico industrial |
+| 3 | Automatización | 12-06-2026 al 17-07-2026 | Fundamentos de programación con PLCs |
+
+## Bibliografía base
+
+- Davie, A. G. (1974). *Introducción a la automatización industrial*. Universitaria.
+- Enríquez Harper, G. (2017). *Protección de instalaciones eléctricas industriales y comerciales*. Limusa.
+- Enríquez Harper, G. (2012). *Guía para el diseño de instalaciones eléctricas residenciales, industriales y comerciales*. Limusa.
+
+## Bibliografía complementaria
+
+- García Trasancos, J. (2011). *Instalaciones eléctricas en media y baja tensión*. Paraninfo.
+- MIDUVI. (2018). *NEC-SB-IE: Instalaciones eléctricas*. Norma Ecuatoriana de la Construcción.
+- Festo. (2022). *Automatización industrial: sistemas de aprendizaje para la formación técnica*.
+

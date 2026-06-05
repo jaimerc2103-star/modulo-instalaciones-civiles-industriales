@@ -1,0 +1,38 @@
+# Proyecto final del módulo
+
+## Título sugerido
+
+**Diseño, interpretación y automatización básica de una instalación eléctrica civil o industrial**
+
+## Propósito
+
+Integrar los contenidos de normalización, simbología, seguridad, diagramas eléctricos, mediciones e introducción a la automatización industrial mediante un caso aplicado.
+
+## Entregables
+
+1. Descripción del caso de estudio.
+2. Plano eléctrico o esquema de instalación.
+3. Cuadro de cargas.
+4. Diagrama unifilar.
+5. Diagrama de control y potencia, si aplica.
+6. Selección preliminar de conductores y protecciones.
+7. Propuesta de mediciones eléctricas.
+8. Identificación de riesgos eléctricos.
+9. Propuesta básica de automatización con PLC o relés.
+10. Informe técnico final.
+
+## Estructura del informe
+
+1. Portada.
+2. Introducción.
+3. Objetivos.
+4. Marco normativo y técnico.
+5. Desarrollo del diseño.
+6. Cálculos.
+7. Diagramas.
+8. Análisis de seguridad.
+9. Automatización propuesta.
+10. Conclusiones.
+11. Bibliografía.
+12. Anexos.
+

@@ -1,0 +1,2447 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Bloque 1: Normalización Eléctrica, Seguridad y Simbología – Módulo de Instalaciones Civiles e Industriales</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./bloque_02_diagramas_instrumentacion.html" rel="next">
+<link href="./plan_asignatura.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-867d1021bd40c8c68beff7e6093e0f2c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./bloque_01_normalizacion_seguridad_simbologia.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Módulo de Instalaciones Civiles e Industriales</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/TU-USUARIO/modulo-instalaciones-civiles-industriales" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+    <a href="./Módulo-de-Instalaciones-Civiles-e-Industriales.pdf" title="Descargar PDF" class="quarto-navigation-tool px-1" aria-label="Descargar PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Compartir" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Compartir"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Inicio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./plan_asignatura.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Plan de la asignatura</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bloque_01_normalizacion_seguridad_simbologia.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bloque_02_diagramas_instrumentacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bloque 2: Diagramas Eléctricos e Instrumentación</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./bloque_03_automatizacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Bloque 3: Automatización</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./practicas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Prácticas de laboratorio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./evaluacion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Evaluación</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./proyecto_final.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Proyecto final del módulo</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./referencias.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Referencias</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#presentación-del-bloque" id="toc-presentación-del-bloque" class="nav-link active" data-scroll-target="#presentación-del-bloque"><span class="header-section-number">3.1</span> Presentación del bloque</a></li>
+  <li><a href="#resultado-de-aprendizaje-del-bloque" id="toc-resultado-de-aprendizaje-del-bloque" class="nav-link" data-scroll-target="#resultado-de-aprendizaje-del-bloque"><span class="header-section-number">3.2</span> Resultado de aprendizaje del bloque</a></li>
+  <li><a href="#objetivo-específico-del-bloque" id="toc-objetivo-específico-del-bloque" class="nav-link" data-scroll-target="#objetivo-específico-del-bloque"><span class="header-section-number">3.3</span> Objetivo específico del bloque</a></li>
+  <li><a href="#introducción-a-las-instalaciones-eléctricas-civiles-e-industriales" id="toc-introducción-a-las-instalaciones-eléctricas-civiles-e-industriales" class="nav-link" data-scroll-target="#introducción-a-las-instalaciones-eléctricas-civiles-e-industriales"><span class="header-section-number">4</span> 1.1 Introducción a las instalaciones eléctricas civiles e industriales</a>
+  <ul class="collapse">
+  <li><a href="#concepto-general-de-instalación-eléctrica" id="toc-concepto-general-de-instalación-eléctrica" class="nav-link" data-scroll-target="#concepto-general-de-instalación-eléctrica"><span class="header-section-number">4.1</span> Concepto general de instalación eléctrica</a></li>
+  <li><a href="#instalaciones-eléctricas-civiles" id="toc-instalaciones-eléctricas-civiles" class="nav-link" data-scroll-target="#instalaciones-eléctricas-civiles"><span class="header-section-number">4.2</span> Instalaciones eléctricas civiles</a></li>
+  <li><a href="#instalaciones-eléctricas-industriales" id="toc-instalaciones-eléctricas-industriales" class="nav-link" data-scroll-target="#instalaciones-eléctricas-industriales"><span class="header-section-number">4.3</span> Instalaciones eléctricas industriales</a></li>
+  <li><a href="#tabla-1.1.-diferencias-entre-instalaciones-civiles-e-industriales" id="toc-tabla-1.1.-diferencias-entre-instalaciones-civiles-e-industriales" class="nav-link" data-scroll-target="#tabla-1.1.-diferencias-entre-instalaciones-civiles-e-industriales"><span class="header-section-number">4.4</span> Tabla 1.1. Diferencias entre instalaciones civiles e industriales</a></li>
+  </ul></li>
+  <li><a href="#importancia-de-la-normalización-eléctrica" id="toc-importancia-de-la-normalización-eléctrica" class="nav-link" data-scroll-target="#importancia-de-la-normalización-eléctrica"><span class="header-section-number">5</span> 1.2 Importancia de la normalización eléctrica</a>
+  <ul class="collapse">
+  <li><a href="#qué-es-la-normalización-eléctrica" id="toc-qué-es-la-normalización-eléctrica" class="nav-link" data-scroll-target="#qué-es-la-normalización-eléctrica"><span class="header-section-number">5.1</span> ¿Qué es la normalización eléctrica?</a></li>
+  <li><a href="#tabla-1.2.-problemas-frecuentes-por-falta-de-normalización" id="toc-tabla-1.2.-problemas-frecuentes-por-falta-de-normalización" class="nav-link" data-scroll-target="#tabla-1.2.-problemas-frecuentes-por-falta-de-normalización"><span class="header-section-number">5.2</span> Tabla 1.2. Problemas frecuentes por falta de normalización</a></li>
+  <li><a href="#ejemplo-aplicado" id="toc-ejemplo-aplicado" class="nav-link" data-scroll-target="#ejemplo-aplicado"><span class="header-section-number">5.3</span> Ejemplo aplicado</a></li>
+  </ul></li>
+  <li><a href="#normas-técnicas-aplicadas-a-instalaciones-eléctricas" id="toc-normas-técnicas-aplicadas-a-instalaciones-eléctricas" class="nav-link" data-scroll-target="#normas-técnicas-aplicadas-a-instalaciones-eléctricas"><span class="header-section-number">6</span> 1.3 Normas técnicas aplicadas a instalaciones eléctricas</a>
+  <ul class="collapse">
+  <li><a href="#normativa-principal" id="toc-normativa-principal" class="nav-link" data-scroll-target="#normativa-principal"><span class="header-section-number">6.1</span> Normativa principal</a></li>
+  <li><a href="#tabla-1.3.-normas-y-documentos-técnicos-de-referencia" id="toc-tabla-1.3.-normas-y-documentos-técnicos-de-referencia" class="nav-link" data-scroll-target="#tabla-1.3.-normas-y-documentos-técnicos-de-referencia"><span class="header-section-number">6.2</span> Tabla 1.3. Normas y documentos técnicos de referencia</a></li>
+  <li><a href="#relación-entre-norma-plano-y-ejecución" id="toc-relación-entre-norma-plano-y-ejecución" class="nav-link" data-scroll-target="#relación-entre-norma-plano-y-ejecución"><span class="header-section-number">6.3</span> Relación entre norma, plano y ejecución</a></li>
+  </ul></li>
+  <li><a href="#simbología-eléctrica-normalizada" id="toc-simbología-eléctrica-normalizada" class="nav-link" data-scroll-target="#simbología-eléctrica-normalizada"><span class="header-section-number">7</span> 1.4 Simbología eléctrica normalizada</a>
+  <ul class="collapse">
+  <li><a href="#concepto" id="toc-concepto" class="nav-link" data-scroll-target="#concepto"><span class="header-section-number">7.1</span> Concepto</a></li>
+  <li><a href="#tabla-1.4.-simbología-básica-para-instalaciones-civiles" id="toc-tabla-1.4.-simbología-básica-para-instalaciones-civiles" class="nav-link" data-scroll-target="#tabla-1.4.-simbología-básica-para-instalaciones-civiles"><span class="header-section-number">7.2</span> Tabla 1.4. Simbología básica para instalaciones civiles</a></li>
+  <li><a href="#tabla-1.5.-simbología-básica-para-instalaciones-industriales" id="toc-tabla-1.5.-simbología-básica-para-instalaciones-industriales" class="nav-link" data-scroll-target="#tabla-1.5.-simbología-básica-para-instalaciones-industriales"><span class="header-section-number">7.3</span> Tabla 1.5. Simbología básica para instalaciones industriales</a></li>
+  <li><a href="#criterios-de-representación" id="toc-criterios-de-representación" class="nav-link" data-scroll-target="#criterios-de-representación"><span class="header-section-number">7.4</span> Criterios de representación</a></li>
+  </ul></li>
+  <li><a href="#identificación-de-símbolos-eléctricos-en-planos" id="toc-identificación-de-símbolos-eléctricos-en-planos" class="nav-link" data-scroll-target="#identificación-de-símbolos-eléctricos-en-planos"><span class="header-section-number">8</span> 1.5 Identificación de símbolos eléctricos en planos</a>
+  <ul class="collapse">
+  <li><a href="#lectura-de-planos-eléctricos" id="toc-lectura-de-planos-eléctricos" class="nav-link" data-scroll-target="#lectura-de-planos-eléctricos"><span class="header-section-number">8.1</span> Lectura de planos eléctricos</a></li>
+  <li><a href="#elementos-mínimos-de-un-plano-eléctrico-residencial" id="toc-elementos-mínimos-de-un-plano-eléctrico-residencial" class="nav-link" data-scroll-target="#elementos-mínimos-de-un-plano-eléctrico-residencial"><span class="header-section-number">8.2</span> Elementos mínimos de un plano eléctrico residencial</a></li>
+  <li><a href="#procedimiento-recomendado-para-interpretar-un-plano-eléctrico" id="toc-procedimiento-recomendado-para-interpretar-un-plano-eléctrico" class="nav-link" data-scroll-target="#procedimiento-recomendado-para-interpretar-un-plano-eléctrico"><span class="header-section-number">8.3</span> Procedimiento recomendado para interpretar un plano eléctrico</a></li>
+  </ul></li>
+  <li><a href="#normas-de-seguridad-eléctrica-y-uso-de-laboratorios-eléctricos" id="toc-normas-de-seguridad-eléctrica-y-uso-de-laboratorios-eléctricos" class="nav-link" data-scroll-target="#normas-de-seguridad-eléctrica-y-uso-de-laboratorios-eléctricos"><span class="header-section-number">9</span> 1.6 Normas de seguridad eléctrica y uso de laboratorios eléctricos</a>
+  <ul class="collapse">
+  <li><a href="#seguridad-eléctrica" id="toc-seguridad-eléctrica" class="nav-link" data-scroll-target="#seguridad-eléctrica"><span class="header-section-number">9.1</span> Seguridad eléctrica</a></li>
+  <li><a href="#seguridad-en-laboratorio" id="toc-seguridad-en-laboratorio" class="nav-link" data-scroll-target="#seguridad-en-laboratorio"><span class="header-section-number">9.2</span> Seguridad en laboratorio</a></li>
+  <li><a href="#tabla-1.6.-reglas-básicas-de-seguridad-en-laboratorio" id="toc-tabla-1.6.-reglas-básicas-de-seguridad-en-laboratorio" class="nav-link" data-scroll-target="#tabla-1.6.-reglas-básicas-de-seguridad-en-laboratorio"><span class="header-section-number">9.3</span> Tabla 1.6. Reglas básicas de seguridad en laboratorio</a></li>
+  <li><a href="#tabla-1.7.-uso-básico-del-multímetro" id="toc-tabla-1.7.-uso-básico-del-multímetro" class="nav-link" data-scroll-target="#tabla-1.7.-uso-básico-del-multímetro"><span class="header-section-number">9.4</span> Tabla 1.7. Uso básico del multímetro</a></li>
+  </ul></li>
+  <li><a href="#riesgos-eléctricos-y-medidas-de-prevención" id="toc-riesgos-eléctricos-y-medidas-de-prevención" class="nav-link" data-scroll-target="#riesgos-eléctricos-y-medidas-de-prevención"><span class="header-section-number">10</span> 1.7 Riesgos eléctricos y medidas de prevención</a>
+  <ul class="collapse">
+  <li><a href="#concepto-de-riesgo-eléctrico" id="toc-concepto-de-riesgo-eléctrico" class="nav-link" data-scroll-target="#concepto-de-riesgo-eléctrico"><span class="header-section-number">10.1</span> Concepto de riesgo eléctrico</a></li>
+  <li><a href="#tabla-1.8.-tipos-de-riesgos-eléctricos" id="toc-tabla-1.8.-tipos-de-riesgos-eléctricos" class="nav-link" data-scroll-target="#tabla-1.8.-tipos-de-riesgos-eléctricos"><span class="header-section-number">10.2</span> Tabla 1.8. Tipos de riesgos eléctricos</a></li>
+  <li><a href="#sobrecarga" id="toc-sobrecarga" class="nav-link" data-scroll-target="#sobrecarga"><span class="header-section-number">10.3</span> Sobrecarga</a></li>
+  <li><a href="#cortocircuito" id="toc-cortocircuito" class="nav-link" data-scroll-target="#cortocircuito"><span class="header-section-number">10.4</span> Cortocircuito</a></li>
+  <li><a href="#falla-a-tierra" id="toc-falla-a-tierra" class="nav-link" data-scroll-target="#falla-a-tierra"><span class="header-section-number">10.5</span> Falla a tierra</a></li>
+  <li><a href="#medidas-generales-de-prevención" id="toc-medidas-generales-de-prevención" class="nav-link" data-scroll-target="#medidas-generales-de-prevención"><span class="header-section-number">10.6</span> Medidas generales de prevención</a></li>
+  </ul></li>
+  <li><a href="#integración-del-bloque-1-con-la-práctica-experimental" id="toc-integración-del-bloque-1-con-la-práctica-experimental" class="nav-link" data-scroll-target="#integración-del-bloque-1-con-la-práctica-experimental"><span class="header-section-number">11</span> Integración del Bloque 1 con la práctica experimental</a>
+  <ul class="collapse">
+  <li><a href="#práctica-del-bloque" id="toc-práctica-del-bloque" class="nav-link" data-scroll-target="#práctica-del-bloque"><span class="header-section-number">11.1</span> Práctica del bloque</a></li>
+  <li><a href="#entregables-de-la-práctica" id="toc-entregables-de-la-práctica" class="nav-link" data-scroll-target="#entregables-de-la-práctica"><span class="header-section-number">11.2</span> Entregables de la práctica</a></li>
+  <li><a href="#cuadro-de-cargas-modelo" id="toc-cuadro-de-cargas-modelo" class="nav-link" data-scroll-target="#cuadro-de-cargas-modelo"><span class="header-section-number">11.3</span> Cuadro de cargas modelo</a></li>
+  </ul></li>
+  <li><a href="#actividad-en-clase" id="toc-actividad-en-clase" class="nav-link" data-scroll-target="#actividad-en-clase"><span class="header-section-number">12</span> Actividad en clase</a>
+  <ul class="collapse">
+  <li><a href="#análisis-de-una-vivienda-básica" id="toc-análisis-de-una-vivienda-básica" class="nav-link" data-scroll-target="#análisis-de-una-vivienda-básica"><span class="header-section-number">12.1</span> Análisis de una vivienda básica</a></li>
+  <li><a href="#producto-esperado" id="toc-producto-esperado" class="nav-link" data-scroll-target="#producto-esperado"><span class="header-section-number">12.2</span> Producto esperado</a></li>
+  </ul></li>
+  <li><a href="#actividad-autónoma" id="toc-actividad-autónoma" class="nav-link" data-scroll-target="#actividad-autónoma"><span class="header-section-number">13</span> Actividad autónoma</a>
+  <ul class="collapse">
+  <li><a href="#ficha-de-revisión-normativa" id="toc-ficha-de-revisión-normativa" class="nav-link" data-scroll-target="#ficha-de-revisión-normativa"><span class="header-section-number">13.1</span> Ficha de revisión normativa</a></li>
+  </ul></li>
+  <li><a href="#preguntas-de-repaso" id="toc-preguntas-de-repaso" class="nav-link" data-scroll-target="#preguntas-de-repaso"><span class="header-section-number">14</span> Preguntas de repaso</a></li>
+  <li><a href="#cierre-del-bloque" id="toc-cierre-del-bloque" class="nav-link" data-scroll-target="#cierre-del-bloque"><span class="header-section-number">15</span> Cierre del bloque</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/TU-USUARIO/modulo-instalaciones-civiles-industriales/edit/main/bloque_01_normalizacion_seguridad_simbologia.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/TU-USUARIO/modulo-instalaciones-civiles-industriales/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Código</button></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="presentación-del-bloque" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="presentación-del-bloque"><span class="header-section-number">3.1</span> Presentación del bloque</h2>
+<p>El Bloque 1 introduce al estudiante en los fundamentos técnicos, normativos y gráficos necesarios para interpretar instalaciones eléctricas civiles e industriales. En esta etapa se estudia la importancia de la normalización eléctrica, el uso de simbología técnica, la identificación de componentes en planos eléctricos y la aplicación de criterios de seguridad en laboratorio y obra.</p>
+<p>Una instalación eléctrica no debe entenderse únicamente como la conexión de cables, interruptores, luminarias y tomacorrientes. En términos técnicos, es un sistema integrado que permite transportar, distribuir, proteger, controlar y utilizar la energía eléctrica de manera segura, eficiente y conforme a normas.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Este bloque constituye la base para los siguientes temas de la asignatura: diagramas eléctricos, instrumentación, mediciones eléctricas y automatización industrial.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="resultado-de-aprendizaje-del-bloque" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="resultado-de-aprendizaje-del-bloque"><span class="header-section-number">3.2</span> Resultado de aprendizaje del bloque</h2>
+<p>Al finalizar este bloque, el estudiante interpreta planos eléctricos, reconoce simbología normalizada y componentes de instalaciones eléctricas civiles e industriales conforme a normas técnicas vigentes. Además, aplica normas de seguridad eléctrica y protocolos de laboratorio, identificando riesgos eléctricos y proponiendo medidas de prevención en actividades prácticas y entornos reales.</p>
+</section>
+<section id="objetivo-específico-del-bloque" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="objetivo-específico-del-bloque"><span class="header-section-number">3.3</span> Objetivo específico del bloque</h2>
+<p>Comprender y aplicar los fundamentos de las instalaciones eléctricas civiles e industriales, incorporando la normalización eléctrica, las normas técnicas y la simbología eléctrica, para la correcta interpretación de planos eléctricos y la ejecución de actividades bajo criterios de seguridad en laboratorios y entornos eléctricos.</p>
+<hr>
+</section>
+<section id="introducción-a-las-instalaciones-eléctricas-civiles-e-industriales" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 1.1 Introducción a las instalaciones eléctricas civiles e industriales</h1>
+<section id="concepto-general-de-instalación-eléctrica" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="concepto-general-de-instalación-eléctrica"><span class="header-section-number">4.1</span> Concepto general de instalación eléctrica</h2>
+<p>Una instalación eléctrica es el conjunto de elementos destinados a conducir, distribuir, proteger, controlar y utilizar la energía eléctrica dentro de una edificación o sistema productivo.</p>
+<p>Está conformada por acometida, medidor, tablero general, tableros secundarios, protecciones, conductores, canalizaciones, cajas de paso, interruptores, tomacorrientes, luminarias, cargas especiales, sistema de puesta a tierra, planos y diagramas técnicos.</p>
+<p>En una edificación, la instalación eléctrica debe permitir que la energía llegue desde el punto de suministro hasta cada carga de manera segura y funcional.</p>
+<div id="fig-panel-residencial" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-panel-residencial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/residential_panel_subpanel.jpg" class="img-fluid figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-panel-residencial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.1: Panel eléctrico residencial con subpanel y cubierta retirada.
+</figcaption>
+</figure>
+</div>
+<p><strong>Fuente de imagen:</strong> Wikimedia Commons, archivo <em>Electrical panel and subpanel with cover removed from subpanel.jpg</em>, autor Gvolk, licencia CC BY-SA 3.0. Disponible en: <a href="https://commons.wikimedia.org/wiki/File:Electrical_panel_and_subpanel_with_cover_removed_from_subpanel.jpg" class="uri">https://commons.wikimedia.org/wiki/File:Electrical_panel_and_subpanel_with_cover_removed_from_subpanel.jpg</a></p>
+<p>La <a href="#fig-panel-residencial" class="quarto-xref">Figura&nbsp;<span>4.1</span></a> permite observar un tablero residencial con interruptores automáticos. En una instalación real, el tablero concentra protecciones, organiza circuitos y facilita la operación y mantenimiento.</p>
+</section>
+<section id="instalaciones-eléctricas-civiles" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="instalaciones-eléctricas-civiles"><span class="header-section-number">4.2</span> Instalaciones eléctricas civiles</h2>
+<p>Las instalaciones civiles se encuentran en edificaciones destinadas a vivienda, comercio, educación, salud, oficinas, servicios públicos y espacios similares.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo de carga</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Iluminación</td>
+<td>Luminarias interiores, exteriores, decorativas y de emergencia</td>
+</tr>
+<tr class="even">
+<td>Tomacorrientes</td>
+<td>Equipos domésticos, computadores, cargadores, electrodomésticos menores</td>
+</tr>
+<tr class="odd">
+<td>Cargas especiales</td>
+<td>Cocina eléctrica, ducha eléctrica, calefón, aire acondicionado, bomba de agua</td>
+</tr>
+<tr class="even">
+<td>Servicios complementarios</td>
+<td>Porteros eléctricos, alarmas, cámaras, redes de comunicación</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="instalaciones-eléctricas-industriales" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="instalaciones-eléctricas-industriales"><span class="header-section-number">4.3</span> Instalaciones eléctricas industriales</h2>
+<p>Las instalaciones industriales se aplican en procesos productivos, talleres, plantas de manufactura, sistemas electromecánicos y entornos donde existen cargas de potencia, control e instrumentación.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo de carga</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cargas de fuerza</td>
+<td>Motores, bombas, compresores, ventiladores</td>
+</tr>
+<tr class="even">
+<td>Cargas de control</td>
+<td>Contactores, relés, temporizadores, PLC</td>
+</tr>
+<tr class="odd">
+<td>Cargas de instrumentación</td>
+<td>Sensores, transmisores, indicadores</td>
+</tr>
+<tr class="even">
+<td>Cargas de iluminación industrial</td>
+<td>Luminarias de nave, reflectores, alumbrado de emergencia</td>
+</tr>
+<tr class="odd">
+<td>Sistemas auxiliares</td>
+<td>Tableros, bancos de capacitores, variadores de frecuencia</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tabla-1.1.-diferencias-entre-instalaciones-civiles-e-industriales" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="tabla-1.1.-diferencias-entre-instalaciones-civiles-e-industriales"><span class="header-section-number">4.4</span> Tabla 1.1. Diferencias entre instalaciones civiles e industriales</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Criterio</th>
+<th>Instalaciones civiles</th>
+<th>Instalaciones industriales</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Uso principal</td>
+<td>Vivienda, comercio y servicios</td>
+<td>Producción, control y operación de maquinaria</td>
+</tr>
+<tr class="even">
+<td>Tipo de cargas</td>
+<td>Iluminación, tomacorrientes y cargas especiales</td>
+<td>Motores, tableros de control, sensores y actuadores</td>
+</tr>
+<tr class="odd">
+<td>Nivel de potencia</td>
+<td>Bajo a medio</td>
+<td>Medio a alto</td>
+</tr>
+<tr class="even">
+<td>Complejidad técnica</td>
+<td>Moderada</td>
+<td>Alta</td>
+</tr>
+<tr class="odd">
+<td>Documentos frecuentes</td>
+<td>Plano eléctrico, cuadro de cargas, diagrama unifilar</td>
+<td>Diagramas de potencia, control, mando, PLC e instrumentación</td>
+</tr>
+<tr class="even">
+<td>Riesgos principales</td>
+<td>Choque eléctrico, sobrecarga, mala puesta a tierra</td>
+<td>Arco eléctrico, fallas de motor, arranque de cargas, fallas de control</td>
+</tr>
+<tr class="odd">
+<td>Mantenimiento</td>
+<td>Correctivo y preventivo básico</td>
+<td>Preventivo, predictivo y correctivo especializado</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>La principal diferencia entre una instalación civil y una industrial no es únicamente el tamaño, sino el tipo de carga, el nivel de control, la criticidad operativa y los riesgos asociados.</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="importancia-de-la-normalización-eléctrica" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> 1.2 Importancia de la normalización eléctrica</h1>
+<section id="qué-es-la-normalización-eléctrica" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="qué-es-la-normalización-eléctrica"><span class="header-section-number">5.1</span> ¿Qué es la normalización eléctrica?</h2>
+<p>La normalización eléctrica es el conjunto de reglas, criterios, símbolos, procedimientos y requisitos técnicos que permiten diseñar, construir, operar e inspeccionar instalaciones eléctricas bajo parámetros comunes.</p>
+<p>Su finalidad es evitar interpretaciones ambiguas y reducir riesgos técnicos. La normalización permite:</p>
+<ol type="1">
+<li>Garantizar condiciones mínimas de seguridad.</li>
+<li>Unificar criterios entre diseñadores, constructores, instaladores y fiscalizadores.</li>
+<li>Facilitar la lectura de planos eléctricos.</li>
+<li>Definir características mínimas de materiales y equipos.</li>
+<li>Reducir el riesgo de incendios de origen eléctrico.</li>
+<li>Facilitar el mantenimiento y ampliación de instalaciones.</li>
+<li>Proteger a usuarios, equipos y edificaciones.</li>
+</ol>
+</section>
+<section id="tabla-1.2.-problemas-frecuentes-por-falta-de-normalización" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="tabla-1.2.-problemas-frecuentes-por-falta-de-normalización"><span class="header-section-number">5.2</span> Tabla 1.2. Problemas frecuentes por falta de normalización</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problema</th>
+<th>Consecuencia técnica</th>
+<th>Riesgo asociado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Símbolos no normalizados</td>
+<td>Mala interpretación del plano</td>
+<td>Conexiones incorrectas</td>
+</tr>
+<tr class="even">
+<td>Conductores sin código de color</td>
+<td>Dificultad para identificar fase, neutro y tierra</td>
+<td>Choque eléctrico</td>
+</tr>
+<tr class="odd">
+<td>Tableros sin rotulación</td>
+<td>Mantenimiento inseguro</td>
+<td>Desconexión incorrecta</td>
+</tr>
+<tr class="even">
+<td>Circuitos sin identificación</td>
+<td>Confusión en operación y mantenimiento</td>
+<td>Sobrecarga o mal aislamiento</td>
+</tr>
+<tr class="odd">
+<td>Ausencia de cuadro de cargas</td>
+<td>Selección deficiente de protecciones</td>
+<td>Calentamiento o incendio</td>
+</tr>
+<tr class="even">
+<td>No considerar puesta a tierra</td>
+<td>Fallas peligrosas en carcasas metálicas</td>
+<td>Contacto indirecto</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ejemplo-aplicado" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="ejemplo-aplicado"><span class="header-section-number">5.3</span> Ejemplo aplicado</h2>
+<p>Si en un plano residencial se representa un tomacorriente común y una salida para cocina eléctrica usando el mismo símbolo, el instalador podría utilizar el mismo conductor y la misma protección en ambos puntos. Esto generaría un riesgo, porque la cocina eléctrica requiere circuito especial, mayor capacidad de corriente y protección independiente.</p>
+<hr>
+</section>
+</section>
+<section id="normas-técnicas-aplicadas-a-instalaciones-eléctricas" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> 1.3 Normas técnicas aplicadas a instalaciones eléctricas</h1>
+<section id="normativa-principal" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="normativa-principal"><span class="header-section-number">6.1</span> Normativa principal</h2>
+<p>En Ecuador, una referencia fundamental para instalaciones eléctricas en edificaciones es la <strong>NEC-SB-IE Instalaciones Eléctricas</strong>, perteneciente a la Norma Ecuatoriana de la Construcción. Esta norma se enfoca en instalaciones eléctricas interiores residenciales y establece criterios mínimos de diseño y seguridad.</p>
+<p>La instalación debe proteger frente a choques eléctricos, efectos térmicos, sobrecorrientes, corrientes de falla y sobrevoltajes.</p>
+</section>
+<section id="tabla-1.3.-normas-y-documentos-técnicos-de-referencia" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="tabla-1.3.-normas-y-documentos-técnicos-de-referencia"><span class="header-section-number">6.2</span> Tabla 1.3. Normas y documentos técnicos de referencia</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Norma / documento</th>
+<th>Aplicación en el módulo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>NEC-SB-IE Instalaciones Eléctricas</td>
+<td>Diseño y ejecución de instalaciones eléctricas interiores residenciales</td>
+</tr>
+<tr class="even">
+<td>NFPA 70 / National Electrical Code</td>
+<td>Criterios de seguridad, protecciones, conductores y canalizaciones</td>
+</tr>
+<tr class="odd">
+<td>CPE INEN 019</td>
+<td>Código Eléctrico Ecuatoriano</td>
+</tr>
+<tr class="even">
+<td>IEC 60617</td>
+<td>Simbología gráfica para diagramas eléctricos</td>
+</tr>
+<tr class="odd">
+<td>NTE INEN 2345</td>
+<td>Alambres y cables con aislamiento termoplástico</td>
+</tr>
+<tr class="even">
+<td>NTE INEN 3098</td>
+<td>Voltajes normalizados</td>
+</tr>
+<tr class="odd">
+<td>IEC 60364</td>
+<td>Instalaciones eléctricas en edificaciones</td>
+</tr>
+<tr class="even">
+<td>Reglamentos de empresas distribuidoras</td>
+<td>Acometidas, medidores y requisitos de conexión</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Cuando existan diferencias entre documentos técnicos, se debe revisar la normativa nacional vigente, los requisitos de la empresa distribuidora y las especificaciones del proyecto.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="relación-entre-norma-plano-y-ejecución" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="relación-entre-norma-plano-y-ejecución"><span class="header-section-number">6.3</span> Relación entre norma, plano y ejecución</h2>
+<p>Una instalación eléctrica segura requiere coherencia entre normativa aplicable, memoria técnica, plano eléctrico, cuadro de cargas, diagrama unifilar, selección de materiales, ejecución en obra e inspección final.</p>
+<hr>
+</section>
+</section>
+<section id="simbología-eléctrica-normalizada" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> 1.4 Simbología eléctrica normalizada</h1>
+<section id="concepto" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="concepto"><span class="header-section-number">7.1</span> Concepto</h2>
+<p>La simbología eléctrica normalizada permite representar gráficamente los componentes de una instalación eléctrica. Un símbolo eléctrico resume información técnica sobre el tipo de dispositivo, su función y su ubicación dentro del sistema.</p>
+<p>Los símbolos se emplean en planos eléctricos en planta, diagramas unifilares, diagramas multifilares, diagramas de control, diagramas de potencia, planos de tableros y esquemas de automatización.</p>
+<div id="fig-simbologia-iec" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-simbologia-iec-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/electrical_symbols_iec.svg" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-simbologia-iec-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;7.1: Colección de símbolos eléctricos IEC.
+</figcaption>
+</figure>
+</div>
+<p><strong>Fuente de imagen:</strong> Wikimedia Commons, archivo <em>Electrical Symbols IEC.svg</em>, autor Emareg, licencia CC0 1.0. Disponible en: <a href="https://commons.wikimedia.org/wiki/File:Electrical_Symbols_IEC.svg" class="uri">https://commons.wikimedia.org/wiki/File:Electrical_Symbols_IEC.svg</a></p>
+<p>La <a href="#fig-simbologia-iec" class="quarto-xref">Figura&nbsp;<span>7.1</span></a> muestra una colección de símbolos eléctricos IEC. Esta referencia permite comprender por qué la representación gráfica debe ser consistente, legible y verificable.</p>
+</section>
+<section id="tabla-1.4.-simbología-básica-para-instalaciones-civiles" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="tabla-1.4.-simbología-básica-para-instalaciones-civiles"><span class="header-section-number">7.2</span> Tabla 1.4. Simbología básica para instalaciones civiles</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Elemento</th>
+<th>Representación textual sugerida</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Punto de luz</td>
+<td>PL</td>
+<td>Salida para luminaria</td>
+</tr>
+<tr class="even">
+<td>Interruptor simple</td>
+<td>S1</td>
+<td>Control de una luminaria desde un punto</td>
+</tr>
+<tr class="odd">
+<td>Interruptor doble</td>
+<td>S2</td>
+<td>Control de dos luminarias o grupos</td>
+</tr>
+<tr class="even">
+<td>Tomacorriente simple</td>
+<td>T1</td>
+<td>Alimentación de carga de uso general</td>
+</tr>
+<tr class="odd">
+<td>Tomacorriente doble</td>
+<td>T2</td>
+<td>Alimentación de dos equipos</td>
+</tr>
+<tr class="even">
+<td>Tomacorriente con tierra</td>
+<td>TT</td>
+<td>Alimentación con conductor de protección</td>
+</tr>
+<tr class="odd">
+<td>Salida especial</td>
+<td>SE</td>
+<td>Alimentación de carga específica</td>
+</tr>
+<tr class="even">
+<td>Tablero de distribución</td>
+<td>TD</td>
+<td>Agrupación de protecciones</td>
+</tr>
+<tr class="odd">
+<td>Medidor</td>
+<td>M</td>
+<td>Registro de energía</td>
+</tr>
+<tr class="even">
+<td>Puesta a tierra</td>
+<td>PT</td>
+<td>Conexión de seguridad a tierra</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tabla-1.5.-simbología-básica-para-instalaciones-industriales" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="tabla-1.5.-simbología-básica-para-instalaciones-industriales"><span class="header-section-number">7.3</span> Tabla 1.5. Simbología básica para instalaciones industriales</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Elemento</th>
+<th>Código frecuente</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Motor</td>
+<td>M</td>
+<td>Convierte energía eléctrica en mecánica</td>
+</tr>
+<tr class="even">
+<td>Contactor</td>
+<td>KM</td>
+<td>Maniobra eléctrica de cargas</td>
+</tr>
+<tr class="odd">
+<td>Relé térmico</td>
+<td>FR</td>
+<td>Protección contra sobrecarga en motores</td>
+</tr>
+<tr class="even">
+<td>Pulsador de marcha</td>
+<td>S1 / START</td>
+<td>Orden de encendido</td>
+</tr>
+<tr class="odd">
+<td>Pulsador de paro</td>
+<td>S0 / STOP</td>
+<td>Orden de apagado</td>
+</tr>
+<tr class="even">
+<td>Lámpara piloto</td>
+<td>H</td>
+<td>Señalización visual</td>
+</tr>
+<tr class="odd">
+<td>Final de carrera</td>
+<td>SQ</td>
+<td>Detección de posición</td>
+</tr>
+<tr class="even">
+<td>Sensor</td>
+<td>B</td>
+<td>Detección de variable física</td>
+</tr>
+<tr class="odd">
+<td>PLC</td>
+<td>PLC</td>
+<td>Control lógico programable</td>
+</tr>
+<tr class="even">
+<td>Fuente de alimentación</td>
+<td>PS</td>
+<td>Alimentación de circuitos de control</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="criterios-de-representación" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="criterios-de-representación"><span class="header-section-number">7.4</span> Criterios de representación</h2>
+<p>Para que la simbología sea técnicamente correcta, debe ser legible, estar incluida en una leyenda, mantenerse igual en todo el plano, diferenciar cargas normales y especiales, identificar circuitos y relacionarse con el cuadro de cargas.</p>
+<hr>
+</section>
+</section>
+<section id="identificación-de-símbolos-eléctricos-en-planos" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> 1.5 Identificación de símbolos eléctricos en planos</h1>
+<section id="lectura-de-planos-eléctricos" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="lectura-de-planos-eléctricos"><span class="header-section-number">8.1</span> Lectura de planos eléctricos</h2>
+<p>Un plano eléctrico es un documento técnico que representa la ubicación y conexión de elementos eléctricos dentro de una edificación.</p>
+<p>En instalaciones civiles, el plano eléctrico se suele elaborar sobre la planta arquitectónica. Sobre ella se ubican luminarias, interruptores, tomacorrientes, salidas especiales, tablero y canalizaciones.</p>
+</section>
+<section id="elementos-mínimos-de-un-plano-eléctrico-residencial" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="elementos-mínimos-de-un-plano-eléctrico-residencial"><span class="header-section-number">8.2</span> Elementos mínimos de un plano eléctrico residencial</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Elemento</th>
+<th>Descripción</th>
+<th>Importancia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Planta arquitectónica</td>
+<td>Base gráfica de la vivienda</td>
+<td>Permite ubicar ambientes y recorridos</td>
+</tr>
+<tr class="even">
+<td>Puntos de iluminación</td>
+<td>Luminarias interiores y exteriores</td>
+<td>Define circuitos de alumbrado</td>
+</tr>
+<tr class="odd">
+<td>Interruptores</td>
+<td>Dispositivos de control</td>
+<td>Permiten maniobra de luminarias</td>
+</tr>
+<tr class="even">
+<td>Tomacorrientes</td>
+<td>Salidas de uso general</td>
+<td>Alimentan equipos portátiles</td>
+</tr>
+<tr class="odd">
+<td>Cargas especiales</td>
+<td>Cocina, ducha, calefón, bomba</td>
+<td>Requieren circuitos independientes</td>
+</tr>
+<tr class="even">
+<td>Tablero</td>
+<td>Centro de distribución</td>
+<td>Aloja protecciones</td>
+</tr>
+<tr class="odd">
+<td>Canalizaciones</td>
+<td>Recorrido de conductores</td>
+<td>Define ejecución física</td>
+</tr>
+<tr class="even">
+<td>Cuadro de cargas</td>
+<td>Resumen de potencia y corriente</td>
+<td>Permite dimensionamiento</td>
+</tr>
+<tr class="odd">
+<td>Diagrama unifilar</td>
+<td>Esquema general del sistema</td>
+<td>Muestra jerarquía eléctrica</td>
+</tr>
+<tr class="even">
+<td>Leyenda</td>
+<td>Símbolos utilizados</td>
+<td>Facilita interpretación</td>
+</tr>
+</tbody>
+</table>
+<div id="fig-nema" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-nema-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/nema_simplified_pins.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nema-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;8.1: Configuraciones NEMA con identificación de línea, neutro y tierra.
+</figcaption>
+</figure>
+</div>
+<p><strong>Fuente de imagen:</strong> Wikimedia Commons, archivo <em>NEMA simplified pins.svg</em>, autor Orion Lawlor, licencia indicada en la página del archivo. Se usa una previsualización PNG generada por Wikimedia. Disponible en: <a href="https://commons.wikimedia.org/wiki/File:NEMA_simplified_pins.svg" class="uri">https://commons.wikimedia.org/wiki/File:NEMA_simplified_pins.svg</a></p>
+<p>La <a href="#fig-nema" class="quarto-xref">Figura&nbsp;<span>8.1</span></a> ayuda a identificar la función de los pines en diferentes configuraciones de tomacorrientes. En planos eléctricos, las salidas especiales deben diferenciarse de los tomacorrientes de uso general.</p>
+<div id="fig-tomacorriente-tierra" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tomacorriente-tierra-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/outlet_ground.jpg" class="img-fluid figure-img" style="width:45.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tomacorriente-tierra-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;8.2: Tomacorriente doméstico con conexión a tierra.
+</figcaption>
+</figure>
+</div>
+<p><strong>Fuente de imagen:</strong> Wikimedia Commons, archivo <em>OutletGround.jpg</em>, autor Fg2, dominio público. Disponible en: <a href="https://commons.wikimedia.org/wiki/File:OutletGround.jpg" class="uri">https://commons.wikimedia.org/wiki/File:OutletGround.jpg</a></p>
+<p>La <a href="#fig-tomacorriente-tierra" class="quarto-xref">Figura&nbsp;<span>8.2</span></a> ilustra un tomacorriente con punto de tierra. En instalaciones residenciales, los tomacorrientes deben considerar protección y polarización adecuada según el tipo de carga y ambiente de uso.</p>
+</section>
+<section id="procedimiento-recomendado-para-interpretar-un-plano-eléctrico" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="procedimiento-recomendado-para-interpretar-un-plano-eléctrico"><span class="header-section-number">8.3</span> Procedimiento recomendado para interpretar un plano eléctrico</h2>
+<ol type="1">
+<li>Identificar la planta arquitectónica.</li>
+<li>Localizar el tablero de distribución.</li>
+<li>Reconocer la simbología utilizada.</li>
+<li>Revisar los circuitos de iluminación.</li>
+<li>Revisar los circuitos de tomacorrientes.</li>
+<li>Identificar cargas especiales.</li>
+<li>Verificar recorridos de canalización.</li>
+<li>Revisar el cuadro de cargas.</li>
+<li>Comparar el plano con el diagrama unifilar.</li>
+<li>Confirmar la existencia de sistema de puesta a tierra.</li>
+</ol>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Todo símbolo colocado en planta debe tener respaldo en la leyenda y, cuando corresponda, en el cuadro de cargas.</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="normas-de-seguridad-eléctrica-y-uso-de-laboratorios-eléctricos" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> 1.6 Normas de seguridad eléctrica y uso de laboratorios eléctricos</h1>
+<section id="seguridad-eléctrica" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="seguridad-eléctrica"><span class="header-section-number">9.1</span> Seguridad eléctrica</h2>
+<p>La seguridad eléctrica consiste en aplicar medidas preventivas para evitar daños a las personas, equipos e instalaciones. En instalaciones eléctricas, el riesgo no solo aparece por contacto directo con conductores energizados, sino también por fallas de aislamiento, conexiones deficientes, sobrecargas, ausencia de puesta a tierra o protecciones mal seleccionadas.</p>
+</section>
+<section id="seguridad-en-laboratorio" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="seguridad-en-laboratorio"><span class="header-section-number">9.2</span> Seguridad en laboratorio</h2>
+<p>El laboratorio eléctrico es un espacio de aprendizaje experimental. Sin embargo, al trabajar con tensión, corriente y equipos de medición, se deben cumplir reglas estrictas.</p>
+</section>
+<section id="tabla-1.6.-reglas-básicas-de-seguridad-en-laboratorio" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="tabla-1.6.-reglas-básicas-de-seguridad-en-laboratorio"><span class="header-section-number">9.3</span> Tabla 1.6. Reglas básicas de seguridad en laboratorio</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Regla</th>
+<th>Aplicación práctica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Revisar el circuito antes de energizar</td>
+<td>Verificar conexiones según el diagrama</td>
+</tr>
+<tr class="even">
+<td>Confirmar ausencia de tensión</td>
+<td>Usar multímetro antes de manipular</td>
+</tr>
+<tr class="odd">
+<td>Seleccionar escala correcta</td>
+<td>Evitar daño del instrumento</td>
+</tr>
+<tr class="even">
+<td>Usar cables en buen estado</td>
+<td>Evitar falsos contactos o cortocircuitos</td>
+</tr>
+<tr class="odd">
+<td>No dejar conductores expuestos</td>
+<td>Prevenir choque eléctrico</td>
+</tr>
+<tr class="even">
+<td>Energizar solo con autorización</td>
+<td>Mantener control docente</td>
+</tr>
+<tr class="odd">
+<td>Desenergizar antes de modificar</td>
+<td>Evitar conexiones bajo tensión</td>
+</tr>
+<tr class="even">
+<td>Mantener orden en la mesa</td>
+<td>Reducir errores de conexión</td>
+</tr>
+<tr class="odd">
+<td>No improvisar puentes</td>
+<td>Respetar el esquema de trabajo</td>
+</tr>
+<tr class="even">
+<td>Reportar fallas de equipos</td>
+<td>Prevenir accidentes</td>
+</tr>
+</tbody>
+</table>
+<div id="fig-multimetro" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-multimetro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/digital_multimeter.jpg" class="img-fluid figure-img" style="width:55.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-multimetro-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;9.1: Multímetro digital para medición de voltaje, corriente y resistencia.
+</figcaption>
+</figure>
+</div>
+<p><strong>Fuente de imagen:</strong> Wikimedia Commons, archivo <em>Digital Multimeter (To measure Voltage, Current and Resistance).jpg</em>, autor K.Venkataramana, licencia CC0 1.0. Disponible en: <a href="https://commons.wikimedia.org/wiki/File:Digital_Multimeter_(To_measure_Voltage,_Current_and_Resistance).jpg" class="uri">https://commons.wikimedia.org/wiki/File:Digital_Multimeter_(To_measure_Voltage,_Current_and_Resistance).jpg</a></p>
+<p>La <a href="#fig-multimetro" class="quarto-xref">Figura&nbsp;<span>9.1</span></a> muestra un instrumento básico para mediciones eléctricas. Su uso exige seleccionar correctamente magnitud, escala, puntas de prueba y forma de conexión.</p>
+</section>
+<section id="tabla-1.7.-uso-básico-del-multímetro" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="tabla-1.7.-uso-básico-del-multímetro"><span class="header-section-number">9.4</span> Tabla 1.7. Uso básico del multímetro</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Magnitud</th>
+<th>Posición del instrumento</th>
+<th>Forma de conexión</th>
+<th>Condición de seguridad</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Voltaje</td>
+<td>V AC / V DC</td>
+<td>En paralelo</td>
+<td>Circuito energizado con cuidado</td>
+</tr>
+<tr class="even">
+<td>Corriente</td>
+<td>A / mA</td>
+<td>En serie</td>
+<td>Revisar escala y borne correcto</td>
+</tr>
+<tr class="odd">
+<td>Resistencia</td>
+<td>Ω</td>
+<td>En paralelo al elemento</td>
+<td>Circuito desenergizado</td>
+</tr>
+<tr class="even">
+<td>Continuidad</td>
+<td>Símbolo de buzzer</td>
+<td>Entre dos puntos</td>
+<td>Circuito desenergizado</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-simple callout-warning">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Nunca se debe medir resistencia o continuidad en un circuito energizado. Esta acción puede dañar el instrumento y poner en riesgo al usuario.</p>
+</div>
+</div>
+</div>
+<div id="fig-lockout" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lockout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/lockout_tagout.jpg" class="img-fluid figure-img" style="width:75.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lockout-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;9.2: Procedimiento de bloqueo y etiquetado en controles eléctricos.
+</figcaption>
+</figure>
+</div>
+<p><strong>Fuente de imagen:</strong> Wikimedia Commons, archivo <em>Lockout.jpg</em>, autor Gregory Maxwell, licencia GFDL 1.2. Disponible en: <a href="https://commons.wikimedia.org/wiki/File:Lockout.jpg" class="uri">https://commons.wikimedia.org/wiki/File:Lockout.jpg</a></p>
+<p>La <a href="#fig-lockout" class="quarto-xref">Figura&nbsp;<span>9.2</span></a> muestra controles etiquetados para evitar accionamientos no previstos. En obra e industria, el bloqueo y etiquetado reduce el riesgo de energización accidental durante mantenimiento.</p>
+<hr>
+</section>
+</section>
+<section id="riesgos-eléctricos-y-medidas-de-prevención" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> 1.7 Riesgos eléctricos y medidas de prevención</h1>
+<section id="concepto-de-riesgo-eléctrico" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="concepto-de-riesgo-eléctrico"><span class="header-section-number">10.1</span> Concepto de riesgo eléctrico</h2>
+<p>Un riesgo eléctrico es la posibilidad de que una persona, equipo o instalación sufra daño debido a la presencia de energía eléctrica en condiciones inseguras.</p>
+<p>Los riesgos eléctricos pueden presentarse por contacto directo, contacto indirecto, sobrecarga, cortocircuito, falla a tierra, arco eléctrico, conexiones deficientes, ausencia de protecciones, mala selección de conductores o canalizaciones inadecuadas.</p>
+</section>
+<section id="tabla-1.8.-tipos-de-riesgos-eléctricos" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="tabla-1.8.-tipos-de-riesgos-eléctricos"><span class="header-section-number">10.2</span> Tabla 1.8. Tipos de riesgos eléctricos</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Riesgo</th>
+<th>Causa frecuente</th>
+<th>Consecuencia</th>
+<th>Prevención</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Choque eléctrico</td>
+<td>Contacto con parte energizada</td>
+<td>Lesión o muerte</td>
+<td>Aislamiento, señalización, EPP</td>
+</tr>
+<tr class="even">
+<td>Contacto indirecto</td>
+<td>Carcasa energizada por falla</td>
+<td>Electrocución</td>
+<td>Puesta a tierra, protección diferencial</td>
+</tr>
+<tr class="odd">
+<td>Sobrecarga</td>
+<td>Exceso de corriente en conductor</td>
+<td>Calentamiento</td>
+<td>Cálculo de carga y protección adecuada</td>
+</tr>
+<tr class="even">
+<td>Cortocircuito</td>
+<td>Unión accidental entre conductores</td>
+<td>Corriente elevada</td>
+<td>Breaker, fusible, aislamiento correcto</td>
+</tr>
+<tr class="odd">
+<td>Falla a tierra</td>
+<td>Corriente hacia tierra no prevista</td>
+<td>Riesgo en equipos metálicos</td>
+<td>Sistema de puesta a tierra</td>
+</tr>
+<tr class="even">
+<td>Arco eléctrico</td>
+<td>Falla de alta energía</td>
+<td>Quemaduras, daño de equipos</td>
+<td>Mantenimiento, EPP, protecciones</td>
+</tr>
+<tr class="odd">
+<td>Incendio eléctrico</td>
+<td>Calor por mala conexión</td>
+<td>Daño material</td>
+<td>Inspección y conexiones firmes</td>
+</tr>
+</tbody>
+</table>
+<div id="fig-arco-electrico" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-arco-electrico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/arc_flash_hazard.png" class="img-fluid figure-img" style="width:45.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-arco-electrico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.1: Señal de advertencia de peligro por arco eléctrico.
+</figcaption>
+</figure>
+</div>
+<p><strong>Fuente de imagen:</strong> Wikimedia Commons, archivo <em>ISO 7010 W042 warning; arc flash hazard.svg</em>, licencia CC0 1.0. Se usa una previsualización PNG generada por Wikimedia. Disponible en: <a href="https://commons.wikimedia.org/wiki/File:ISO_7010_W042_warning;_arc_flash_hazard.svg" class="uri">https://commons.wikimedia.org/wiki/File:ISO_7010_W042_warning;_arc_flash_hazard.svg</a></p>
+<p>La <a href="#fig-arco-electrico" class="quarto-xref">Figura&nbsp;<span>10.1</span></a> representa el riesgo de arco eléctrico. Este riesgo es especialmente importante en tableros, sistemas industriales y maniobras sobre equipos energizados.</p>
+</section>
+<section id="sobrecarga" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="sobrecarga"><span class="header-section-number">10.3</span> Sobrecarga</h2>
+<p>La sobrecarga ocurre cuando un circuito conduce una corriente mayor a la prevista durante un tiempo prolongado. Esto puede suceder por conectar demasiadas cargas a un mismo circuito o por seleccionar conductores de calibre insuficiente.</p>
+</section>
+<section id="cortocircuito" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="cortocircuito"><span class="header-section-number">10.4</span> Cortocircuito</h2>
+<p>El cortocircuito es una falla de baja impedancia entre conductores activos o entre fase y tierra. Genera una corriente muy elevada en un tiempo muy corto.</p>
+<p>Sus causas frecuentes son aislamiento deteriorado, conexiones flojas, humedad, daño mecánico en conductores, errores de conexión o contacto accidental entre fase y neutro.</p>
+</section>
+<section id="falla-a-tierra" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="falla-a-tierra"><span class="header-section-number">10.5</span> Falla a tierra</h2>
+<p>La falla a tierra ocurre cuando una corriente no deseada fluye hacia elementos metálicos o hacia tierra. Es especialmente peligrosa cuando energiza carcasas de equipos.</p>
+<div id="fig-cable-tierra" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cable-tierra-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/electric_wire_grounded.jpg" class="img-fluid figure-img" style="width:55.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cable-tierra-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.2: Cable eléctrico con conductor de puesta a tierra incorporado.
+</figcaption>
+</figure>
+</div>
+<p><strong>Fuente de imagen:</strong> Wikimedia Commons, archivo <em>ElectricWireGrounded.jpg</em>, autor KVDP, dominio público. Disponible en: <a href="https://commons.wikimedia.org/wiki/File:ElectricWireGrounded.jpg" class="uri">https://commons.wikimedia.org/wiki/File:ElectricWireGrounded.jpg</a></p>
+<p>La <a href="#fig-cable-tierra" class="quarto-xref">Figura&nbsp;<span>10.2</span></a> permite reconocer la función del conductor de protección dentro de una instalación. La identificación del conductor de tierra es fundamental para prevenir contactos indirectos.</p>
+<div id="fig-barra-tierra" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-barra-tierra-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/main_ground_busbar.jpg" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-barra-tierra-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.3: Barra principal de puesta a tierra.
+</figcaption>
+</figure>
+</div>
+<p><strong>Fuente de imagen:</strong> Wikimedia Commons, archivo <em>Main ground busbar.JPG</em>, autor Victor zmey / Dmitry G, licencia CC BY-SA 3.0. Disponible en: <a href="https://commons.wikimedia.org/wiki/File:Main_ground_busbar.JPG" class="uri">https://commons.wikimedia.org/wiki/File:Main_ground_busbar.JPG</a></p>
+<p>La <a href="#fig-barra-tierra" class="quarto-xref">Figura&nbsp;<span>10.3</span></a> muestra una barra principal de tierra. Este elemento permite concentrar conductores de protección y asegurar continuidad hacia el sistema de puesta a tierra.</p>
+</section>
+<section id="medidas-generales-de-prevención" class="level2" data-number="10.6">
+<h2 data-number="10.6" class="anchored" data-anchor-id="medidas-generales-de-prevención"><span class="header-section-number">10.6</span> Medidas generales de prevención</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Medida</th>
+<th>Aplicación</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dimensionar correctamente conductores</td>
+<td>Evita calentamiento</td>
+</tr>
+<tr class="even">
+<td>Seleccionar protecciones adecuadas</td>
+<td>Permite desconexión ante fallas</td>
+</tr>
+<tr class="odd">
+<td>Usar puesta a tierra</td>
+<td>Reduce riesgo de contacto indirecto</td>
+</tr>
+<tr class="even">
+<td>Usar protección diferencial</td>
+<td>Protege personas ante fugas de corriente</td>
+</tr>
+<tr class="odd">
+<td>Aislar conexiones</td>
+<td>Evita contactos accidentales</td>
+</tr>
+<tr class="even">
+<td>Rotular tableros</td>
+<td>Facilita mantenimiento seguro</td>
+</tr>
+<tr class="odd">
+<td>Separar circuitos</td>
+<td>Evita sobrecarga y facilita operación</td>
+</tr>
+<tr class="even">
+<td>Realizar inspecciones</td>
+<td>Detecta fallas antes de accidentes</td>
+</tr>
+</tbody>
+</table>
+<div id="fig-gfci" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gfci-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="img/gfci_outlet.jpg" class="img-fluid figure-img" style="width:65.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gfci-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.4: Tomacorriente GFCI con botones de prueba y reinicio.
+</figcaption>
+</figure>
+</div>
+<p><strong>Fuente de imagen:</strong> Wikimedia Commons, archivo <em>Ground Fault Circuit Interrupter (GFCI) Electrical Outlet (29268945818).jpg</em>, autor Tony Webster, licencia CC BY 2.0. Disponible en: <a href="https://commons.wikimedia.org/wiki/File:Ground_Fault_Circuit_Interrupter_(GFCI)_Electrical_Outlet_(29268945818).jpg" class="uri">https://commons.wikimedia.org/wiki/File:Ground_Fault_Circuit_Interrupter_(GFCI)_Electrical_Outlet_(29268945818).jpg</a></p>
+<p>La <a href="#fig-gfci" class="quarto-xref">Figura&nbsp;<span>10.4</span></a> muestra un tomacorriente con protección diferencial de falla a tierra. Este tipo de dispositivo es especialmente relevante en zonas húmedas o con mayor exposición al contacto accidental.</p>
+<hr>
+</section>
+</section>
+<section id="integración-del-bloque-1-con-la-práctica-experimental" class="level1" data-number="11">
+<h1 data-number="11"><span class="header-section-number">11</span> Integración del Bloque 1 con la práctica experimental</h1>
+<section id="práctica-del-bloque" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="práctica-del-bloque"><span class="header-section-number">11.1</span> Práctica del bloque</h2>
+<p>La práctica oficial del bloque consiste en el diseño de un plano eléctrico residencial. Esta actividad integra normalización, simbología, seguridad y criterios iniciales de diseño.</p>
+</section>
+<section id="entregables-de-la-práctica" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="entregables-de-la-práctica"><span class="header-section-number">11.2</span> Entregables de la práctica</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Entregable</th>
+<th>Contenido mínimo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Plano eléctrico residencial</td>
+<td>Luminarias, interruptores, tomacorrientes, cargas especiales y tablero</td>
+</tr>
+<tr class="even">
+<td>Cuadro de cargas</td>
+<td>Circuito, descripción, potencia, corriente, conductor y protección</td>
+</tr>
+<tr class="odd">
+<td>Diagrama unifilar</td>
+<td>Medidor, tablero, protecciones y circuitos derivados</td>
+</tr>
+<tr class="even">
+<td>Cuadro de simbología</td>
+<td>Símbolos utilizados en el plano</td>
+</tr>
+<tr class="odd">
+<td>Memoria técnica</td>
+<td>Criterios normativos, cálculos y justificación</td>
+</tr>
+<tr class="even">
+<td>Conclusiones</td>
+<td>Análisis técnico del diseño realizado</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cuadro-de-cargas-modelo" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="cuadro-de-cargas-modelo"><span class="header-section-number">11.3</span> Cuadro de cargas modelo</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 9%">
+<col style="width: 9%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Circuito</th>
+<th>Descripción</th>
+<th style="text-align: right;">Cantidad</th>
+<th style="text-align: right;">Potencia unitaria (W)</th>
+<th style="text-align: right;">Potencia total (W)</th>
+<th style="text-align: right;">Voltaje (V)</th>
+<th style="text-align: right;">Corriente (A)</th>
+<th>Conductor sugerido</th>
+<th>Protección</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>C1</td>
+<td>Iluminación planta baja</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">6.67</td>
+<td>14 AWG</td>
+<td>15 A</td>
+</tr>
+<tr class="even">
+<td>C2</td>
+<td>Iluminación planta alta</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">600</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">5.00</td>
+<td>14 AWG</td>
+<td>15 A</td>
+</tr>
+<tr class="odd">
+<td>C3</td>
+<td>Tomacorrientes generales</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">1600</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">13.33</td>
+<td>12 AWG</td>
+<td>20 A</td>
+</tr>
+<tr class="even">
+<td>C4</td>
+<td>Tomacorrientes cocina</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">200</td>
+<td style="text-align: right;">800</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">6.67</td>
+<td>12 AWG</td>
+<td>20 A</td>
+</tr>
+<tr class="odd">
+<td>C5</td>
+<td>Cocina eléctrica</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6000</td>
+<td style="text-align: right;">6000</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: right;">25.00</td>
+<td>Según cálculo</td>
+<td>Bipolar</td>
+</tr>
+<tr class="even">
+<td>C6</td>
+<td>Ducha eléctrica</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3500</td>
+<td style="text-align: right;">3500</td>
+<td style="text-align: right;">240</td>
+<td style="text-align: right;">14.58</td>
+<td>Según cálculo</td>
+<td>Bipolar</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Los valores del cuadro son referenciales para fines académicos. En un proyecto real deben verificarse con normativa vigente, condiciones de instalación, temperatura, caída de tensión, tipo de aislamiento, longitud del circuito y especificaciones del fabricante.</p>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="actividad-en-clase" class="level1" data-number="12">
+<h1 data-number="12"><span class="header-section-number">12</span> Actividad en clase</h1>
+<section id="análisis-de-una-vivienda-básica" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="análisis-de-una-vivienda-básica"><span class="header-section-number">12.1</span> Análisis de una vivienda básica</h2>
+<p>A partir de un plano arquitectónico asignado por el docente, el estudiante deberá:</p>
+<ol type="1">
+<li>Identificar ambientes.</li>
+<li>Proponer puntos de iluminación.</li>
+<li>Ubicar interruptores.</li>
+<li>Ubicar tomacorrientes.</li>
+<li>Identificar cargas especiales.</li>
+<li>Proponer ubicación del tablero.</li>
+<li>Elaborar una leyenda básica de símbolos.</li>
+<li>Identificar riesgos eléctricos.</li>
+<li>Proponer medidas de prevención.</li>
+<li>Justificar el criterio de separación de circuitos.</li>
+</ol>
+</section>
+<section id="producto-esperado" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="producto-esperado"><span class="header-section-number">12.2</span> Producto esperado</h2>
+<p>Un esquema preliminar de instalación eléctrica residencial con simbología básica, identificación de circuitos y observaciones de seguridad.</p>
+<hr>
+</section>
+</section>
+<section id="actividad-autónoma" class="level1" data-number="13">
+<h1 data-number="13"><span class="header-section-number">13</span> Actividad autónoma</h1>
+<section id="ficha-de-revisión-normativa" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="ficha-de-revisión-normativa"><span class="header-section-number">13.1</span> Ficha de revisión normativa</h2>
+<p>El estudiante revisará la NEC-SB-IE Instalaciones Eléctricas y elaborará una ficha técnica con:</p>
+<ol type="1">
+<li>objetivo de la norma;</li>
+<li>campo de aplicación;</li>
+<li>normas referenciadas;</li>
+<li>criterios de circuitos;</li>
+<li>criterios de conductores;</li>
+<li>criterios de protecciones;</li>
+<li>criterios de puesta a tierra;</li>
+<li>criterios de ubicación de interruptores y tomacorrientes;</li>
+<li>tres conclusiones técnicas.</li>
+</ol>
+<p>Extensión sugerida: 2 a 3 páginas.</p>
+<hr>
+</section>
+</section>
+<section id="preguntas-de-repaso" class="level1" data-number="14">
+<h1 data-number="14"><span class="header-section-number">14</span> Preguntas de repaso</h1>
+<ol type="1">
+<li>¿Qué es una instalación eléctrica?</li>
+<li>¿Qué diferencia existe entre una instalación civil y una industrial?</li>
+<li>¿Por qué es importante la normalización eléctrica?</li>
+<li>¿Qué normas se pueden aplicar en instalaciones eléctricas?</li>
+<li>¿Qué función cumple la simbología eléctrica?</li>
+<li>¿Qué elementos debe contener un plano eléctrico residencial?</li>
+<li>¿Qué es un cuadro de cargas?</li>
+<li>¿Qué es un diagrama unifilar?</li>
+<li>¿Qué diferencia existe entre sobrecarga y cortocircuito?</li>
+<li>¿Por qué la puesta a tierra es una medida de seguridad?</li>
+<li>¿Qué riesgos existen al trabajar en laboratorio eléctrico?</li>
+<li>¿Por qué no se debe medir resistencia en un circuito energizado?</li>
+<li>¿Qué información debe contener una leyenda de simbología?</li>
+<li>¿Por qué se deben separar circuitos de iluminación, tomacorrientes y cargas especiales?</li>
+<li>¿Qué relación existe entre carga, conductor y protección?</li>
+</ol>
+<hr>
+</section>
+<section id="cierre-del-bloque" class="level1" data-number="15">
+<h1 data-number="15"><span class="header-section-number">15</span> Cierre del bloque</h1>
+<p>El Bloque 1 permite al estudiante comprender que una instalación eléctrica segura depende de la correcta aplicación de normas, simbología, criterios de diseño y medidas de prevención. Estos fundamentos son necesarios para avanzar hacia el análisis de diagramas eléctricos, mediciones, instrumentación y automatización industrial.</p>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/TU-USUARIO\.github\.io\/modulo-instalaciones-civiles-industriales\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./plan_asignatura.html" class="pagination-link" aria-label="Plan de la asignatura">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Plan de la asignatura</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./bloque_02_diagramas_instrumentacion.html" class="pagination-link" aria-label="Bloque 2: Diagramas Eléctricos e Instrumentación">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Bloque 2: Diagramas Eléctricos e Instrumentación</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Ejecutar el código</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Bloque 1: Normalización Eléctrica, Seguridad y Simbología</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">## Presentación del bloque</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>El Bloque 1 introduce al estudiante en los fundamentos técnicos, normativos y gráficos necesarios para interpretar instalaciones eléctricas civiles e industriales. En esta etapa se estudia la importancia de la normalización eléctrica, el uso de simbología técnica, la identificación de componentes en planos eléctricos y la aplicación de criterios de seguridad en laboratorio y obra.</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Una instalación eléctrica no debe entenderse únicamente como la conexión de cables, interruptores, luminarias y tomacorrientes. En términos técnicos, es un sistema integrado que permite transportar, distribuir, proteger, controlar y utilizar la energía eléctrica de manera segura, eficiente y conforme a normas.</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>Este bloque constituye la base para los siguientes temas de la asignatura: diagramas eléctricos, instrumentación, mediciones eléctricas y automatización industrial.</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## Resultado de aprendizaje del bloque</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Al finalizar este bloque, el estudiante interpreta planos eléctricos, reconoce simbología normalizada y componentes de instalaciones eléctricas civiles e industriales conforme a normas técnicas vigentes. Además, aplica normas de seguridad eléctrica y protocolos de laboratorio, identificando riesgos eléctricos y proponiendo medidas de prevención en actividades prácticas y entornos reales.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Objetivo específico del bloque</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Comprender y aplicar los fundamentos de las instalaciones eléctricas civiles e industriales, incorporando la normalización eléctrica, las normas técnicas y la simbología eléctrica, para la correcta interpretación de planos eléctricos y la ejecución de actividades bajo criterios de seguridad en laboratorios y entornos eléctricos.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu"># 1.1 Introducción a las instalaciones eléctricas civiles e industriales</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">## Concepto general de instalación eléctrica</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>Una instalación eléctrica es el conjunto de elementos destinados a conducir, distribuir, proteger, controlar y utilizar la energía eléctrica dentro de una edificación o sistema productivo.</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Está conformada por acometida, medidor, tablero general, tableros secundarios, protecciones, conductores, canalizaciones, cajas de paso, interruptores, tomacorrientes, luminarias, cargas especiales, sistema de puesta a tierra, planos y diagramas técnicos.</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>En una edificación, la instalación eléctrica debe permitir que la energía llegue desde el punto de suministro hasta cada carga de manera segura y funcional.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="al">![Panel eléctrico residencial con subpanel y cubierta retirada.](img/residential_panel_subpanel.jpg)</span>{#fig-panel-residencial width=70%}</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>**Fuente de imagen:** Wikimedia Commons, archivo *Electrical panel and subpanel with cover removed from subpanel.jpg*, autor Gvolk, licencia CC BY-SA 3.0. Disponible en: <span class="ot">&lt;https://commons.wikimedia.org/wiki/File:Electrical_panel_and_subpanel_with_cover_removed_from_subpanel.jpg&gt;</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>La @fig-panel-residencial permite observar un tablero residencial con interruptores automáticos. En una instalación real, el tablero concentra protecciones, organiza circuitos y facilita la operación y mantenimiento.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Instalaciones eléctricas civiles</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>Las instalaciones civiles se encuentran en edificaciones destinadas a vivienda, comercio, educación, salud, oficinas, servicios públicos y espacios similares.</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tipo de carga <span class="pp">|</span> Ejemplos <span class="pp">|</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Iluminación <span class="pp">|</span> Luminarias interiores, exteriores, decorativas y de emergencia <span class="pp">|</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tomacorrientes <span class="pp">|</span> Equipos domésticos, computadores, cargadores, electrodomésticos menores <span class="pp">|</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cargas especiales <span class="pp">|</span> Cocina eléctrica, ducha eléctrica, calefón, aire acondicionado, bomba de agua <span class="pp">|</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Servicios complementarios <span class="pp">|</span> Porteros eléctricos, alarmas, cámaras, redes de comunicación <span class="pp">|</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="fu">## Instalaciones eléctricas industriales</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>Las instalaciones industriales se aplican en procesos productivos, talleres, plantas de manufactura, sistemas electromecánicos y entornos donde existen cargas de potencia, control e instrumentación.</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tipo de carga <span class="pp">|</span> Ejemplos <span class="pp">|</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cargas de fuerza <span class="pp">|</span> Motores, bombas, compresores, ventiladores <span class="pp">|</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cargas de control <span class="pp">|</span> Contactores, relés, temporizadores, PLC <span class="pp">|</span></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cargas de instrumentación <span class="pp">|</span> Sensores, transmisores, indicadores <span class="pp">|</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cargas de iluminación industrial <span class="pp">|</span> Luminarias de nave, reflectores, alumbrado de emergencia <span class="pp">|</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Sistemas auxiliares <span class="pp">|</span> Tableros, bancos de capacitores, variadores de frecuencia <span class="pp">|</span></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tabla 1.1. Diferencias entre instalaciones civiles e industriales</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Criterio <span class="pp">|</span> Instalaciones civiles <span class="pp">|</span> Instalaciones industriales <span class="pp">|</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Uso principal <span class="pp">|</span> Vivienda, comercio y servicios <span class="pp">|</span> Producción, control y operación de maquinaria <span class="pp">|</span></span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tipo de cargas <span class="pp">|</span> Iluminación, tomacorrientes y cargas especiales <span class="pp">|</span> Motores, tableros de control, sensores y actuadores <span class="pp">|</span></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Nivel de potencia <span class="pp">|</span> Bajo a medio <span class="pp">|</span> Medio a alto <span class="pp">|</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Complejidad técnica <span class="pp">|</span> Moderada <span class="pp">|</span> Alta <span class="pp">|</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Documentos frecuentes <span class="pp">|</span> Plano eléctrico, cuadro de cargas, diagrama unifilar <span class="pp">|</span> Diagramas de potencia, control, mando, PLC e instrumentación <span class="pp">|</span></span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Riesgos principales <span class="pp">|</span> Choque eléctrico, sobrecarga, mala puesta a tierra <span class="pp">|</span> Arco eléctrico, fallas de motor, arranque de cargas, fallas de control <span class="pp">|</span></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Mantenimiento <span class="pp">|</span> Correctivo y preventivo básico <span class="pp">|</span> Preventivo, predictivo y correctivo especializado <span class="pp">|</span></span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>La principal diferencia entre una instalación civil y una industrial no es únicamente el tamaño, sino el tipo de carga, el nivel de control, la criticidad operativa y los riesgos asociados.</span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a><span class="fu"># 1.2 Importancia de la normalización eléctrica</span></span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a><span class="fu">## ¿Qué es la normalización eléctrica?</span></span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>La normalización eléctrica es el conjunto de reglas, criterios, símbolos, procedimientos y requisitos técnicos que permiten diseñar, construir, operar e inspeccionar instalaciones eléctricas bajo parámetros comunes.</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>Su finalidad es evitar interpretaciones ambiguas y reducir riesgos técnicos. La normalización permite:</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Garantizar condiciones mínimas de seguridad.</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Unificar criterios entre diseñadores, constructores, instaladores y fiscalizadores.</span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Facilitar la lectura de planos eléctricos.</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Definir características mínimas de materiales y equipos.</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Reducir el riesgo de incendios de origen eléctrico.</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Facilitar el mantenimiento y ampliación de instalaciones.</span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>Proteger a usuarios, equipos y edificaciones.</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tabla 1.2. Problemas frecuentes por falta de normalización</span></span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Problema <span class="pp">|</span> Consecuencia técnica <span class="pp">|</span> Riesgo asociado <span class="pp">|</span></span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Símbolos no normalizados <span class="pp">|</span> Mala interpretación del plano <span class="pp">|</span> Conexiones incorrectas <span class="pp">|</span></span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Conductores sin código de color <span class="pp">|</span> Dificultad para identificar fase, neutro y tierra <span class="pp">|</span> Choque eléctrico <span class="pp">|</span></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tableros sin rotulación <span class="pp">|</span> Mantenimiento inseguro <span class="pp">|</span> Desconexión incorrecta <span class="pp">|</span></span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Circuitos sin identificación <span class="pp">|</span> Confusión en operación y mantenimiento <span class="pp">|</span> Sobrecarga o mal aislamiento <span class="pp">|</span></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Ausencia de cuadro de cargas <span class="pp">|</span> Selección deficiente de protecciones <span class="pp">|</span> Calentamiento o incendio <span class="pp">|</span></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> No considerar puesta a tierra <span class="pp">|</span> Fallas peligrosas en carcasas metálicas <span class="pp">|</span> Contacto indirecto <span class="pp">|</span></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ejemplo aplicado</span></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>Si en un plano residencial se representa un tomacorriente común y una salida para cocina eléctrica usando el mismo símbolo, el instalador podría utilizar el mismo conductor y la misma protección en ambos puntos. Esto generaría un riesgo, porque la cocina eléctrica requiere circuito especial, mayor capacidad de corriente y protección independiente.</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a><span class="fu"># 1.3 Normas técnicas aplicadas a instalaciones eléctricas</span></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a><span class="fu">## Normativa principal</span></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>En Ecuador, una referencia fundamental para instalaciones eléctricas en edificaciones es la **NEC-SB-IE Instalaciones Eléctricas**, perteneciente a la Norma Ecuatoriana de la Construcción. Esta norma se enfoca en instalaciones eléctricas interiores residenciales y establece criterios mínimos de diseño y seguridad.</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>La instalación debe proteger frente a choques eléctricos, efectos térmicos, sobrecorrientes, corrientes de falla y sobrevoltajes.</span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tabla 1.3. Normas y documentos técnicos de referencia</span></span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Norma / documento <span class="pp">|</span> Aplicación en el módulo <span class="pp">|</span></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> NEC-SB-IE Instalaciones Eléctricas <span class="pp">|</span> Diseño y ejecución de instalaciones eléctricas interiores residenciales <span class="pp">|</span></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> NFPA 70 / National Electrical Code <span class="pp">|</span> Criterios de seguridad, protecciones, conductores y canalizaciones <span class="pp">|</span></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> CPE INEN 019 <span class="pp">|</span> Código Eléctrico Ecuatoriano <span class="pp">|</span></span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IEC 60617 <span class="pp">|</span> Simbología gráfica para diagramas eléctricos <span class="pp">|</span></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> NTE INEN 2345 <span class="pp">|</span> Alambres y cables con aislamiento termoplástico <span class="pp">|</span></span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> NTE INEN 3098 <span class="pp">|</span> Voltajes normalizados <span class="pp">|</span></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> IEC 60364 <span class="pp">|</span> Instalaciones eléctricas en edificaciones <span class="pp">|</span></span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Reglamentos de empresas distribuidoras <span class="pp">|</span> Acometidas, medidores y requisitos de conexión <span class="pp">|</span></span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a>Cuando existan diferencias entre documentos técnicos, se debe revisar la normativa nacional vigente, los requisitos de la empresa distribuidora y las especificaciones del proyecto.</span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a><span class="fu">## Relación entre norma, plano y ejecución</span></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>Una instalación eléctrica segura requiere coherencia entre normativa aplicable, memoria técnica, plano eléctrico, cuadro de cargas, diagrama unifilar, selección de materiales, ejecución en obra e inspección final.</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a><span class="fu"># 1.4 Simbología eléctrica normalizada</span></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a><span class="fu">## Concepto</span></span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>La simbología eléctrica normalizada permite representar gráficamente los componentes de una instalación eléctrica. Un símbolo eléctrico resume información técnica sobre el tipo de dispositivo, su función y su ubicación dentro del sistema.</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>Los símbolos se emplean en planos eléctricos en planta, diagramas unifilares, diagramas multifilares, diagramas de control, diagramas de potencia, planos de tableros y esquemas de automatización.</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a><span class="al">![Colección de símbolos eléctricos IEC.](img/electrical_symbols_iec.svg)</span>{#fig-simbologia-iec width=90%}</span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>**Fuente de imagen:** Wikimedia Commons, archivo *Electrical Symbols IEC.svg*, autor Emareg, licencia CC0 1.0. Disponible en: <span class="ot">&lt;https://commons.wikimedia.org/wiki/File:Electrical_Symbols_IEC.svg&gt;</span></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>La @fig-simbologia-iec muestra una colección de símbolos eléctricos IEC. Esta referencia permite comprender por qué la representación gráfica debe ser consistente, legible y verificable.</span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tabla 1.4. Simbología básica para instalaciones civiles</span></span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Elemento <span class="pp">|</span> Representación textual sugerida <span class="pp">|</span> Función <span class="pp">|</span></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Punto de luz <span class="pp">|</span> PL <span class="pp">|</span> Salida para luminaria <span class="pp">|</span></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Interruptor simple <span class="pp">|</span> S1 <span class="pp">|</span> Control de una luminaria desde un punto <span class="pp">|</span></span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Interruptor doble <span class="pp">|</span> S2 <span class="pp">|</span> Control de dos luminarias o grupos <span class="pp">|</span></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tomacorriente simple <span class="pp">|</span> T1 <span class="pp">|</span> Alimentación de carga de uso general <span class="pp">|</span></span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tomacorriente doble <span class="pp">|</span> T2 <span class="pp">|</span> Alimentación de dos equipos <span class="pp">|</span></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tomacorriente con tierra <span class="pp">|</span> TT <span class="pp">|</span> Alimentación con conductor de protección <span class="pp">|</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Salida especial <span class="pp">|</span> SE <span class="pp">|</span> Alimentación de carga específica <span class="pp">|</span></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tablero de distribución <span class="pp">|</span> TD <span class="pp">|</span> Agrupación de protecciones <span class="pp">|</span></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Medidor <span class="pp">|</span> M <span class="pp">|</span> Registro de energía <span class="pp">|</span></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Puesta a tierra <span class="pp">|</span> PT <span class="pp">|</span> Conexión de seguridad a tierra <span class="pp">|</span></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tabla 1.5. Simbología básica para instalaciones industriales</span></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Elemento <span class="pp">|</span> Código frecuente <span class="pp">|</span> Función <span class="pp">|</span></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Motor <span class="pp">|</span> M <span class="pp">|</span> Convierte energía eléctrica en mecánica <span class="pp">|</span></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Contactor <span class="pp">|</span> KM <span class="pp">|</span> Maniobra eléctrica de cargas <span class="pp">|</span></span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Relé térmico <span class="pp">|</span> FR <span class="pp">|</span> Protección contra sobrecarga en motores <span class="pp">|</span></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pulsador de marcha <span class="pp">|</span> S1 / START <span class="pp">|</span> Orden de encendido <span class="pp">|</span></span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Pulsador de paro <span class="pp">|</span> S0 / STOP <span class="pp">|</span> Orden de apagado <span class="pp">|</span></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Lámpara piloto <span class="pp">|</span> H <span class="pp">|</span> Señalización visual <span class="pp">|</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Final de carrera <span class="pp">|</span> SQ <span class="pp">|</span> Detección de posición <span class="pp">|</span></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Sensor <span class="pp">|</span> B <span class="pp">|</span> Detección de variable física <span class="pp">|</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> PLC <span class="pp">|</span> PLC <span class="pp">|</span> Control lógico programable <span class="pp">|</span></span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Fuente de alimentación <span class="pp">|</span> PS <span class="pp">|</span> Alimentación de circuitos de control <span class="pp">|</span></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a><span class="fu">## Criterios de representación</span></span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>Para que la simbología sea técnicamente correcta, debe ser legible, estar incluida en una leyenda, mantenerse igual en todo el plano, diferenciar cargas normales y especiales, identificar circuitos y relacionarse con el cuadro de cargas.</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a><span class="fu"># 1.5 Identificación de símbolos eléctricos en planos</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a><span class="fu">## Lectura de planos eléctricos</span></span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>Un plano eléctrico es un documento técnico que representa la ubicación y conexión de elementos eléctricos dentro de una edificación.</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>En instalaciones civiles, el plano eléctrico se suele elaborar sobre la planta arquitectónica. Sobre ella se ubican luminarias, interruptores, tomacorrientes, salidas especiales, tablero y canalizaciones.</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a><span class="fu">## Elementos mínimos de un plano eléctrico residencial</span></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Elemento <span class="pp">|</span> Descripción <span class="pp">|</span> Importancia <span class="pp">|</span></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|</span></span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Planta arquitectónica <span class="pp">|</span> Base gráfica de la vivienda <span class="pp">|</span> Permite ubicar ambientes y recorridos <span class="pp">|</span></span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Puntos de iluminación <span class="pp">|</span> Luminarias interiores y exteriores <span class="pp">|</span> Define circuitos de alumbrado <span class="pp">|</span></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Interruptores <span class="pp">|</span> Dispositivos de control <span class="pp">|</span> Permiten maniobra de luminarias <span class="pp">|</span></span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tomacorrientes <span class="pp">|</span> Salidas de uso general <span class="pp">|</span> Alimentan equipos portátiles <span class="pp">|</span></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cargas especiales <span class="pp">|</span> Cocina, ducha, calefón, bomba <span class="pp">|</span> Requieren circuitos independientes <span class="pp">|</span></span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Tablero <span class="pp">|</span> Centro de distribución <span class="pp">|</span> Aloja protecciones <span class="pp">|</span></span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Canalizaciones <span class="pp">|</span> Recorrido de conductores <span class="pp">|</span> Define ejecución física <span class="pp">|</span></span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cuadro de cargas <span class="pp">|</span> Resumen de potencia y corriente <span class="pp">|</span> Permite dimensionamiento <span class="pp">|</span></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Diagrama unifilar <span class="pp">|</span> Esquema general del sistema <span class="pp">|</span> Muestra jerarquía eléctrica <span class="pp">|</span></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Leyenda <span class="pp">|</span> Símbolos utilizados <span class="pp">|</span> Facilita interpretación <span class="pp">|</span></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="al">![Configuraciones NEMA con identificación de línea, neutro y tierra.](img/nema_simplified_pins.png)</span>{#fig-nema width=85%}</span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>**Fuente de imagen:** Wikimedia Commons, archivo *NEMA simplified pins.svg*, autor Orion Lawlor, licencia indicada en la página del archivo. Se usa una previsualización PNG generada por Wikimedia. Disponible en: <span class="ot">&lt;https://commons.wikimedia.org/wiki/File:NEMA_simplified_pins.svg&gt;</span></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>La @fig-nema ayuda a identificar la función de los pines en diferentes configuraciones de tomacorrientes. En planos eléctricos, las salidas especiales deben diferenciarse de los tomacorrientes de uso general.</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a><span class="al">![Tomacorriente doméstico con conexión a tierra.](img/outlet_ground.jpg)</span>{#fig-tomacorriente-tierra width=45%}</span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>**Fuente de imagen:** Wikimedia Commons, archivo *OutletGround.jpg*, autor Fg2, dominio público. Disponible en: <span class="ot">&lt;https://commons.wikimedia.org/wiki/File:OutletGround.jpg&gt;</span></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>La @fig-tomacorriente-tierra ilustra un tomacorriente con punto de tierra. En instalaciones residenciales, los tomacorrientes deben considerar protección y polarización adecuada según el tipo de carga y ambiente de uso.</span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="fu">## Procedimiento recomendado para interpretar un plano eléctrico</span></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Identificar la planta arquitectónica.</span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Localizar el tablero de distribución.</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Reconocer la simbología utilizada.</span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Revisar los circuitos de iluminación.</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Revisar los circuitos de tomacorrientes.</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Identificar cargas especiales.</span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>Verificar recorridos de canalización.</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>Revisar el cuadro de cargas.</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a><span class="ss">9. </span>Comparar el plano con el diagrama unifilar.</span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a><span class="ss">10. </span>Confirmar la existencia de sistema de puesta a tierra.</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>Todo símbolo colocado en planta debe tener respaldo en la leyenda y, cuando corresponda, en el cuadro de cargas.</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a><span class="fu"># 1.6 Normas de seguridad eléctrica y uso de laboratorios eléctricos</span></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a><span class="fu">## Seguridad eléctrica</span></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>La seguridad eléctrica consiste en aplicar medidas preventivas para evitar daños a las personas, equipos e instalaciones. En instalaciones eléctricas, el riesgo no solo aparece por contacto directo con conductores energizados, sino también por fallas de aislamiento, conexiones deficientes, sobrecargas, ausencia de puesta a tierra o protecciones mal seleccionadas.</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a><span class="fu">## Seguridad en laboratorio</span></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>El laboratorio eléctrico es un espacio de aprendizaje experimental. Sin embargo, al trabajar con tensión, corriente y equipos de medición, se deben cumplir reglas estrictas.</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tabla 1.6. Reglas básicas de seguridad en laboratorio</span></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Regla <span class="pp">|</span> Aplicación práctica <span class="pp">|</span></span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Revisar el circuito antes de energizar <span class="pp">|</span> Verificar conexiones según el diagrama <span class="pp">|</span></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Confirmar ausencia de tensión <span class="pp">|</span> Usar multímetro antes de manipular <span class="pp">|</span></span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Seleccionar escala correcta <span class="pp">|</span> Evitar daño del instrumento <span class="pp">|</span></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Usar cables en buen estado <span class="pp">|</span> Evitar falsos contactos o cortocircuitos <span class="pp">|</span></span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> No dejar conductores expuestos <span class="pp">|</span> Prevenir choque eléctrico <span class="pp">|</span></span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Energizar solo con autorización <span class="pp">|</span> Mantener control docente <span class="pp">|</span></span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Desenergizar antes de modificar <span class="pp">|</span> Evitar conexiones bajo tensión <span class="pp">|</span></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Mantener orden en la mesa <span class="pp">|</span> Reducir errores de conexión <span class="pp">|</span></span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> No improvisar puentes <span class="pp">|</span> Respetar el esquema de trabajo <span class="pp">|</span></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Reportar fallas de equipos <span class="pp">|</span> Prevenir accidentes <span class="pp">|</span></span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a><span class="al">![Multímetro digital para medición de voltaje, corriente y resistencia.](img/digital_multimeter.jpg)</span>{#fig-multimetro width=55%}</span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>**Fuente de imagen:** Wikimedia Commons, archivo *Digital Multimeter (To measure Voltage, Current and Resistance).jpg*, autor K.Venkataramana, licencia CC0 1.0. Disponible en: <span class="ot">&lt;https://commons.wikimedia.org/wiki/File:Digital_Multimeter_(To_measure_Voltage,_Current_and_Resistance).jpg&gt;</span></span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>La @fig-multimetro muestra un instrumento básico para mediciones eléctricas. Su uso exige seleccionar correctamente magnitud, escala, puntas de prueba y forma de conexión.</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tabla 1.7. Uso básico del multímetro</span></span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Magnitud <span class="pp">|</span> Posición del instrumento <span class="pp">|</span> Forma de conexión <span class="pp">|</span> Condición de seguridad <span class="pp">|</span></span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|</span></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Voltaje <span class="pp">|</span> V AC / V DC <span class="pp">|</span> En paralelo <span class="pp">|</span> Circuito energizado con cuidado <span class="pp">|</span></span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Corriente <span class="pp">|</span> A / mA <span class="pp">|</span> En serie <span class="pp">|</span> Revisar escala y borne correcto <span class="pp">|</span></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Resistencia <span class="pp">|</span> Ω <span class="pp">|</span> En paralelo al elemento <span class="pp">|</span> Circuito desenergizado <span class="pp">|</span></span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Continuidad <span class="pp">|</span> Símbolo de buzzer <span class="pp">|</span> Entre dos puntos <span class="pp">|</span> Circuito desenergizado <span class="pp">|</span></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>::: {.callout-warning}</span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>Nunca se debe medir resistencia o continuidad en un circuito energizado. Esta acción puede dañar el instrumento y poner en riesgo al usuario.</span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a><span class="al">![Procedimiento de bloqueo y etiquetado en controles eléctricos.](img/lockout_tagout.jpg)</span>{#fig-lockout width=75%}</span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>**Fuente de imagen:** Wikimedia Commons, archivo *Lockout.jpg*, autor Gregory Maxwell, licencia GFDL 1.2. Disponible en: <span class="ot">&lt;https://commons.wikimedia.org/wiki/File:Lockout.jpg&gt;</span></span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>La @fig-lockout muestra controles etiquetados para evitar accionamientos no previstos. En obra e industria, el bloqueo y etiquetado reduce el riesgo de energización accidental durante mantenimiento.</span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a><span class="fu"># 1.7 Riesgos eléctricos y medidas de prevención</span></span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a><span class="fu">## Concepto de riesgo eléctrico</span></span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>Un riesgo eléctrico es la posibilidad de que una persona, equipo o instalación sufra daño debido a la presencia de energía eléctrica en condiciones inseguras.</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>Los riesgos eléctricos pueden presentarse por contacto directo, contacto indirecto, sobrecarga, cortocircuito, falla a tierra, arco eléctrico, conexiones deficientes, ausencia de protecciones, mala selección de conductores o canalizaciones inadecuadas.</span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a><span class="fu">## Tabla 1.8. Tipos de riesgos eléctricos</span></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Riesgo <span class="pp">|</span> Causa frecuente <span class="pp">|</span> Consecuencia <span class="pp">|</span> Prevención <span class="pp">|</span></span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---|---|</span></span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Choque eléctrico <span class="pp">|</span> Contacto con parte energizada <span class="pp">|</span> Lesión o muerte <span class="pp">|</span> Aislamiento, señalización, EPP <span class="pp">|</span></span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Contacto indirecto <span class="pp">|</span> Carcasa energizada por falla <span class="pp">|</span> Electrocución <span class="pp">|</span> Puesta a tierra, protección diferencial <span class="pp">|</span></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Sobrecarga <span class="pp">|</span> Exceso de corriente en conductor <span class="pp">|</span> Calentamiento <span class="pp">|</span> Cálculo de carga y protección adecuada <span class="pp">|</span></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cortocircuito <span class="pp">|</span> Unión accidental entre conductores <span class="pp">|</span> Corriente elevada <span class="pp">|</span> Breaker, fusible, aislamiento correcto <span class="pp">|</span></span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Falla a tierra <span class="pp">|</span> Corriente hacia tierra no prevista <span class="pp">|</span> Riesgo en equipos metálicos <span class="pp">|</span> Sistema de puesta a tierra <span class="pp">|</span></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Arco eléctrico <span class="pp">|</span> Falla de alta energía <span class="pp">|</span> Quemaduras, daño de equipos <span class="pp">|</span> Mantenimiento, EPP, protecciones <span class="pp">|</span></span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Incendio eléctrico <span class="pp">|</span> Calor por mala conexión <span class="pp">|</span> Daño material <span class="pp">|</span> Inspección y conexiones firmes <span class="pp">|</span></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a><span class="al">![Señal de advertencia de peligro por arco eléctrico.](img/arc_flash_hazard.png)</span>{#fig-arco-electrico width=45%}</span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>**Fuente de imagen:** Wikimedia Commons, archivo *ISO 7010 W042 warning; arc flash hazard.svg*, licencia CC0 1.0. Se usa una previsualización PNG generada por Wikimedia. Disponible en: <span class="ot">&lt;https://commons.wikimedia.org/wiki/File:ISO_7010_W042_warning;_arc_flash_hazard.svg&gt;</span></span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a>La @fig-arco-electrico representa el riesgo de arco eléctrico. Este riesgo es especialmente importante en tableros, sistemas industriales y maniobras sobre equipos energizados.</span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a><span class="fu">## Sobrecarga</span></span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a>La sobrecarga ocurre cuando un circuito conduce una corriente mayor a la prevista durante un tiempo prolongado. Esto puede suceder por conectar demasiadas cargas a un mismo circuito o por seleccionar conductores de calibre insuficiente.</span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cortocircuito</span></span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>El cortocircuito es una falla de baja impedancia entre conductores activos o entre fase y tierra. Genera una corriente muy elevada en un tiempo muy corto.</span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a>Sus causas frecuentes son aislamiento deteriorado, conexiones flojas, humedad, daño mecánico en conductores, errores de conexión o contacto accidental entre fase y neutro.</span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a><span class="fu">## Falla a tierra</span></span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a>La falla a tierra ocurre cuando una corriente no deseada fluye hacia elementos metálicos o hacia tierra. Es especialmente peligrosa cuando energiza carcasas de equipos.</span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a><span class="al">![Cable eléctrico con conductor de puesta a tierra incorporado.](img/electric_wire_grounded.jpg)</span>{#fig-cable-tierra width=55%}</span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>**Fuente de imagen:** Wikimedia Commons, archivo *ElectricWireGrounded.jpg*, autor KVDP, dominio público. Disponible en: <span class="ot">&lt;https://commons.wikimedia.org/wiki/File:ElectricWireGrounded.jpg&gt;</span></span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a>La @fig-cable-tierra permite reconocer la función del conductor de protección dentro de una instalación. La identificación del conductor de tierra es fundamental para prevenir contactos indirectos.</span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a><span class="al">![Barra principal de puesta a tierra.](img/main_ground_busbar.jpg)</span>{#fig-barra-tierra width=60%}</span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a>**Fuente de imagen:** Wikimedia Commons, archivo *Main ground busbar.JPG*, autor Victor zmey / Dmitry G, licencia CC BY-SA 3.0. Disponible en: <span class="ot">&lt;https://commons.wikimedia.org/wiki/File:Main_ground_busbar.JPG&gt;</span></span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a>La @fig-barra-tierra muestra una barra principal de tierra. Este elemento permite concentrar conductores de protección y asegurar continuidad hacia el sistema de puesta a tierra.</span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a><span class="fu">## Medidas generales de prevención</span></span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Medida <span class="pp">|</span> Aplicación <span class="pp">|</span></span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Dimensionar correctamente conductores <span class="pp">|</span> Evita calentamiento <span class="pp">|</span></span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Seleccionar protecciones adecuadas <span class="pp">|</span> Permite desconexión ante fallas <span class="pp">|</span></span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Usar puesta a tierra <span class="pp">|</span> Reduce riesgo de contacto indirecto <span class="pp">|</span></span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Usar protección diferencial <span class="pp">|</span> Protege personas ante fugas de corriente <span class="pp">|</span></span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Aislar conexiones <span class="pp">|</span> Evita contactos accidentales <span class="pp">|</span></span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Rotular tableros <span class="pp">|</span> Facilita mantenimiento seguro <span class="pp">|</span></span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Separar circuitos <span class="pp">|</span> Evita sobrecarga y facilita operación <span class="pp">|</span></span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Realizar inspecciones <span class="pp">|</span> Detecta fallas antes de accidentes <span class="pp">|</span></span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a><span class="al">![Tomacorriente GFCI con botones de prueba y reinicio.](img/gfci_outlet.jpg)</span>{#fig-gfci width=65%}</span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a>**Fuente de imagen:** Wikimedia Commons, archivo *Ground Fault Circuit Interrupter (GFCI) Electrical Outlet (29268945818).jpg*, autor Tony Webster, licencia CC BY 2.0. Disponible en: <span class="ot">&lt;https://commons.wikimedia.org/wiki/File:Ground_Fault_Circuit_Interrupter_(GFCI)_Electrical_Outlet_(29268945818).jpg&gt;</span></span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a>La @fig-gfci muestra un tomacorriente con protección diferencial de falla a tierra. Este tipo de dispositivo es especialmente relevante en zonas húmedas o con mayor exposición al contacto accidental.</span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a><span class="fu"># Integración del Bloque 1 con la práctica experimental</span></span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a><span class="fu">## Práctica del bloque</span></span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a>La práctica oficial del bloque consiste en el diseño de un plano eléctrico residencial. Esta actividad integra normalización, simbología, seguridad y criterios iniciales de diseño.</span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a><span class="fu">## Entregables de la práctica</span></span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Entregable <span class="pp">|</span> Contenido mínimo <span class="pp">|</span></span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|</span></span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Plano eléctrico residencial <span class="pp">|</span> Luminarias, interruptores, tomacorrientes, cargas especiales y tablero <span class="pp">|</span></span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cuadro de cargas <span class="pp">|</span> Circuito, descripción, potencia, corriente, conductor y protección <span class="pp">|</span></span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Diagrama unifilar <span class="pp">|</span> Medidor, tablero, protecciones y circuitos derivados <span class="pp">|</span></span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Cuadro de simbología <span class="pp">|</span> Símbolos utilizados en el plano <span class="pp">|</span></span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Memoria técnica <span class="pp">|</span> Criterios normativos, cálculos y justificación <span class="pp">|</span></span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Conclusiones <span class="pp">|</span> Análisis técnico del diseño realizado <span class="pp">|</span></span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a><span class="fu">## Cuadro de cargas modelo</span></span>
+<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Circuito <span class="pp">|</span> Descripción <span class="pp">|</span> Cantidad <span class="pp">|</span> Potencia unitaria (W) <span class="pp">|</span> Potencia total (W) <span class="pp">|</span> Voltaje (V) <span class="pp">|</span> Corriente (A) <span class="pp">|</span> Conductor sugerido <span class="pp">|</span> Protección <span class="pp">|</span></span>
+<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a><span class="pp">|---|---|---:|---:|---:|---:|---:|---|---|</span></span>
+<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C1 <span class="pp">|</span> Iluminación planta baja <span class="pp">|</span> 8 <span class="pp">|</span> 100 <span class="pp">|</span> 800 <span class="pp">|</span> 120 <span class="pp">|</span> 6.67 <span class="pp">|</span> 14 AWG <span class="pp">|</span> 15 A <span class="pp">|</span></span>
+<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C2 <span class="pp">|</span> Iluminación planta alta <span class="pp">|</span> 6 <span class="pp">|</span> 100 <span class="pp">|</span> 600 <span class="pp">|</span> 120 <span class="pp">|</span> 5.00 <span class="pp">|</span> 14 AWG <span class="pp">|</span> 15 A <span class="pp">|</span></span>
+<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C3 <span class="pp">|</span> Tomacorrientes generales <span class="pp">|</span> 8 <span class="pp">|</span> 200 <span class="pp">|</span> 1600 <span class="pp">|</span> 120 <span class="pp">|</span> 13.33 <span class="pp">|</span> 12 AWG <span class="pp">|</span> 20 A <span class="pp">|</span></span>
+<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C4 <span class="pp">|</span> Tomacorrientes cocina <span class="pp">|</span> 4 <span class="pp">|</span> 200 <span class="pp">|</span> 800 <span class="pp">|</span> 120 <span class="pp">|</span> 6.67 <span class="pp">|</span> 12 AWG <span class="pp">|</span> 20 A <span class="pp">|</span></span>
+<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C5 <span class="pp">|</span> Cocina eléctrica <span class="pp">|</span> 1 <span class="pp">|</span> 6000 <span class="pp">|</span> 6000 <span class="pp">|</span> 240 <span class="pp">|</span> 25.00 <span class="pp">|</span> Según cálculo <span class="pp">|</span> Bipolar <span class="pp">|</span></span>
+<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> C6 <span class="pp">|</span> Ducha eléctrica <span class="pp">|</span> 1 <span class="pp">|</span> 3500 <span class="pp">|</span> 3500 <span class="pp">|</span> 240 <span class="pp">|</span> 14.58 <span class="pp">|</span> Según cálculo <span class="pp">|</span> Bipolar <span class="pp">|</span></span>
+<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a>::: {.callout-important}</span>
+<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a>Los valores del cuadro son referenciales para fines académicos. En un proyecto real deben verificarse con normativa vigente, condiciones de instalación, temperatura, caída de tensión, tipo de aislamiento, longitud del circuito y especificaciones del fabricante.</span>
+<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a><span class="fu"># Actividad en clase</span></span>
+<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a><span class="fu">## Análisis de una vivienda básica</span></span>
+<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a>A partir de un plano arquitectónico asignado por el docente, el estudiante deberá:</span>
+<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Identificar ambientes.</span>
+<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Proponer puntos de iluminación.</span>
+<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Ubicar interruptores.</span>
+<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Ubicar tomacorrientes.</span>
+<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Identificar cargas especiales.</span>
+<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Proponer ubicación del tablero.</span>
+<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>Elaborar una leyenda básica de símbolos.</span>
+<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>Identificar riesgos eléctricos.</span>
+<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a><span class="ss">9. </span>Proponer medidas de prevención.</span>
+<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a><span class="ss">10. </span>Justificar el criterio de separación de circuitos.</span>
+<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a><span class="fu">## Producto esperado</span></span>
+<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a>Un esquema preliminar de instalación eléctrica residencial con simbología básica, identificación de circuitos y observaciones de seguridad.</span>
+<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a><span class="fu"># Actividad autónoma</span></span>
+<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a><span class="fu">## Ficha de revisión normativa</span></span>
+<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a>El estudiante revisará la NEC-SB-IE Instalaciones Eléctricas y elaborará una ficha técnica con:</span>
+<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>objetivo de la norma;</span>
+<span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>campo de aplicación;</span>
+<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>normas referenciadas;</span>
+<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>criterios de circuitos;</span>
+<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>criterios de conductores;</span>
+<span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>criterios de protecciones;</span>
+<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>criterios de puesta a tierra;</span>
+<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>criterios de ubicación de interruptores y tomacorrientes;</span>
+<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a><span class="ss">9. </span>tres conclusiones técnicas.</span>
+<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a>Extensión sugerida: 2 a 3 páginas.</span>
+<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a><span class="fu"># Preguntas de repaso</span></span>
+<span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>¿Qué es una instalación eléctrica?</span>
+<span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>¿Qué diferencia existe entre una instalación civil y una industrial?</span>
+<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>¿Por qué es importante la normalización eléctrica?</span>
+<span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>¿Qué normas se pueden aplicar en instalaciones eléctricas?</span>
+<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>¿Qué función cumple la simbología eléctrica?</span>
+<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>¿Qué elementos debe contener un plano eléctrico residencial?</span>
+<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a><span class="ss">7. </span>¿Qué es un cuadro de cargas?</span>
+<span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a><span class="ss">8. </span>¿Qué es un diagrama unifilar?</span>
+<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a><span class="ss">9. </span>¿Qué diferencia existe entre sobrecarga y cortocircuito?</span>
+<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a><span class="ss">10. </span>¿Por qué la puesta a tierra es una medida de seguridad?</span>
+<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a><span class="ss">11. </span>¿Qué riesgos existen al trabajar en laboratorio eléctrico?</span>
+<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a><span class="ss">12. </span>¿Por qué no se debe medir resistencia en un circuito energizado?</span>
+<span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a><span class="ss">13. </span>¿Qué información debe contener una leyenda de simbología?</span>
+<span id="cb1-465"><a href="#cb1-465" aria-hidden="true" tabindex="-1"></a><span class="ss">14. </span>¿Por qué se deben separar circuitos de iluminación, tomacorrientes y cargas especiales?</span>
+<span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a><span class="ss">15. </span>¿Qué relación existe entre carga, conductor y protección?</span>
+<span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a><span class="fu"># Cierre del bloque</span></span>
+<span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a>El Bloque 1 permite al estudiante comprender que una instalación eléctrica segura depende de la correcta aplicación de normas, simbología, criterios de diseño y medidas de prevención. Estos fundamentos son necesarios para avanzar hacia el análisis de diagramas eléctricos, mediciones, instrumentación y automatización industrial.</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/TU-USUARIO/modulo-instalaciones-civiles-industriales/edit/main/bloque_01_normalizacion_seguridad_simbologia.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li><li><a href="https://github.com/TU-USUARIO/modulo-instalaciones-civiles-industriales/issues/new" class="toc-action"><i class="bi empty"></i>Informar sobre problema</a></li></ul></div></div></div></footer><script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

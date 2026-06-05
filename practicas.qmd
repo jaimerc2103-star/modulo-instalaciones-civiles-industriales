@@ -1,0 +1,74 @@
+# Prácticas de laboratorio
+
+## Organización general
+
+Las prácticas están alineadas con los tres bloques de la asignatura y con el componente práctico-experimental.
+
+| Práctica | Bloque | Título | Producto esperado |
+|---|---|---|---|
+| 1 | Bloque 1 | Diseño de plano eléctrico residencial | Plano, cuadro de cargas, diagrama unifilar e informe |
+| 2 | Bloque 2 | Diseño de plano eléctrico industrial | Plano industrial, diagramas de potencia/control e informe |
+| 3 | Bloque 3 | Fundamentos de programación con PLCs | Programa básico, conexión física e informe |
+
+## Práctica 1: Diseño de plano eléctrico residencial
+
+### Objetivo
+
+Diseñar el plano eléctrico integral de una instalación residencial mediante simbología normalizada, criterios normativos, cuadro de cargas, selección de conductores, protecciones y puesta a tierra.
+
+### Producto mínimo
+
+- Plano arquitectónico con instalación eléctrica.
+- Cuadro de cargas.
+- Diagrama unifilar.
+- Cuadro de simbología.
+- Criterio de selección de conductores y protecciones.
+- Identificación de puesta a tierra.
+- Informe técnico.
+
+### Criterios técnicos básicos
+
+- Separación de circuitos de iluminación, tomacorrientes y cargas especiales.
+- Uso de simbología normalizada.
+- Protección termomagnética por circuito.
+- Consideración de conductor de protección.
+- Ubicación funcional del tablero.
+
+## Práctica 2: Diseño de plano eléctrico industrial
+
+### Objetivo
+
+Diseñar e interpretar una instalación eléctrica industrial básica, diferenciando circuitos de potencia y control, diagramas unifilares, multifilares, protecciones, cargas e instrumentos de medición.
+
+### Producto mínimo
+
+- Plano o esquema de instalación industrial.
+- Diagrama de potencia.
+- Diagrama de control.
+- Identificación de instrumentos de medición.
+- Análisis de magnitudes eléctricas.
+- Informe técnico.
+
+## Práctica 3: Fundamentos de programación con PLCs
+
+### Objetivo
+
+Configurar, conectar y programar manualmente un micro-PLC Siemens LOGO! mediante funciones de temporización para el control secuencial de cargas eléctricas.
+
+### Producto mínimo
+
+- Diagrama de conexión.
+- Programa o lógica de control.
+- Evidencia de funcionamiento.
+- Tabla de entradas y salidas.
+- Informe técnico.
+
+### Tabla de entradas y salidas sugerida
+
+| Variable | Dirección | Descripción |
+|---|---|---|
+| Marcha | I1 | Pulsador normalmente abierto |
+| Paro / Reset | I2 | Pulsador normalmente cerrado |
+| Carga | Q1 | Lámpara piloto o bobina de contactor |
+| Temporizador | TON | Retardo a la conexión de 5 s |
+

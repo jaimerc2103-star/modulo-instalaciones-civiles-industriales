@@ -1,0 +1,37 @@
+# Evaluación
+
+## Distribución general
+
+| Componente | Valoración |
+|---|---:|
+| Aprendizaje en contacto con el docente | 30 puntos |
+| Aprendizaje autónomo | 20 puntos |
+| Aprendizaje práctico-experimental | 20 puntos |
+| Evaluación interciclo | 10 puntos |
+| Evaluación final | 20 puntos |
+| **Total** | **100 puntos** |
+
+## Actividades evaluativas sugeridas
+
+| Actividad | Bloque | Técnica | Instrumento | Puntaje referencial |
+|---|---|---|---|---:|
+| Evaluación de conocimientos | 1 | Prueba | Cuestionario | 10 |
+| Webinar | 2 | Informe / ensayo | Rúbrica | 5 |
+| Investigación formativa | 2 | Ensayo | Rúbrica | 10 |
+| Evaluación de conocimientos | 3 | Prueba | Cuestionario | 5 |
+| Práctica residencial | 1 | Informe | Rúbrica | 20 |
+| Práctica industrial | 2 | Informe | Rúbrica | 20 |
+| Práctica PLC | 3 | Informe | Rúbrica | 20 |
+| Proyecto final | 3 | Proyecto | Rúbrica | 10 |
+
+## Rúbrica general para prácticas
+
+| Criterio | Excelente | Bueno | Básico | Puntaje |
+|---|---|---|---|---:|
+| Cumplimiento técnico | Aplica normativa, cálculos y criterios de seguridad de forma consistente | Presenta criterios técnicos con errores menores | Presenta criterios incompletos | 4 |
+| Representación gráfica | Plano/diagrama claro, ordenado y normalizado | Plano/diagrama comprensible con detalles por corregir | Plano/diagrama incompleto | 4 |
+| Cálculos y justificación | Cálculos completos y correctamente interpretados | Cálculos parcialmente correctos | Cálculos insuficientes | 4 |
+| Informe técnico | Estructura clara, redacción técnica y evidencias | Presenta estructura aceptable | Informe débil o desordenado | 4 |
+| Seguridad y procedimiento | Identifica riesgos y aplica prevención | Reconoce parcialmente riesgos | Omite criterios de seguridad | 4 |
+| **Total** |  |  |  | **20** |
+

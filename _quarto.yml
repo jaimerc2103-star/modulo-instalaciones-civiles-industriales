@@ -1,0 +1,57 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Módulo de Instalaciones Civiles e Industriales"
+  subtitle: "Normalización, diagramas, instrumentación y automatización"
+  author: "Ing. Jaime Rojas C., Mgtr."
+  date: today
+  language: es
+  site-url: "https://TU-USUARIO.github.io/modulo-instalaciones-civiles-industriales/"
+  repo-url: "https://github.com/TU-USUARIO/modulo-instalaciones-civiles-industriales"
+  repo-actions: [edit, issue]
+  downloads: [pdf]
+  sharing: [twitter, facebook, linkedin]
+  sidebar:
+    style: docked
+    background: light
+    search: true
+  chapters:
+    - index.qmd
+    - plan_asignatura.qmd
+    - bloque_01_normalizacion_seguridad_simbologia.qmd
+    - bloque_02_diagramas_instrumentacion.qmd
+    - bloque_03_automatizacion.qmd
+    - practicas.qmd
+    - evaluacion.qmd
+    - proyecto_final.qmd
+    - referencias.qmd
+
+bibliography: references.bib
+csl: apa.csl
+
+format:
+  html:
+    theme:
+      light: litera
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    code-tools: true
+    callout-appearance: simple
+    fig-align: center
+    smooth-scroll: true
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    number-sections: true
+    colorlinks: true
+
+execute:
+  warning: false
+  message: false
+
+lang: es
