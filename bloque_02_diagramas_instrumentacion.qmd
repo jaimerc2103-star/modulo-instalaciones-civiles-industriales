@@ -2,15 +2,9 @@
 
 ## Presentación del bloque
 
-El Bloque 2 profundiza en la interpretación y elaboración de diagramas eléctricos, así como en el uso técnico de instrumentos de medición. Este bloque conecta los fundamentos normativos y de simbología estudiados en el Bloque 1 con la representación funcional de instalaciones civiles e industriales.
+El Bloque 2 profundiza en la interpretación de planos, diagramas eléctricos e instrumentos de medición aplicados a instalaciones civiles e industriales. En este bloque el estudiante pasa de reconocer símbolos aislados a comprender sistemas completos: planta eléctrica, simbología, cuadro de cargas, diagrama unifilar, esquemas funcionales, esquemas multifilares y procedimientos básicos de medición.
 
-En una instalación eléctrica real, el plano o diagrama no es únicamente un dibujo. Es un documento técnico que permite diseñar, construir, operar, diagnosticar, mantener y modificar un sistema eléctrico. Por esta razón, el estudiante debe diferenciar entre plano en planta, diagrama unifilar, diagrama multifilar, diagrama de potencia, diagrama de control e información de instrumentación.
-
-Además, este bloque introduce la medición eléctrica como proceso técnico. Medir no consiste solamente en observar un número en la pantalla de un instrumento; implica seleccionar el equipo adecuado, conectar correctamente, registrar la unidad, interpretar el dato y reconocer el posible error de medición.
-
-::: {.callout-note}
-El propósito central del bloque es que el estudiante pase de “ver símbolos” a “leer sistemas eléctricos”, interpretando cómo se alimentan, protegen, controlan y verifican las instalaciones civiles e industriales.
-:::
+La lectura de diagramas eléctricos es una competencia esencial para diseñar, construir, diagnosticar, mantener y modificar una instalación. Un plano no es únicamente una imagen; es un documento técnico que comunica ubicación, conexión, protección, carga, calibre de conductor, circuito asociado y criterios de operación.
 
 ---
 
@@ -26,302 +20,363 @@ Analizar e interpretar diagramas eléctricos de instalaciones civiles e industri
 
 ---
 
-# 2.1 Tipos de diagramas eléctricos
+# 2.1 Documentación gráfica de una instalación eléctrica
 
-## Concepto de diagrama eléctrico
+## 2.1.1 Relación entre planta, simbología, cuadro de cargas y unifilar
 
-Un diagrama eléctrico es una representación gráfica de un circuito, instalación o sistema eléctrico. Su función es mostrar cómo se alimenta, conecta, protege, controla y opera un conjunto de elementos eléctricos.
+En un proyecto eléctrico, los documentos gráficos y técnicos cumplen funciones complementarias. La planta eléctrica muestra la ubicación física de los elementos; la simbología permite interpretar cada representación gráfica; el cuadro de cargas resume la potencia y protección de los circuitos; y el diagrama unifilar muestra la estructura de alimentación y distribución.
 
-Un diagrama eléctrico puede representar una instalación completa o solo una parte de ella. Por ejemplo, puede mostrar la distribución desde un tablero general, el arranque de un motor, la conexión de un instrumento, el mando de un contactor o el esquema de protección de un alimentador.
+| Documento | Pregunta técnica que responde | Información principal |
+|---|---|---|
+| Planta eléctrica | ¿Dónde están ubicados los elementos? | Luminarias, interruptores, tomacorrientes, canalizaciones y circuitos |
+| Simbología | ¿Qué significa cada símbolo? | Leyenda gráfica, colores, calibres, tipos de salida y referencias |
+| Cuadro de cargas | ¿Cuánta carga tiene cada circuito? | Potencia, protección, conductor, tipo de circuito y tablero |
+| Diagrama unifilar | ¿Cómo se alimenta y protege el sistema? | Tableros, breakers, alimentadores, cargas y distribución principal |
+| Esquema multifilar | ¿Cómo se cablea realmente? | Conductores fase, neutro, retorno, tierra, contactos, lámparas y bornes |
 
-## Tabla 2.1. Tipos de diagramas eléctricos
+::: {.callout-important}
+Un error común es interpretar la planta eléctrica sin revisar la simbología y el cuadro de cargas. En una instalación real, estos documentos deben leerse en conjunto.
+:::
+
+## 2.1.2 Planta eléctrica
+
+La planta eléctrica es la representación de los elementos eléctricos sobre el plano arquitectónico. Permite ubicar físicamente luminarias, apagadores, tomacorrientes, tableros, canalizaciones y cargas especiales.
+
+![Planta eléctrica de referencia de una instalación con circuitos de iluminación, tomacorrientes y salidas especiales.](img/bloque2/b2_planta_instalacion.png){#fig-b2-planta width=100%}
+
+En la @fig-b2-planta se observan recorridos de circuitos, puntos de iluminación, tomacorrientes, salidas especiales, identificación de circuitos y distribución por ambientes. Para leerla técnicamente se recomienda seguir este orden:
+
+1. identificar el tablero o punto de alimentación principal;
+2. reconocer los ambientes arquitectónicos;
+3. ubicar luminarias y salidas de iluminación;
+4. ubicar interruptores y su relación con los puntos de luz;
+5. identificar tomacorrientes de uso general y tomacorrientes especiales;
+6. seguir el recorrido de canalizaciones;
+7. relacionar cada circuito con el cuadro de cargas.
+
+## 2.1.3 Simbología eléctrica
+
+La simbología eléctrica es el lenguaje gráfico del plano. Permite que el diseñador, el instalador, el fiscalizador y el personal de mantenimiento interpreten la misma información sin ambigüedad.
+
+![Simbología, referencias, ubicación y calibres de la instalación.](img/bloque2/b2_simbologia_instalacion.png){#fig-b2-simbologia width=100%}
+
+En la @fig-b2-simbologia se integran símbolos eléctricos, referencias de ubicación y calibres. Esta información es indispensable para no confundir un punto de luz con un tomacorriente, una salida especial, una canalización o un elemento de protección.
+
+## 2.1.4 Cuadro de cargas
+
+El cuadro de cargas resume los circuitos que alimenta cada tablero. Permite evaluar la potencia instalada, seleccionar conductores, definir protecciones y verificar la distribución de cargas.
+
+![Cuadro de cargas de tableros y circuitos de una instalación eléctrica.](img/bloque2/b2_cuadro_cargas_instalacion.png){#fig-b2-cargas width=100%}
+
+Un cuadro de cargas debe leerse verificando los siguientes datos:
+
+| Dato | Interpretación técnica |
+|---|---|
+| Número de circuito | Identifica cada ramal o circuito derivado |
+| Tipo de carga | Iluminación, tomacorriente, aire acondicionado, emergencia, reserva, etc. |
+| Potencia | Carga instalada o estimada del circuito |
+| Conductor | Calibre requerido para transportar la corriente |
+| Protección | Capacidad nominal del interruptor termomagnético |
+| Total | Potencia total asociada al tablero |
+
+La corriente de diseño puede estimarse, para carga monofásica, mediante:
+
+$$
+I = \frac{P}{V\cos\varphi}
+$$
+
+Para cargas resistivas o cuando se asume factor de potencia unitario:
+
+$$
+I = \frac{P}{V}
+$$
+
+Donde:
+
+- \(I\) es la corriente en amperios;
+- \(P\) es la potencia en watts;
+- \(V\) es el voltaje en voltios;
+- \(\cos\varphi\) es el factor de potencia.
+
+## 2.1.5 Diagrama unifilar
+
+El diagrama unifilar representa la distribución eléctrica mediante una sola línea por circuito, aunque físicamente el circuito tenga varios conductores. Es útil para analizar alimentadores, tableros, interruptores principales, circuitos derivados y protecciones.
+
+![Diagrama unifilar de una instalación eléctrica con tableros y circuitos derivados.](img/bloque2/b2_diagrama_unifilar_instalacion.png){#fig-b2-unifilar width=100%}
+
+En la @fig-b2-unifilar se observa la relación entre alimentación, medidores, tableros y circuitos derivados. Al revisar un unifilar debe identificarse:
+
+- fuente de alimentación;
+- tensión del sistema;
+- tablero principal;
+- tableros secundarios;
+- protecciones principales y derivadas;
+- circuitos de iluminación, tomacorrientes y cargas especiales;
+- reservas o circuitos futuros.
+
+---
+
+# 2.2 Tipos de diagramas eléctricos
+
+## 2.2.1 Concepto general
+
+Un diagrama eléctrico es una representación gráfica que muestra cómo se conecta, alimenta, controla, protege o mide un sistema eléctrico. No todos los diagramas tienen el mismo nivel de detalle. Por ello, el lector debe identificar primero qué tipo de diagrama está observando.
 
 | Tipo de diagrama | Qué representa | Uso principal |
 |---|---|---|
-| Plano eléctrico en planta | Ubicación física de dispositivos sobre el plano arquitectónico | Diseño, montaje e inspección |
-| Diagrama unifilar | Distribución eléctrica simplificada mediante una línea por circuito | Análisis de alimentación, protecciones y tableros |
-| Diagrama multifilar | Conexión individual de conductores | Cableado, verificación y mantenimiento |
-| Diagrama de potencia | Camino de la energía hacia la carga | Alimentación de motores y cargas industriales |
-| Diagrama de control | Lógica de mando y operación | Marcha, paro, enclavamientos, señalización |
-| Diagrama de instrumentación | Señales de medición y control | Sensores, transmisores, indicadores y controladores |
-| Esquema de tablero | Disposición de elementos dentro de gabinete | Fabricación, montaje y mantenimiento de tableros |
+| Plano en planta | Ubicación física de elementos | Diseño, montaje e inspección |
+| Unifilar | Alimentación simplificada por circuitos | Análisis de tableros y protecciones |
+| Multifilar | Conductores individuales | Cableado, diagnóstico y mantenimiento |
+| Funcional | Secuencia lógica de operación | Comprender el funcionamiento |
+| Potencia | Camino de energía hacia la carga | Motores, resistencias, bombas y cargas de fuerza |
+| Control | Lógica de mando | Marcha, paro, enclavamientos, temporización y señalización |
+| Instrumentación | Variables medidas y señales | Sensores, transmisores, indicadores y controladores |
 
-## Relación entre diagramas
+## 2.2.2 Esquema funcional
 
-En un proyecto real, los diagramas se complementan. El plano en planta indica dónde se ubican los elementos; el diagrama unifilar muestra cómo se alimentan; el multifilar permite ver los conductores; el diagrama de potencia muestra el flujo de energía hacia la carga; y el diagrama de control explica la lógica de mando.
+El esquema funcional muestra la relación lógica entre dispositivos, sin necesariamente representar el recorrido físico exacto de los conductores.
 
-::: {.callout-important}
-Un error frecuente es pensar que todos los diagramas cumplen la misma función. En realidad, cada diagrama responde a una pregunta técnica distinta.
-:::
+![Esquema funcional de una instalación de salón-comedor.](img/bloque2/b2_esquema_funcional_salon_comedor.png){#fig-b2-funcional width=90%}
 
----
+La @fig-b2-funcional permite relacionar interruptores, luminarias y tomacorrientes dentro de un mismo ambiente. Es útil para explicar cómo debe comportarse la instalación antes de entrar al detalle del cableado.
 
-# 2.2 Diagramas unifilares y multifilares
+## 2.2.3 Esquema unifilar
 
-## Diagrama unifilar
+El esquema unifilar simplifica la instalación usando una sola línea para representar uno o más conductores. En instalaciones residenciales permite observar circuitos, alimentación y protecciones.
 
-El diagrama unifilar representa un sistema eléctrico mediante una sola línea por circuito, aunque físicamente existan varios conductores. Es muy utilizado en tableros, acometidas, alimentadores, subestaciones, centros de carga y sistemas de distribución.
+![Ejemplo de esquema unifilar tomado de la presentación de vivienda.](img/bloque2/b2_esquema_unifilar_ejemplo.png){#fig-b2-ejemplo-unifilar width=55%}
 
-Este tipo de diagrama permite revisar:
+## 2.2.4 Esquema multifilar
 
-- fuente de alimentación;
-- transformador o acometida;
-- interruptor principal;
-- barras principales;
-- alimentadores;
-- tableros secundarios;
-- protecciones;
-- cargas principales;
-- sistema de puesta a tierra;
-- niveles de tensión;
-- corriente nominal;
-- capacidad interruptiva.
+El esquema multifilar representa cada conductor por separado. Por tanto, es más detallado que el unifilar y se utiliza especialmente cuando se necesita comprender el cableado real.
 
-![Diagrama unifilar de una subestación de distribución.](img/one_line_substation_wiring.jpg){#fig-b2-unifilar-subestacion width=75%}
+![Ejemplo de esquema multifilar tomado de la presentación de vivienda.](img/bloque2/b2_esquema_multifilar_ejemplo.png){#fig-b2-ejemplo-multifilar width=60%}
 
-**Fuente:** Wikimedia Commons, archivo *110kV substation wiring.JPG*. Autor: Dmitry G. Licencia: CC BY-SA 3.0 / GFDL.
+![Esquema multifilar de salón-comedor.](img/bloque2/b2_esquema_multifilar_salon_comedor.png){#fig-b2-multifilar-salon width=80%}
 
-La @fig-b2-unifilar-subestacion muestra un ejemplo de diagrama unifilar. Aunque corresponde a una subestación de distribución, permite observar el principio de representación simplificada: una sola línea resume la estructura principal del sistema.
+## 2.2.5 Diagrama de potencia y diagrama de control
 
-## Diagrama multifilar
+En instalaciones industriales es común separar el circuito de potencia del circuito de control.
 
-El diagrama multifilar representa cada conductor de forma independiente. A diferencia del unifilar, no simplifica el circuito en una sola línea, sino que muestra la conexión real de conductores, fases, neutro, tierra, contactos, bobinas, cargas, borneras y protecciones.
+El **circuito de potencia** transporta la corriente principal hacia la carga. Alimenta motores, bombas, compresores, resistencias, hornos o equipos de fuerza. Sus elementos frecuentes son: interruptor termomagnético, fusibles, contactores de potencia, relé térmico, variador de frecuencia, motor y conductores de fuerza.
 
-El multifilar es útil para:
-
-- montaje de tableros;
-- cableado de equipos;
-- revisión de continuidad;
-- diagnóstico de fallas;
-- identificación de conductores;
-- verificación de terminales;
-- mantenimiento correctivo.
-
-## Tabla 2.2. Comparación entre diagrama unifilar y multifilar
-
-| Criterio | Diagrama unifilar | Diagrama multifilar |
-|---|---|---|
-| Nivel de detalle | General | Detallado |
-| Representación | Una línea por circuito | Cada conductor se representa por separado |
-| Uso principal | Distribución y protecciones | Cableado y verificación |
-| Ventaja | Simplifica sistemas grandes | Muestra conexiones reales |
-| Limitación | No muestra todos los conductores | Puede ser extenso y complejo |
-| Aplicación típica | Acometidas, alimentadores, tableros | Motores, tableros de control, borneras |
-
-## Ejemplo de interpretación
-
-Si en un diagrama unifilar aparece un motor trifásico, se puede conocer su alimentador y protección. Sin embargo, para conocer cómo se conectan L1, L2, L3, PE, contactor, relé térmico y bornera, se requiere un diagrama multifilar o un diagrama de potencia detallado.
-
----
-
-# 2.3 Diagramas de control y potencia
-
-## Circuito de potencia
-
-El circuito de potencia, también denominado circuito de fuerza, es el camino por donde circula la corriente principal hacia la carga. En instalaciones industriales alimenta motores, bombas, compresores, ventiladores, resistencias, hornos o máquinas.
-
-Elementos frecuentes:
-
-- interruptor termomagnético;
-- fusible;
-- guardamotor;
-- contactor de potencia;
-- relé térmico;
-- variador de frecuencia;
-- motor;
-- conductores de fuerza;
-- borneras de potencia.
-
-## Circuito de control
-
-El circuito de control, también llamado circuito de mando, define la lógica de operación. Trabaja con corrientes menores y permite ordenar la marcha, paro, enclavamiento, temporización, señalización o protección lógica de una carga.
-
-Elementos frecuentes:
-
-- pulsador de marcha;
-- pulsador de paro;
-- paro de emergencia;
-- contacto auxiliar;
-- bobina de contactor;
-- temporizador;
-- relé;
-- lámpara piloto;
-- sensor;
-- final de carrera;
-- PLC.
-
-![Circuito de inversión de giro de motor con contactores.](img/ac_motor_reverse_control.jpg){#fig-b2-control-motor width=85%}
-
-**Fuente:** Wikimedia Commons, archivo *AC motor reverse without auxilary contacts.jpg*. Autor: Dmitry G. Licencia: CC BY-SA 3.0 / GFDL.
-
-La @fig-b2-control-motor presenta un circuito de inversión de giro con contactores. Este tipo de diagrama permite diferenciar visualmente la parte de potencia y la parte de mando, así como los elementos de protección y maniobra.
-
-## Tabla 2.3. Diferencias entre potencia y control
+El **circuito de control** gobierna la operación de la carga. Maneja corrientes menores y permite ejecutar órdenes de marcha, paro, enclavamiento, temporización o señalización. Sus elementos frecuentes son: pulsadores, selectores, contactos auxiliares, bobinas, temporizadores, relés, sensores, lámparas piloto y PLC.
 
 | Criterio | Circuito de potencia | Circuito de control |
 |---|---|---|
 | Función | Alimentar la carga principal | Gobernar la operación |
-| Corriente | Alta o media | Baja |
-| Elementos principales | Breaker, contactor, relé térmico, motor | Pulsadores, contactos, bobinas, relés, PLC |
-| Riesgo principal | Sobrecorriente, arco eléctrico, calentamiento | Maniobra no deseada, error lógico |
-| Documento asociado | Diagrama de potencia | Diagrama de mando |
-| Verificación | Continuidad de fuerza y protecciones | Secuencia lógica y señales |
-
-## Ejemplo: arranque directo de motor
-
-Un arranque directo de motor puede representarse con dos diagramas:
-
-1. **Diagrama de potencia:** alimentación trifásica, breaker, contactor, relé térmico y motor.
-2. **Diagrama de control:** pulsador de paro, pulsador de marcha, contacto auxiliar de enclavamiento, contacto del relé térmico y bobina del contactor.
-
-Cuando el operador presiona marcha, se energiza la bobina del contactor. Al cerrarse los contactos principales, la energía llega al motor. Si se produce sobrecarga, el relé térmico abre el circuito de control y detiene el sistema.
+| Corriente | Mayor | Menor |
+| Elementos | Breaker, contactor, relé térmico, motor | Pulsadores, contactos, bobinas, relés, PLC |
+| Riesgo | Sobrecorriente, calentamiento, arco eléctrico | Maniobra incorrecta, error lógico |
+| Documento | Diagrama de fuerza o potencia | Diagrama de mando o control |
 
 ---
 
-# 2.4 Interpretación de planos eléctricos
+# 2.3 Instalaciones básicas de alumbrado
 
-## Lectura técnica de planos
+Las instalaciones básicas de alumbrado permiten comprender de manera práctica cómo se controla una carga desde uno, dos o tres puntos. Estos circuitos son esenciales para viviendas, oficinas, pasillos, escaleras y áreas de circulación.
 
-Interpretar un plano eléctrico significa comprender la relación entre símbolos, conexiones, circuitos, cargas, protecciones y ubicación física de los elementos. Esta habilidad es indispensable para montaje, mantenimiento y diagnóstico.
+::: {.callout-tip}
+Para interpretar estos circuitos conviene seguir siempre el recorrido de la fase: alimentación → protección → interruptor o conmutadores → retorno → lámpara → neutro.
+:::
 
-![Panel eléctrico abierto con breakers identificados.](img/electrical_panel_opened.jpg){#fig-b2-panel-abierto width=80%}
+## 2.3.1 Encendido de un foco desde un punto
 
-**Fuente:** Wikimedia Commons, archivo *Electrical panel opened.jpg*. Autor: FuriousYogi. Licencia: CC BY-SA 4.0.
+El encendido desde un punto utiliza un interruptor simple para controlar una luminaria. Es el circuito más básico y se aplica en ambientes donde se requiere un solo punto de mando.
 
-La @fig-b2-panel-abierto muestra un tablero con interruptores automáticos identificados. Esta imagen permite relacionar el plano eléctrico con la instalación física: cada circuito debe estar protegido, identificado y documentado.
+![Esquema de un punto de luz.](img/bloque2/b2_slide_un_punto_luz.png){#fig-b2-slide-un-punto width=70%}
 
-## Procedimiento recomendado para interpretar un plano
+![Representación simplificada del encendido de un foco desde un punto.](img/bloque2/b2_encendido_un_punto.png){#fig-b2-un-punto width=55%}
 
-1. Revisar el título del plano y el alcance del documento.
-2. Revisar simbología y abreviaturas.
-3. Identificar la fuente de alimentación.
-4. Ubicar tablero principal y tableros secundarios.
-5. Localizar cargas principales.
-6. Diferenciar potencia y control.
-7. Verificar protecciones.
-8. Revisar numeración de cables y borneras.
-9. Comparar con el cuadro de cargas.
-10. Revisar notas técnicas.
-11. Verificar puesta a tierra.
-12. Confirmar rotulado y correspondencia con la instalación real.
+### Funcionamiento
 
-## Tabla 2.4. Errores frecuentes al interpretar planos
+Cuando el interruptor está cerrado, existe continuidad entre la fase y el retorno hacia la lámpara; por tanto, el foco enciende. Cuando el interruptor abre el circuito, se interrumpe el paso de corriente y el foco se apaga.
 
-| Error frecuente | Consecuencia | Recomendación |
+La relación eléctrica básica es:
+
+$$
+I = \frac{P}{V}
+$$
+
+Por ejemplo, para un foco de \(60\,\mathrm{W}\) conectado a \(120\,\mathrm{V}\):
+
+$$
+I = \frac{60\,\mathrm{W}}{120\,\mathrm{V}}=0.5\,\mathrm{A}
+$$
+
+### Conductores mínimos del circuito
+
+| Conductor | Función |
+|---|---|
+| Fase | Alimenta el interruptor |
+| Retorno | Lleva la fase conmutada hacia la lámpara |
+| Neutro | Completa el circuito en la lámpara |
+| Tierra | Protección de partes metálicas, si aplica |
+
+## 2.3.2 Encendido de un foco desde dos puntos
+
+El encendido desde dos puntos permite controlar una misma luminaria desde dos ubicaciones. Se implementa con dos interruptores conmutados. Es muy utilizado en escaleras, pasillos, dormitorios con dos accesos y corredores.
+
+![Instalación conmutada desde dos puntos.](img/bloque2/b2_slide_conmutada_dos_puntos.png){#fig-b2-slide-dos-puntos width=70%}
+
+![Representación simplificada del encendido de un foco desde dos puntos.](img/bloque2/b2_encendido_dos_puntos.png){#fig-b2-dos-puntos width=55%}
+
+### Funcionamiento
+
+Los dos conmutadores cambian la continuidad entre dos conductores viajeros. Al accionar cualquiera de los dos dispositivos, se modifica el camino eléctrico y la lámpara cambia de estado.
+
+| Elemento | Función |
+|---|---|
+| Conmutador 1 | Recibe la fase y selecciona uno de los viajeros |
+| Viajeros | Conectan ambos conmutadores |
+| Conmutador 2 | Recibe viajeros y entrega retorno a la lámpara |
+| Lámpara | Carga controlada |
+| Neutro | Retorno común hacia la fuente |
+
+## 2.3.3 Encendido de un foco desde tres puntos
+
+El encendido desde tres puntos se utiliza cuando se desea controlar una luminaria desde tres ubicaciones. Se emplean dos conmutadores extremos y un interruptor intermedio o de cruce.
+
+![Instalación conmutada desde tres puntos.](img/bloque2/b2_slide_conmutada_tres_puntos.png){#fig-b2-slide-tres-puntos width=70%}
+
+![Representación simplificada del encendido de un foco desde tres puntos.](img/bloque2/b2_encendido_tres_puntos.png){#fig-b2-tres-puntos width=55%}
+
+### Funcionamiento
+
+El interruptor intermedio invierte o cruza los conductores viajeros. Por ello, cualquiera de los tres puntos de mando puede cambiar el estado de la lámpara.
+
+| Caso | Elementos de mando | Aplicación típica |
 |---|---|---|
-| No revisar la leyenda | Confusión de símbolos | Leer la simbología antes de interpretar |
-| Confundir potencia y control | Diagnóstico incorrecto | Separar ambos circuitos |
-| Ignorar numeración de cables | Error de conexión | Verificar borneras y marcas |
-| No comparar con cuadro de cargas | Protección mal seleccionada | Revisar potencia, corriente y breaker |
-| No leer notas técnicas | Omisión de restricciones | Revisar observaciones del plano |
-| No verificar puesta a tierra | Riesgo de seguridad | Confirmar PE y barras de tierra |
+| Un punto | 1 interruptor simple | Habitación pequeña, baño, bodega |
+| Dos puntos | 2 interruptores conmutados | Escalera, pasillo, dormitorio con dos accesos |
+| Tres puntos | 2 conmutadores + 1 intermedio | Pasillo largo, escalera con descanso, área con tres accesos |
+
+## 2.3.4 Ejemplos de instalación en ambiente real
+
+![Distribución básica de canalización y puntos eléctricos en una habitación.](img/bloque2/b2_distribucion_basica_habitacion.png){#fig-b2-distribucion-basica width=85%}
+
+![Referencia espacial de una habitación para ubicar puntos de luz, interruptores y tomacorrientes.](img/bloque2/b2_habitacion_referencia.png){#fig-b2-habitacion-ref width=85%}
+
+![Esquema multifilar de una instalación conmutada aplicada a pasillo.](img/bloque2/b2_instalacion_conmutada_pasillo_multifilar.png){#fig-b2-pasillo-multifilar width=60%}
+
+![Ejemplo de doble conmutada.](img/bloque2/b2_doble_conmutada.png){#fig-b2-doble-conmutada width=75%}
+
+---
+
+# 2.4 Interpretación técnica de planos eléctricos
+
+## 2.4.1 Procedimiento de lectura
+
+Para interpretar correctamente un plano eléctrico se recomienda seguir una secuencia ordenada:
+
+1. revisar título, escala, lámina y alcance del plano;
+2. leer la simbología y notas técnicas;
+3. ubicar la alimentación general;
+4. ubicar tablero principal y tableros secundarios;
+5. identificar circuitos de iluminación;
+6. identificar circuitos de tomacorrientes;
+7. identificar cargas especiales;
+8. relacionar circuitos con el cuadro de cargas;
+9. revisar calibres y protecciones;
+10. verificar puesta a tierra;
+11. comparar el plano con el diagrama unifilar;
+12. revisar si existen reservas o circuitos futuros.
+
+## 2.4.2 Errores frecuentes en interpretación
+
+| Error frecuente | Consecuencia | Acción correctiva |
+|---|---|---|
+| No leer la simbología | Confusión entre salidas | Revisar leyenda antes de interpretar |
+| Confundir retorno con neutro | Falla de operación o riesgo eléctrico | Seguir el recorrido de fase y retorno |
+| No revisar cuadro de cargas | Protección o conductor mal seleccionados | Verificar circuito, potencia y breaker |
+| No relacionar planta y unifilar | Diagnóstico incompleto | Leer ambos documentos en conjunto |
+| Ignorar puesta a tierra | Riesgo para personas y equipos | Confirmar conductor de protección |
+| No verificar tensión nominal | Selección incorrecta de equipos | Revisar voltaje del sistema |
+
+## 2.4.3 Relación entre plano y montaje
+
+El plano indica lo que se debe instalar, pero el montaje exige verificar condiciones reales: ubicación de cajas, altura de interruptores, canalización disponible, accesibilidad del tablero, ruta de conductores y separación entre circuitos.
+
+::: {.callout-warning}
+Antes de intervenir un circuito se debe verificar ausencia de tensión con un instrumento adecuado y aplicar procedimientos seguros de trabajo.
+:::
 
 ---
 
 # 2.5 Introducción a las mediciones eléctricas
 
-## Importancia de medir
+## 2.5.1 Importancia de medir
 
-Medir es comparar una magnitud con una unidad de referencia. En instalaciones eléctricas, las mediciones permiten verificar si un sistema opera dentro de condiciones seguras y funcionales.
+La medición eléctrica permite comprobar si una instalación corresponde al plano, si los circuitos están correctamente alimentados y si las cargas funcionan dentro de los valores esperados.
 
-Las mediciones eléctricas permiten:
+Una medición técnica requiere:
 
-- comprobar presencia o ausencia de tensión;
-- verificar continuidad;
-- medir corriente de carga;
-- detectar sobrecargas;
-- comprobar caída de tensión;
-- revisar resistencia de aislamiento;
-- medir potencia;
-- estimar factor de potencia;
-- diagnosticar fallas;
-- validar instalaciones después del montaje.
+- seleccionar el instrumento correcto;
+- elegir la escala adecuada;
+- conectar el instrumento correctamente;
+- registrar valor y unidad;
+- interpretar el resultado;
+- estimar el error asociado;
+- trabajar bajo condiciones seguras.
 
-## Instrumentos de medición
+## 2.5.2 Magnitudes e instrumentos
 
-:::: {.columns}
+| Magnitud | Símbolo | Unidad | Instrumento | Conexión básica |
+|---|---|---|---|---|
+| Voltaje | \(V\) | voltio \(V\) | Voltímetro o multímetro | Paralelo |
+| Corriente | \(I\) | amperio \(A\) | Amperímetro o pinza amperimétrica | Serie o abrazando conductor |
+| Resistencia | \(R\) | ohmio \(\Omega\) | Óhmetro o multímetro | Circuito desenergizado |
+| Potencia | \(P\) | watt \(W\) | Vatímetro o cálculo | Según método |
+| Energía | \(E\) | kilowatt-hora \(kWh\) | Medidor de energía | En acometida o tablero |
 
-::: {.column width="33%"}
-![Multímetro digital.](img/digital_multimeter.jpg){#fig-b2-multimetro width=100%}
+## 2.5.3 Medición de voltaje
 
-**Fuente:** Wikimedia Commons, archivo *Digital Multimeter (To measure Voltage, Current and Resistance).jpg*. Autor: K.Venkataramana. Licencia: CC0.
-:::
+El voltaje se mide en paralelo con el elemento o puntos entre los que se desea conocer la diferencia de potencial.
 
-::: {.column width="33%"}
-![Pinza amperimétrica.](img/clampmeter_fluke_337.jpg){#fig-b2-pinza width=100%}
+$$
+V = V_{ab}
+$$
 
-**Fuente:** Wikimedia Commons, archivo *Clampmeter Fluke 337.jpg*. Autor: Harke. Dominio público.
-:::
+Ejemplos típicos:
 
-::: {.column width="33%"}
-![Medidor de aislamiento.](img/insulation_tester_1507.jpg){#fig-b2-megohmetro width=100%}
+- voltaje fase-neutro;
+- voltaje fase-fase;
+- voltaje en bornes de una carga;
+- voltaje en salida de tomacorriente.
 
-**Fuente:** Wikimedia Commons, archivo *Isolationsmessgerät 1507.jpg*. Autor: wdwd. Licencia: CC BY-SA 4.0.
-:::
+## 2.5.4 Medición de corriente
 
-::::
+La corriente se mide en serie con la carga o mediante pinza amperimétrica alrededor de un conductor individual.
 
-Las @fig-b2-multimetro, @fig-b2-pinza y @fig-b2-megohmetro muestran instrumentos de uso frecuente en laboratorio y obra. El multímetro sirve para mediciones generales; la pinza amperimétrica permite medir corriente sin abrir el circuito; y el medidor de aislamiento permite evaluar el estado dieléctrico de cables, motores y equipos.
+$$
+I = I_{\text{carga}}
+$$
 
-## Tabla 2.5. Instrumentos y magnitudes
+No debe abrazarse fase y neutro al mismo tiempo con una pinza amperimétrica para medir corriente de carga, porque los campos se cancelan y la lectura puede ser incorrecta.
 
-| Instrumento | Magnitud principal | Aplicación |
-|---|---|---|
-| Voltímetro | Tensión | Verificar alimentación y caída de tensión |
-| Amperímetro | Corriente | Medir corriente de carga |
-| Pinza amperimétrica | Corriente | Medición sin abrir el circuito |
-| Óhmetro | Resistencia | Verificar resistencias y continuidad |
-| Multímetro | Varias magnitudes | Medición general en laboratorio y campo |
-| Megóhmetro | Resistencia de aislamiento | Evaluación de cables, motores y tableros |
-| Vatímetro | Potencia activa | Evaluación de consumo |
-| Analizador de redes | V, I, P, Q, S, FP, armónicos | Diagnóstico avanzado |
+## 2.5.5 Medición de resistencia y continuidad
 
-::: {.callout-warning}
-Antes de realizar una medición se debe confirmar si el circuito debe estar energizado o desenergizado. Resistencia, continuidad y aislamiento se miden con el circuito sin tensión.
+La resistencia se mide únicamente con el circuito desenergizado. La continuidad permite verificar si existe camino eléctrico entre dos puntos.
+
+$$
+R = \frac{V}{I}
+$$
+
+::: {.callout-important}
+Nunca se debe medir resistencia en un circuito energizado. Esta práctica puede dañar el instrumento y poner en riesgo al operador.
 :::
 
 ---
 
-# 2.6 Magnitudes eléctricas fundamentales e instrumentos de medición
+# 2.6 Fórmulas eléctricas aplicadas al bloque
 
-## Magnitudes principales
+Las siguientes expresiones se escriben en LaTeX para que Quarto las renderice correctamente en HTML. Se recomienda conservarlas entre delimitadores `$$ ... $$` cuando se edite el archivo.
 
-Las magnitudes eléctricas básicas permiten describir el comportamiento de una instalación. En este bloque se analizan desde el punto de vista de la medición.
-
-## Tabla 2.6. Magnitudes eléctricas fundamentales
-
-| Magnitud | Símbolo | Unidad | Instrumento | Forma de conexión |
-|---|---|---|---|---|
-| Voltaje | \(V\) | Voltio (V) | Voltímetro / multímetro | Paralelo |
-| Corriente | \(I\) | Amperio (A) | Amperímetro / pinza | Serie o pinza |
-| Resistencia | \(R\) | Ohmio (\(\Omega\)) | Óhmetro | Circuito desenergizado |
-| Potencia activa | \(P\) | Watt (W) | Vatímetro / analizador | Según instrumento |
-| Energía | \(E\) | kWh | Medidor de energía | Instalado en red |
-| Frecuencia | \(f\) | Hertz (Hz) | Frecuencímetro | Paralelo |
-| Factor de potencia | FP | Adimensional | Analizador de redes | Según instrumento |
-| Resistencia de aislamiento | \(R_{iso}\) | M\(\Omega\) | Megóhmetro | Circuito desenergizado |
-
-## Conexión de instrumentos
-
-![Circuito didáctico con voltímetro y amperímetro.](img/electric_circuit_voltmeter_ammeter.jpg){#fig-b2-voltimetro-amperimetro width=85%}
-
-**Fuente:** Wikimedia Commons, archivo *Electric circuit with voltmeter and ammeter.JPG*. Autor: Meganbeckett27. Licencia: CC BY-SA 3.0.
-
-La @fig-b2-voltimetro-amperimetro muestra una práctica de laboratorio con voltímetro y amperímetro. En términos generales, el voltímetro se conecta en paralelo con el elemento de interés, mientras que el amperímetro se conecta en serie con la corriente que se desea medir.
-
-## Fórmulas útiles en instalaciones y mediciones
-
-En Quarto, las expresiones matemáticas se escriben con sintaxis LaTeX. Para una lectura clara en HTML se utilizarán ecuaciones centradas. Las variables principales son: voltaje `\(V\)`, corriente `\(I\)`, resistencia `\(R\)`, potencia activa `\(P\)`, potencia aparente `\(S\)`, potencia reactiva `\(Q\)` y factor de potencia `\(\cos\phi\)`.
-
-### Ley de Ohm
-
-La Ley de Ohm relaciona voltaje, corriente y resistencia:
+## 2.6.1 Ley de Ohm
 
 $$
-V = I \, R
+V = I R
 $$
-
-De esta expresión se despejan:
 
 $$
 I = \frac{V}{R}
@@ -331,462 +386,203 @@ $$
 R = \frac{V}{I}
 $$
 
-Donde:
+## 2.6.2 Potencia monofásica
 
-- \(V\) es el voltaje, medido en voltios \(\mathrm{V}\).
-- \(I\) es la corriente, medida en amperios \(\mathrm{A}\).
-- \(R\) es la resistencia, medida en ohmios \(\Omega\).
-
-### Potencia eléctrica en corriente alterna monofásica
-
-Para una carga monofásica, la potencia activa se expresa como:
+Para cargas resistivas o factor de potencia unitario:
 
 $$
-P = V \, I \, \cos\phi
+P = V I
 $$
 
-Por tanto, la corriente de diseño puede estimarse mediante:
+Para corriente alterna con factor de potencia:
 
 $$
-I = \frac{P}{V \, \cos\phi}
+P = V I \cos\varphi
 $$
 
-La potencia aparente monofásica se calcula como:
+Por tanto:
 
 $$
-S = V \, I
+I = \frac{P}{V\cos\varphi}
 $$
 
-Y la relación entre potencia activa, aparente y factor de potencia es:
+## 2.6.3 Potencia trifásica
 
 $$
-\cos\phi = \frac{P}{S}
-$$
-
-### Potencia eléctrica en corriente alterna trifásica
-
-En un sistema trifásico balanceado, la potencia activa se calcula como:
-
-$$
-P = \sqrt{3} \, V_L \, I_L \, \cos\phi
-$$
-
-La potencia aparente trifásica se obtiene con:
-
-$$
-S = \sqrt{3} \, V_L \, I_L
-$$
-
-De la ecuación de potencia activa trifásica se puede despejar la corriente de línea:
-
-$$
-I_L = \frac{P}{\sqrt{3} \, V_L \, \cos\phi}
+P = \sqrt{3}\,V_L I_L \cos\varphi
 $$
 
 Donde:
 
-- \(V_L\) es el voltaje de línea.
-- \(I_L\) es la corriente de línea.
-- \(\cos\phi\) es el factor de potencia.
+- \(V_L\) es el voltaje de línea;
+- \(I_L\) es la corriente de línea;
+- \(\cos\varphi\) es el factor de potencia.
 
-![Relación entre potencia activa, reactiva y aparente.](img/electric_power_factor.png){#fig-b2-factor-potencia width=80%}
-
-**Fuente:** Wikimedia Commons, archivo *Electric power factor.svg*. Autor: VoidZero / F l a n k e r. Licencia: GFDL, CC BY-SA 3.0 y Free Art License.
-
-La @fig-b2-factor-potencia representa el triángulo de potencia. En cargas industriales inductivas, la potencia activa \(P\), la potencia reactiva \(Q\) y la potencia aparente \(S\) permiten analizar el factor de potencia del sistema.
-
-## Ejemplo aplicado
-
-Un motor trifásico opera con los siguientes datos:
+## 2.6.4 Energía eléctrica
 
 $$
-V_L = 220 \, \mathrm{V}
+E = P t
 $$
 
-$$
-I_L = 12 \, \mathrm{A}
-$$
+Si la potencia se expresa en kilowatts y el tiempo en horas:
 
 $$
-\cos\phi = 0.85
+E\,(\mathrm{kWh})=P\,(\mathrm{kW})\,t\,(\mathrm{h})
 $$
-
-La potencia activa aproximada se calcula con:
-
-$$
-P = \sqrt{3} \, V_L \, I_L \, \cos\phi
-$$
-
-Sustituyendo valores:
-
-$$
-P = \sqrt{3} \, (220) \, (12) \, (0.85)
-$$
-
-$$
-P = 3886.7 \, \mathrm{W}
-$$
-
-$$
-P \approx 3.89 \, \mathrm{kW}
-$$
-
-También se puede calcular la potencia aparente trifásica:
-
-$$
-S = \sqrt{3} \, V_L \, I_L
-$$
-
-$$
-S = \sqrt{3} \, (220) \, (12) = 4572.4 \, \mathrm{VA}
-$$
-
-$$
-S \approx 4.57 \, \mathrm{kVA}
-$$
-
-La relación entre ambas magnitudes confirma el factor de potencia:
-
-$$
-\cos\phi = \frac{P}{S} = \frac{3.89}{4.57} \approx 0.85
-$$
-
-Esta información permite estimar demanda, seleccionar protecciones y analizar el comportamiento de la carga.
 
 ---
 
-# 2.7 Procedimientos de medición
+# 2.7 Exactitud, precisión y error de medición
 
-## Procedimiento general
+## 2.7.1 Exactitud
 
-Un procedimiento de medición debe ser ordenado, repetible y seguro. No basta con colocar las puntas del instrumento; el estudiante debe justificar qué mide, cómo lo mide y qué significa el resultado.
+La exactitud indica qué tan cerca está una medición del valor verdadero o de referencia.
 
-## Tabla 2.7. Procedimiento general de medición
+## 2.7.2 Precisión
 
-| Paso | Acción | Criterio técnico |
-|---|---|---|
-| 1 | Identificar magnitud | Voltaje, corriente, resistencia, potencia, etc. |
-| 2 | Seleccionar instrumento | Debe corresponder a la magnitud |
-| 3 | Revisar estado del instrumento | Puntas, batería, fusible, carcasa |
-| 4 | Seleccionar escala | Rango superior al valor esperado |
-| 5 | Definir conexión | Serie, paralelo, pinza o circuito abierto |
-| 6 | Verificar seguridad | Energizado o desenergizado según medición |
-| 7 | Realizar medición | Evitar contacto con partes energizadas |
-| 8 | Registrar lectura | Valor, unidad, escala y condición |
-| 9 | Repetir si es necesario | Permite evaluar dispersión |
-| 10 | Interpretar resultado | Comparar con valor esperado o nominal |
+La precisión indica qué tan repetibles son varias mediciones bajo condiciones similares.
 
-## Medición de voltaje
-
-El voltaje se mide en paralelo. En instalaciones de baja tensión se puede medir entre:
-
-- fase y neutro;
-- fase y fase;
-- fase y tierra;
-- neutro y tierra.
-
-Una lectura anormal entre neutro y tierra puede indicar problemas de puesta a tierra, caída de tensión o retorno de corriente.
-
-## Medición de corriente
-
-La corriente se puede medir de dos formas:
-
-1. con amperímetro conectado en serie;
-2. con pinza amperimétrica alrededor de un conductor.
-
-En instalaciones reales, la pinza amperimétrica es más segura porque no requiere abrir el circuito.
-
-## Medición de resistencia
-
-La resistencia se mide con el circuito desenergizado. Se usa para verificar componentes, continuidad o condición de un conductor.
-
-## Medición de aislamiento
-
-La resistencia de aislamiento se mide con megóhmetro. Es una prueba importante en motores, cables y tableros. Debe realizarse con el equipo desconectado, descargado y bajo un procedimiento seguro.
-
-::: {.callout-important}
-En una medición técnica, el dato sin contexto tiene poco valor. Siempre debe registrarse magnitud, unidad, punto de medición, instrumento, escala, condición de operación y observaciones.
-:::
-
----
-
-# 2.8 Exactitud y precisión en las mediciones
-
-## Exactitud
-
-La exactitud indica qué tan cerca está una medición del valor verdadero o aceptado como referencia.
-
-Ejemplo: si una fuente entrega realmente \(120.0\ V\) y un instrumento mide \(119.8\ V\), la medición tiene buena exactitud.
-
-## Precisión
-
-La precisión indica qué tan cercanas son varias mediciones entre sí. Un instrumento puede ser preciso, pero no exacto, si repite valores similares pero alejados del valor real.
-
-## Tabla 2.8. Diferencia entre exactitud y precisión
-
-| Concepto | Pregunta que responde | Ejemplo |
-|---|---|---|
-| Exactitud | ¿Qué tan cerca estoy del valor real? | Mido 119.9 V cuando el valor real es 120 V |
-| Precisión | ¿Qué tan repetibles son mis mediciones? | Mido 117.1 V, 117.2 V, 117.1 V |
-| Baja exactitud | Lecturas alejadas del valor real | Instrumento descalibrado |
-| Baja precisión | Lecturas muy dispersas | Mala conexión o ruido en la señal |
-
-## Ejemplo de análisis
-
-Valor de referencia: \(120.0\ V\)
-
-Lecturas del instrumento A:
-
-\[
-119.8,\ 119.9,\ 120.0,\ 119.9
-\]
-
-Lecturas del instrumento B:
-
-\[
-116.5,\ 116.6,\ 116.5,\ 116.7
-\]
-
-El instrumento A presenta buena exactitud y buena precisión. El instrumento B presenta buena precisión, pero baja exactitud, porque repite valores similares pero alejados del valor de referencia.
-
----
-
-# 2.9 Concepto de error en las mediciones: tipos, cálculo e interpretación
-
-## ¿Qué es el error de medición?
-
-El error de medición es la diferencia entre el valor medido y el valor verdadero o de referencia. En la práctica, el valor verdadero casi nunca se conoce de forma absoluta, por lo que se utiliza un valor patrón, nominal o de referencia.
-
-## Error absoluto
-
-El error absoluto mide la diferencia entre el valor medido y el valor de referencia:
+## 2.7.3 Error absoluto
 
 $$
-E_a = \left| X_m - X_r \right|
+E_a = |X_m - X_r|
 $$
 
 Donde:
 
-- \(E_a\) es el error absoluto.
-- \(X_m\) es el valor medido.
+- \(E_a\) es el error absoluto;
+- \(X_m\) es el valor medido;
 - \(X_r\) es el valor de referencia.
 
-## Error relativo
-
-El error relativo compara el error absoluto con el valor de referencia:
+## 2.7.4 Error relativo
 
 $$
 E_r = \frac{E_a}{X_r}
 $$
 
-## Error porcentual
-
-El error porcentual expresa el error relativo en porcentaje:
+## 2.7.5 Error porcentual
 
 $$
-E_{\%} = \frac{E_a}{X_r} \times 100
+E_{\%}=\left(\frac{E_a}{X_r}\right)\times 100\,\%
 $$
 
-## Ejemplo
+## 2.7.6 Ejemplo resuelto
 
-Una tensión de referencia es:
+Un tomacorriente debería entregar \(120\,\mathrm{V}\), pero el multímetro registra \(118\,\mathrm{V}\).
 
-$$
-X_r = 120 \, \mathrm{V}
-$$
-
-El multímetro registra:
+Error absoluto:
 
 $$
-X_m = 117.6 \, \mathrm{V}
+E_a = |118-120|=2\,\mathrm{V}
 $$
 
-El error absoluto es:
+Error relativo:
 
 $$
-E_a = \left|117.6 - 120\right|
+E_r = \frac{2}{120}=0.0167
 $$
 
-$$
-E_a = 2.4 \, \mathrm{V}
-$$
-
-El error relativo es:
+Error porcentual:
 
 $$
-E_r = \frac{2.4}{120}
+E_{\%}=0.0167\times100\,\%=1.67\,\%
 $$
 
-$$
-E_r = 0.02
-$$
-
-El error porcentual es:
-
-$$
-E_{\%} = 0.02 \times 100
-$$
-
-$$
-E_{\%} = 2\%
-$$
-
-La medición presenta un error porcentual del \(2\%\). Dependiendo de la tolerancia aceptable, este valor puede ser admisible o no.
-
-## Tabla 2.9. Tipos de error
-
-| Tipo de error | Descripción | Ejemplo | Forma de reducirlo |
-|---|---|---|---|
-| Sistemático | Se repite en la misma dirección | Instrumento descalibrado | Calibración |
-| Aleatorio | Varía de forma impredecible | Ruido o variación de señal | Repetir mediciones y promediar |
-| Instrumental | Asociado al instrumento | Fusible dañado, baja resolución | Revisar equipo |
-| De método | Procedimiento inadecuado | Medir corriente en paralelo | Capacitación y guía |
-| Humano | Lectura o conexión incorrecta | Escala incorrecta | Verificación cruzada |
-| Ambiental | Influencia externa | Temperatura, humedad, campos EM | Controlar condiciones |
-
-
-## Promedio de mediciones
-
-Cuando se realizan varias mediciones de una misma magnitud, se recomienda calcular el promedio:
-
-$$
-\bar{X} = \frac{X_1 + X_2 + X_3 + \cdots + X_n}{n}
-$$
-
-Donde \(\bar{X}\) es el valor promedio y \(n\) es el número total de mediciones.
-
-## Desviación respecto al promedio
-
-Para analizar la dispersión de cada lectura respecto al promedio se puede usar:
-
-$$
-d_i = \left|X_i - \bar{X}\right|
-$$
-
-Si las desviaciones son pequeñas, las mediciones son más precisas. Si las desviaciones son grandes, existe mayor dispersión y se debe revisar el método, el instrumento o las condiciones de medición.
+Interpretación: la medición presenta una diferencia del \(1.67\,\%\) respecto al valor de referencia.
 
 ---
 
-# Integración del Bloque 2 con la práctica experimental
+# 2.8 Procedimiento de medición segura
 
-## Práctica del bloque
+## 2.8.1 Antes de medir
 
-La práctica asociada al Bloque 2 consiste en el diseño de un plano eléctrico de una instalación de tipo industrial. Esta actividad se desarrolla como estudio de caso e integra diagramas, cargas, protecciones, mando, potencia y documentación técnica.
+- Revisar el estado físico del instrumento.
+- Verificar puntas de prueba y aislamiento.
+- Seleccionar magnitud y escala adecuada.
+- Confirmar si el circuito debe estar energizado o desenergizado.
+- Identificar fase, neutro y tierra.
+- Utilizar equipo de protección personal cuando aplique.
 
-## Criterios técnicos para el diseño industrial
+## 2.8.2 Durante la medición
 
-En una instalación industrial deben considerarse:
+- Mantener las manos alejadas de partes energizadas.
+- No cambiar de escala con las puntas conectadas si el instrumento no lo permite.
+- Conectar el voltímetro en paralelo.
+- Conectar el amperímetro en serie, salvo uso de pinza amperimétrica.
+- No medir resistencia con tensión presente.
 
-- potencia activa, reactiva y aparente;
-- factor de potencia;
-- corrientes de arranque;
-- motores trifásicos;
-- selectividad de protecciones;
-- diagramas de potencia;
-- diagramas de control;
-- rotulado de cables y bornes;
-- seguridad de operación;
-- continuidad del proceso productivo.
+## 2.8.3 Después de medir
 
-## Entregables mínimos
+- Registrar valor, unidad, fecha y condición de prueba.
+- Comparar contra valor esperado.
+- Analizar posibles fuentes de error.
+- Desenergizar si se va a modificar el circuito.
+- Guardar el instrumento correctamente.
+
+---
+
+# 2.9 Actividad integradora del bloque
+
+## 2.9.1 Caso de estudio
+
+A partir de los archivos adjuntos del bloque, el estudiante debe interpretar una instalación eléctrica básica y elaborar un informe técnico breve.
+
+## 2.9.2 Actividades
+
+1. Identificar en la planta los circuitos de iluminación, tomacorrientes y cargas especiales.
+2. Relacionar los símbolos del plano con la tabla de simbología.
+3. Interpretar el cuadro de cargas y explicar el significado de conductor, protección y potencia.
+4. Explicar la estructura del diagrama unifilar.
+5. Dibujar a mano o en software un encendido de foco desde un punto.
+6. Dibujar un control de foco desde dos puntos.
+7. Dibujar un control de foco desde tres puntos.
+8. Medir voltaje en un tomacorriente bajo supervisión.
+9. Calcular el error porcentual si se compara con un valor de referencia.
+10. Entregar conclusiones técnicas.
+
+## 2.9.3 Tabla de registro de mediciones
+
+| Punto medido | Valor esperado | Valor medido | Error absoluto | Error porcentual | Observación |
+|---|---:|---:|---:|---:|---|
+| Tomacorriente 1 fase-neutro | 120 V |  |  |  |  |
+| Tomacorriente 2 fase-neutro | 120 V |  |  |  |  |
+| Salida de iluminación | 120 V |  |  |  |  |
+| Continuidad de conductor | 0 \(\Omega\) aprox. |  |  |  | Circuito desenergizado |
+
+## 2.9.4 Entregables mínimos
 
 | Entregable | Contenido esperado |
 |---|---|
-| Plano de canalizaciones | Recorrido de alimentadores, tableros, cargas y canalizaciones |
-| Diagrama unifilar | Alimentación, protecciones, tableros, cargas y datos eléctricos |
-| Diagrama de potencia | Alimentación de motores y cargas industriales |
-| Diagrama de mando | Pulsadores, contactos, bobinas, temporizadores y enclavamientos |
-| Cuadro de cargas | Potencia, voltaje, corriente, factor de potencia y protección |
-| Lista de materiales | Conductores, canalizaciones, protecciones y equipos |
-| Memoria técnica | Criterios de diseño, cálculos y justificaciones |
-| Conclusiones | Interpretación técnica del diseño realizado |
-
-## Caso de estudio sugerido
-
-Diseñar el sistema eléctrico básico para un pequeño taller industrial que contiene:
-
-| Carga | Cantidad | Potencia unitaria | Tensión | Observación |
-|---|---:|---:|---:|---|
-| Motor bomba | 1 | 3 HP | 220 V trifásico | Arranque directo |
-| Motor compresor | 1 | 5 HP | 220 V trifásico | Protección térmica |
-| Iluminación industrial | 8 | 100 W | 120 V | Circuito independiente |
-| Tomacorrientes de servicio | 6 | 200 W | 120 V | Uso general |
-| Extractor | 1 | 1 HP | 220 V | Control manual |
-| Tablero de control | 1 | 300 W | 120 V | Mando y señalización |
-
-El estudiante deberá elaborar:
-
-1. cuadro de cargas;
-2. diagrama unifilar;
-3. diagrama de potencia para un motor;
-4. diagrama de control marcha-paro;
-5. selección preliminar de protecciones;
-6. lista de materiales;
-7. análisis de mediciones esperadas.
-
----
-
-# Actividad en clase
-
-## Interpretación guiada de diagramas
-
-El docente entregará un diagrama unifilar y un diagrama de control de un motor. En grupos, los estudiantes deberán:
-
-1. identificar la alimentación;
-2. reconocer protecciones;
-3. diferenciar potencia y control;
-4. identificar motor, contactor y relé térmico;
-5. explicar la secuencia de marcha y paro;
-6. proponer puntos de medición;
-7. identificar riesgos;
-8. reportar posibles errores de interpretación.
-
----
-
-# Actividad autónoma
-
-## Informe breve de mediciones eléctricas
-
-El estudiante deberá elaborar un informe de 2 a 3 páginas con:
-
-1. definición de voltaje, corriente, resistencia y potencia;
-2. instrumento utilizado para cada magnitud;
-3. forma correcta de conexión;
-4. ejemplo de cálculo de error absoluto, relativo y porcentual;
-5. diferencia entre exactitud y precisión;
-6. tres recomendaciones de seguridad para mediciones en laboratorio.
+| Interpretación de planta | Identificación de ambientes, circuitos y dispositivos |
+| Análisis de simbología | Tabla con símbolos principales y significado |
+| Lectura del cuadro de cargas | Explicación de potencia, conductor y protección |
+| Interpretación del unifilar | Alimentación, tableros y circuitos derivados |
+| Esquemas básicos | Un punto, dos puntos y tres puntos |
+| Registro de mediciones | Valores medidos, unidades y error porcentual |
 
 ---
 
 # Preguntas de repaso
 
-1. ¿Qué es un diagrama eléctrico?
-2. ¿Cuál es la diferencia entre plano en planta y diagrama eléctrico?
-3. ¿Para qué sirve un diagrama unifilar?
-4. ¿Qué información adicional muestra un diagrama multifilar?
-5. ¿Cuál es la diferencia entre circuito de potencia y circuito de control?
-6. ¿Qué elementos aparecen en un circuito de mando marcha-paro?
-7. ¿Qué instrumento se utiliza para medir voltaje?
-8. ¿Cómo se conecta un voltímetro?
-9. ¿Por qué el amperímetro se conecta en serie?
-10. ¿Qué ventaja tiene una pinza amperimétrica?
-11. ¿Por qué no se debe medir resistencia con tensión?
-12. ¿Qué es exactitud?
-13. ¿Qué es precisión?
-14. ¿Qué es error absoluto?
-15. ¿Cómo se calcula el error porcentual?
-16. ¿Qué es selectividad de protecciones?
-17. ¿Por qué los motores industriales requieren atención especial?
-18. ¿Qué relación existe entre potencia activa, reactiva y aparente?
-19. ¿Qué debe contener el entregable final de la práctica industrial?
-20. ¿Por qué es importante rotular cables y bornes?
+1. ¿Qué información aporta una planta eléctrica?
+2. ¿Por qué debe revisarse la simbología antes de interpretar el plano?
+3. ¿Qué información contiene un cuadro de cargas?
+4. ¿Qué representa un diagrama unifilar?
+5. ¿Cuál es la diferencia entre unifilar y multifilar?
+6. ¿Qué es un esquema funcional?
+7. ¿Qué elementos forman un encendido desde un punto?
+8. ¿Qué elementos se requieren para controlar un foco desde dos puntos?
+9. ¿Qué elemento adicional se requiere para controlar un foco desde tres puntos?
+10. ¿Qué diferencia existe entre circuito de potencia y circuito de control?
+11. ¿Cómo se conecta un voltímetro?
+12. ¿Cómo se conecta un amperímetro?
+13. ¿Por qué no se mide resistencia en un circuito energizado?
+14. ¿Qué es exactitud?
+15. ¿Qué es precisión?
+16. ¿Cómo se calcula el error porcentual?
 
 ---
 
 # Cierre del bloque
 
-El Bloque 2 permite al estudiante avanzar desde la lectura básica de símbolos hacia la interpretación funcional de sistemas eléctricos. El dominio de diagramas unifilares, multifilares, de potencia y de control es indispensable para el diseño, montaje y mantenimiento de instalaciones civiles e industriales.
-
-La incorporación de mediciones eléctricas fortalece la capacidad de diagnóstico técnico. Medir correctamente no significa únicamente obtener un valor en pantalla, sino comprender el procedimiento, el instrumento, el punto de medición, la seguridad, el error y la confiabilidad del dato.
-
-Estos conocimientos servirán como base para el Bloque 3, donde se estudiarán los fundamentos de automatización industrial y el uso de controladores lógicos programables.
+El Bloque 2 integra la lectura de planos, la interpretación de diagramas eléctricos y la medición de magnitudes eléctricas. La relación entre planta, simbología, cuadro de cargas y diagrama unifilar permite comprender una instalación como sistema técnico. Los esquemas de encendido desde uno, dos y tres puntos fortalecen la comprensión práctica del alumbrado residencial, mientras que la instrumentación permite verificar el funcionamiento real de los circuitos.

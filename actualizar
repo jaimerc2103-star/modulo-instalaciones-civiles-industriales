@@ -1,0 +1,4 @@
+quarto render --to html
+git add .
+git commit -m "Actualizar modulo"
+git push
