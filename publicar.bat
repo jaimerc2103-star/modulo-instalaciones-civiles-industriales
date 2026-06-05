@@ -1,15 +1,35 @@
 @echo off
-echo Renderizando libro Quarto...
-quarto render
+echo ============================================
+echo Actualizando modulo Quarto en GitHub Pages
+echo ============================================
 
-echo Agregando cambios a Git...
+echo.
+echo 1. Renderizando HTML...
+quarto render --to html
+
+IF %ERRORLEVEL% NEQ 0 (
+    echo.
+    echo ERROR: Fallo quarto render --to html
+    pause
+    exit /b
+)
+
+echo.
+echo 2. Agregando cambios a Git...
 git add .
 
-echo Creando commit...
-git commit -m "Actualizar módulo de instalaciones civiles e industriales"
+echo.
+echo 3. Creando commit...
+git commit -m "Actualizar modulo"
 
-echo Subiendo a GitHub...
+echo.
+echo 4. Subiendo a GitHub...
 git push
 
-echo Proceso finalizado.
+echo.
+echo ============================================
+echo Proceso terminado.
+echo GitHub Pages se actualizara en unos minutos.
+echo ============================================
+
 pause
