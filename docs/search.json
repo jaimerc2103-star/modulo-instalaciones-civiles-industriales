@@ -980,6 +980,166 @@
     ]
   },
   {
+    "objectID": "bloque_03_automatizacion.html",
+    "href": "bloque_03_automatizacion.html",
+    "title": "5  Bloque 3: Automatización",
+    "section": "",
+    "text": "5.1 Resultado de aprendizaje del bloque\nEl estudiante analiza e implementa soluciones básicas de automatización en sistemas eléctricos mediante principios de control industrial, identificación de arquitectura y componentes de un PLC y aplicaciones en procesos industriales simples.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Bloque 3: Automatización</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_03_automatizacion.html#objetivo-específico",
+    "href": "bloque_03_automatizacion.html#objetivo-específico",
+    "title": "5  Bloque 3: Automatización",
+    "section": "5.2 Objetivo específico",
+    "text": "5.2 Objetivo específico\nDesarrollar competencias para comprender y aplicar principios de automatización industrial y sistemas de control mediante el estudio de controladores lógicos programables, arquitectura, componentes y aplicaciones básicas en sistemas eléctricos.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Bloque 3: Automatización</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_03_automatizacion.html#introducción-a-la-automatización-industrial",
+    "href": "bloque_03_automatizacion.html#introducción-a-la-automatización-industrial",
+    "title": "5  Bloque 3: Automatización",
+    "section": "5.3 3.1 Introducción a la automatización industrial",
+    "text": "5.3 3.1 Introducción a la automatización industrial\nLa automatización industrial consiste en el uso de dispositivos de control, sensores, actuadores, interfaces y programas para ejecutar procesos con mínima intervención humana. Su aplicación mejora productividad, seguridad, repetibilidad, control de calidad y continuidad de operación.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Bloque 3: Automatización</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_03_automatizacion.html#sistemas-de-control-en-procesos-industriales",
+    "href": "bloque_03_automatizacion.html#sistemas-de-control-en-procesos-industriales",
+    "title": "5  Bloque 3: Automatización",
+    "section": "5.4 3.2 Sistemas de control en procesos industriales",
+    "text": "5.4 3.2 Sistemas de control en procesos industriales\nUn sistema de control integra entradas, procesamiento y salidas.\n\n\n\nElemento\nFunción\n\n\n\n\nSensor\nDetecta una condición física o eléctrica\n\n\nPulsador\nPermite una orden manual\n\n\nControlador\nProcesa señales y ejecuta lógica\n\n\nActuador\nEjecuta una acción física\n\n\nContactor\nManiobra cargas de potencia\n\n\nProtección\nDesconecta ante fallas",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Bloque 3: Automatización</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_03_automatizacion.html#introducción-a-los-controladores-lógicos-programables",
+    "href": "bloque_03_automatizacion.html#introducción-a-los-controladores-lógicos-programables",
+    "title": "5  Bloque 3: Automatización",
+    "section": "5.5 3.3 Introducción a los controladores lógicos programables",
+    "text": "5.5 3.3 Introducción a los controladores lógicos programables\nUn PLC es un dispositivo electrónico diseñado para controlar procesos mediante lógica programada. Sustituye parcial o totalmente la lógica cableada de relés, permitiendo modificar secuencias sin cambiar todo el cableado físico.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Bloque 3: Automatización</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_03_automatizacion.html#componentes-y-arquitectura-básica-de-un-plc",
+    "href": "bloque_03_automatizacion.html#componentes-y-arquitectura-básica-de-un-plc",
+    "title": "5  Bloque 3: Automatización",
+    "section": "5.6 3.4 Componentes y arquitectura básica de un PLC",
+    "text": "5.6 3.4 Componentes y arquitectura básica de un PLC\nUn PLC básico incluye:\n\nFuente de alimentación.\nCPU.\nMemoria.\nEntradas digitales o analógicas.\nSalidas digitales o analógicas.\nMódulos de comunicación.\nInterfaz de programación.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Bloque 3: Automatización</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_03_automatizacion.html#aplicaciones-básicas-de-plc-en-sistemas-eléctricos",
+    "href": "bloque_03_automatizacion.html#aplicaciones-básicas-de-plc-en-sistemas-eléctricos",
+    "title": "5  Bloque 3: Automatización",
+    "section": "5.7 3.5 Aplicaciones básicas de PLC en sistemas eléctricos",
+    "text": "5.7 3.5 Aplicaciones básicas de PLC en sistemas eléctricos\nEjemplos de aplicación:\n\nArranque y paro de motores.\nControl de iluminación.\nTemporización de cargas.\nControl de bombas.\nSecuencias automáticas.\nSeñalización de estados.\nTransferencias automáticas simples.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Bloque 3: Automatización</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_03_automatizacion.html#temporizadores-básicos",
+    "href": "bloque_03_automatizacion.html#temporizadores-básicos",
+    "title": "5  Bloque 3: Automatización",
+    "section": "5.8 Temporizadores básicos",
+    "text": "5.8 Temporizadores básicos\n\n\n\n\n\n\n\n\nTemporizador\nDescripción\nAplicación típica\n\n\n\n\nTON\nRetardo a la conexión\nEncendido diferido de una carga\n\n\nTOF\nRetardo a la desconexión\nApagado diferido\n\n\nPulso\nGenera activación por tiempo definido\nSeñalización o eventos breves",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Bloque 3: Automatización</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_03_automatizacion.html#ejemplo-conceptual-retardo-a-la-conexión",
+    "href": "bloque_03_automatizacion.html#ejemplo-conceptual-retardo-a-la-conexión",
+    "title": "5  Bloque 3: Automatización",
+    "section": "5.9 Ejemplo conceptual: retardo a la conexión",
+    "text": "5.9 Ejemplo conceptual: retardo a la conexión\nUna lámpara piloto debe encenderse cinco segundos después de presionar un pulsador de marcha. La lógica básica es:\n\nEntrada I1 activa el temporizador TON.\nEl temporizador cuenta 5 segundos.\nAl cumplirse el tiempo, se activa Q1.\nUn pulsador de paro reinicia el proceso.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Bloque 3: Automatización</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_03_automatizacion.html#actividad-de-aula",
+    "href": "bloque_03_automatizacion.html#actividad-de-aula",
+    "title": "5  Bloque 3: Automatización",
+    "section": "5.10 Actividad de aula",
+    "text": "5.10 Actividad de aula\nDiseñe la lógica básica para:\n\nEncendido de una lámpara con retardo de 5 segundos.\nApagado con pulsador de paro.\nSeñalización de estado activo.\nRepresentación del diagrama de conexión.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Bloque 3: Automatización</span>"
+    ]
+  },
+  {
+    "objectID": "bloque_03_automatizacion.html#práctica-vinculada",
+    "href": "bloque_03_automatizacion.html#práctica-vinculada",
+    "title": "5  Bloque 3: Automatización",
+    "section": "5.11 Práctica vinculada",
+    "text": "5.11 Práctica vinculada\nPráctica 3: Fundamentos de programación con PLCs usando Siemens LOGO!.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Bloque 3: Automatización</span>"
+    ]
+  },
+  {
+    "objectID": "practicas.html",
+    "href": "practicas.html",
+    "title": "6  Prácticas de laboratorio",
+    "section": "",
+    "text": "6.1 Organización general\nLas prácticas están alineadas con los tres bloques de la asignatura y con el componente práctico-experimental.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Prácticas de laboratorio</span>"
+    ]
+  },
+  {
+    "objectID": "practicas.html#organización-general",
+    "href": "practicas.html#organización-general",
+    "title": "6  Prácticas de laboratorio",
+    "section": "",
+    "text": "Práctica\nBloque\nTítulo\nProducto esperado\n\n\n\n\n1\nBloque 1\nDiseño de plano eléctrico residencial\nPlano, cuadro de cargas, diagrama unifilar e informe\n\n\n2\nBloque 2\nDiseño de plano eléctrico industrial\nPlano industrial, diagramas de potencia/control e informe\n\n\n3\nBloque 3\nFundamentos de programación con PLCs\nPrograma básico, conexión física e informe",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Prácticas de laboratorio</span>"
+    ]
+  },
+  {
+    "objectID": "practicas.html#práctica-1-diseño-de-plano-eléctrico-residencial",
+    "href": "practicas.html#práctica-1-diseño-de-plano-eléctrico-residencial",
+    "title": "6  Prácticas de laboratorio",
+    "section": "6.2 Práctica 1: Diseño de plano eléctrico residencial",
+    "text": "6.2 Práctica 1: Diseño de plano eléctrico residencial\n\n6.2.1 Objetivo\nDiseñar el plano eléctrico integral de una instalación residencial mediante simbología normalizada, criterios normativos, cuadro de cargas, selección de conductores, protecciones y puesta a tierra.\n\n\n6.2.2 Producto mínimo\n\nPlano arquitectónico con instalación eléctrica.\nCuadro de cargas.\nDiagrama unifilar.\nCuadro de simbología.\nCriterio de selección de conductores y protecciones.\nIdentificación de puesta a tierra.\nInforme técnico.\n\n\n\n6.2.3 Criterios técnicos básicos\n\nSeparación de circuitos de iluminación, tomacorrientes y cargas especiales.\nUso de simbología normalizada.\nProtección termomagnética por circuito.\nConsideración de conductor de protección.\nUbicación funcional del tablero.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Prácticas de laboratorio</span>"
+    ]
+  },
+  {
+    "objectID": "practicas.html#práctica-2-diseño-de-plano-eléctrico-industrial",
+    "href": "practicas.html#práctica-2-diseño-de-plano-eléctrico-industrial",
+    "title": "6  Prácticas de laboratorio",
+    "section": "6.3 Práctica 2: Diseño de plano eléctrico industrial",
+    "text": "6.3 Práctica 2: Diseño de plano eléctrico industrial\n\n6.3.1 Objetivo\nDiseñar e interpretar una instalación eléctrica industrial básica, diferenciando circuitos de potencia y control, diagramas unifilares, multifilares, protecciones, cargas e instrumentos de medición.\n\n\n6.3.2 Producto mínimo\n\nPlano o esquema de instalación industrial.\nDiagrama de potencia.\nDiagrama de control.\nIdentificación de instrumentos de medición.\nAnálisis de magnitudes eléctricas.\nInforme técnico.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Prácticas de laboratorio</span>"
+    ]
+  },
+  {
+    "objectID": "practicas.html#práctica-3-fundamentos-de-programación-con-plcs",
+    "href": "practicas.html#práctica-3-fundamentos-de-programación-con-plcs",
+    "title": "6  Prácticas de laboratorio",
+    "section": "6.4 Práctica 3: Fundamentos de programación con PLCs",
+    "text": "6.4 Práctica 3: Fundamentos de programación con PLCs\n\n6.4.1 Objetivo\nConfigurar, conectar y programar manualmente un micro-PLC Siemens LOGO! mediante funciones de temporización para el control secuencial de cargas eléctricas.\n\n\n6.4.2 Producto mínimo\n\nDiagrama de conexión.\nPrograma o lógica de control.\nEvidencia de funcionamiento.\nTabla de entradas y salidas.\nInforme técnico.\n\n\n\n6.4.3 Tabla de entradas y salidas sugerida\n\n\n\nVariable\nDirección\nDescripción\n\n\n\n\nMarcha\nI1\nPulsador normalmente abierto\n\n\nParo / Reset\nI2\nPulsador normalmente cerrado\n\n\nCarga\nQ1\nLámpara piloto o bobina de contactor\n\n\nTemporizador\nTON\nRetardo a la conexión de 5 s",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Prácticas de laboratorio</span>"
+    ]
+  },
+  {
     "objectID": "evaluacion.html",
     "href": "evaluacion.html",
     "title": "7  Evaluación",
